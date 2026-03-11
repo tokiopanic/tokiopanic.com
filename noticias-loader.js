@@ -8,7 +8,7 @@ async function cargarNoticias() {
         noticias = await respuesta.json();
         
         // Detectar si estamos en la página principal (existe el botón "Más noticias")
-        const esPaginaPrincipal = document.querySelector('.more-news-container') !== null;
+        const esPaginaPrincipal = document.querySelector('.more-news-btn') !== null;
         
         if (document.getElementById('lista-noticias')) {
             if (esPaginaPrincipal) {
@@ -85,3 +85,4 @@ function mostrarError() {
 }
 
 document.addEventListener('DOMContentLoaded', cargarNoticias);
+
