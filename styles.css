@@ -956,6 +956,20 @@ body.internal-page {
     margin: 1rem auto 0;
 }
 
+/* Convertir body en contenedor flex */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ya lo tienes, pero asegúrate que sea min-height */
+}
+
+/* El contenido principal ocupa el espacio disponible */
+.main-content {
+    flex: 1;
+    width: 100%;
+}
+
+
 
 
 
