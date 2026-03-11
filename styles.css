@@ -265,7 +265,7 @@ main {
 /* COLUMNA DERECHA (párrafos justificados) */
 .right-column {
     flex: 1.5; /* La derecha ocupa un poco más de espacio */
-    text-align: justify;
+    text-align: left;
 }
 
     .right-column p {
@@ -273,6 +273,7 @@ main {
         line-height: 1.8;
         margin-bottom: 1.2rem;
         color: #333;
+        text-align: left;
     }
 
         .right-column p:last-child {
@@ -954,6 +955,7 @@ body.internal-page {
     display: block;
     margin: 1rem auto 0;
 }
+
 
 
 
