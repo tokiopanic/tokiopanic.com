@@ -43,15 +43,15 @@ async function cargarNoticias() {
 function renderizarListaNoticias() {
     const contenedor = document.getElementById('lista-noticias');
     if (!contenedor) return;
-    
-    if (noticias.length === 0) {
+
+    // Ordenar noticias por ID de mayor a menor (más reciente primero)
+    const noticiasOrdenadas = [...noticias].sort((a, b) => b.id - a.id);
+
+    if (noticiasOrdenadas.length === 0) {
         contenedor.innerHTML = '<p class="no-news">No hay noticias disponibles.</p>';
         return;
     }
-    
-    // Ordenar noticias por ID de mayor a menor (más reciente primero)
-    const noticiasOrdenadas = [...noticias].sort((a, b) => b.id - a.id);
-    
+
     const noticiasHTML = noticiasOrdenadas.map(noticia => `
         <article class="news-item with-image">
             <img src="${noticia.imagen}" alt="${noticia.titulo}" class="news-image" onerror="this.src='images/placeholder.jpg'">
@@ -63,7 +63,7 @@ function renderizarListaNoticias() {
             </div>
         </article>
     `).join('');
-    
+
     contenedor.innerHTML = noticiasHTML;
 }
 
@@ -96,4 +96,5 @@ function mostrarError(error) {
 // Iniciar cuando el DOM esté listo
 
 document.addEventListener('DOMContentLoaded', cargarNoticias);
+
 
