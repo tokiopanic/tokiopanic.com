@@ -839,3 +839,21 @@ body.internal-page {
 .noticia-detalle .back-link:hover {
     background-color: #e6c300;
 }
+
+.noticia-imagen {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.noticia-contenido p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
