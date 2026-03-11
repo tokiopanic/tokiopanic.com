@@ -76,26 +76,18 @@ function renderizarNoticiaIndividual() {
     const urlParams = new URLSearchParams(window.location.search);
     const id = parseInt(urlParams.get('id'));
     const contenedor = document.getElementById('noticia-detalle');
-
-    if (!contenedor) {
-        console.error('❌ No se encontró el elemento #noticia-detalle');
-        return;
-    }
-
+    if (!contenedor) return;
     const noticia = noticias.find(n => n.id === id);
-
     if (noticia) {
         contenedor.innerHTML = `
             <h1>${noticia.titulo}</h1>
             <p class="news-date">${noticia.fecha} / ${noticia.autor}</p>
-            <img src="${noticia.imagen}" alt="${noticia.titulo}" style="max-width:100%; border-radius:10px; margin:1rem 0;">
-            ${noticia.contenidoCompleto}
+            <img src="${noticia.imagen}" alt="${noticia.titulo}" class="noticia-imagen">
+            <div class="noticia-contenido">${noticia.contenidoCompleto}</div>
             <a href="noticias.html" class="back-link">← Ver todas las noticias</a>
         `;
-        console.log('✅ Noticia individual renderizada ID:', id);
     } else {
-        contenedor.innerHTML = '<p>Noticia no encontrada</p>';
-        console.warn('⚠️ Noticia no encontrada para ID:', id);
+        contenedor.innerHTML = '<p class="error">Noticia no encontrada</p>';
     }
 }
 
@@ -107,4 +99,5 @@ function mostrarError(error) {
 }
 
 // Iniciar cuando el DOM esté listo
+
 document.addEventListener('DOMContentLoaded', cargarNoticias);
