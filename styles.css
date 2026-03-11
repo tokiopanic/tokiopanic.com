@@ -857,3 +857,94 @@ body.internal-page {
     margin-bottom: 1.5rem;
     text-align: justify;
 }
+
+/* ===== PÁGINA DE NOTICIA INDIVIDUAL ===== */
+.noticia-detalle {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.noticia-detalle h1 {
+    font-size: 2.5rem;
+    color: #e63946;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.noticia-detalle .news-date {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    border-bottom: 2px solid #ffe44e;
+    padding-bottom: 1rem;
+    display: inline-block;
+}
+
+.noticia-detalle .noticia-imagen {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border: 3px solid #ffe44e;
+}
+
+.noticia-detalle .noticia-contenido {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin: 2rem 0;
+}
+
+.noticia-detalle .noticia-contenido p {
+    margin-bottom: 1.8rem;
+    text-align: justify;
+}
+
+.noticia-detalle .back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    background-color: #ffe44e;
+    color: #000;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 2px solid #ffe44e;
+}
+
+.noticia-detalle .back-link:hover {
+    background-color: #e6c300;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 228, 78, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .noticia-detalle {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    .noticia-detalle h1 {
+        font-size: 1.8rem;
+    }
+    .noticia-detalle .noticia-contenido {
+        font-size: 1rem;
+    }
+    .noticia-detalle .noticia-imagen {
+        max-height: 300px;
+    }
+}
