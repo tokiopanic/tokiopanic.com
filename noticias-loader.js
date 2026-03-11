@@ -42,21 +42,17 @@ async function cargarNoticias() {
 
 function renderizarListaNoticias() {
     const contenedor = document.getElementById('lista-noticias');
-    if (!contenedor) {
-        console.error('❌ No se encontró el elemento #lista-noticias');
-        return;
-    }
-
+    if (!contenedor) return;
+    
     if (noticias.length === 0) {
         contenedor.innerHTML = '<p class="no-news">No hay noticias disponibles.</p>';
         return;
     }
-
-    const noticiasHTML = noticias.map(noticia => {
-        // Verificar que la noticia tenga todos los campos necesarios
-        console.log('📰 Procesando noticia ID:', noticia.id, noticia.titulo);
-
-        return `
+    
+    // Ordenar noticias por ID de mayor a menor (más reciente primero)
+    const noticiasOrdenadas = [...noticias].sort((a, b) => b.id - a.id);
+    
+    const noticiasHTML = noticiasOrdenadas.map(noticia => `
         <article class="news-item with-image">
             <img src="${noticia.imagen}" alt="${noticia.titulo}" class="news-image" onerror="this.src='images/placeholder.jpg'">
             <div class="news-content">
@@ -66,10 +62,9 @@ function renderizarListaNoticias() {
                 <a href="noticia.html?id=${noticia.id}" class="news-more">Leer más</a>
             </div>
         </article>
-    `}).join('');
-
+    `).join('');
+    
     contenedor.innerHTML = noticiasHTML;
-    console.log('✅ Lista de noticias renderizada. Total artículos:', noticias.length);
 }
 
 function renderizarNoticiaIndividual() {
@@ -101,3 +96,4 @@ function mostrarError(error) {
 // Iniciar cuando el DOM esté listo
 
 document.addEventListener('DOMContentLoaded', cargarNoticias);
+
