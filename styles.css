@@ -909,7 +909,7 @@ body.internal-page {
 
 .noticia-detalle .noticia-contenido p {
     margin-bottom: 1.8rem;
-    text-align: justify;
+    text-align: left; /* Cambiado de 'justify' a 'left' */
 }
 
 .noticia-detalle .back-link {
@@ -948,3 +948,4 @@ body.internal-page {
         max-height: 300px;
     }
 }
+
