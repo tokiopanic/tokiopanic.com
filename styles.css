@@ -771,4 +771,17 @@ body.internal-page {
     text-align: center;
     max-width: 600px;
     word-wrap: break-word;
+
+}
+
+
+.podcast-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
 }
