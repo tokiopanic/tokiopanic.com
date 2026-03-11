@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODAS LAS NOTICIAS - TOKIO PANIC</title>
+    <title>Noticia - TOKIO PANIC</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body class="internal-page">
     <div class="internal-container">
-        <!-- HEADER (copia exacta del que usas en index.html) -->
         <header>
-            <a href="index.html"><img src="logo.png" alt="Logo TOKIO PANIC" class="logo"></a>
+            <a href="index.html"><img src="logo.png" alt="Logo" class="logo"></a>
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -20,25 +18,10 @@
                 </ul>
             </nav>
         </header>
-
-        <!-- CONTENIDO PRINCIPAL -->
-        <main>
-            <h1 class="page-title">NOTICIAS</h1>
-
-            <!-- CONTENEDOR DONDE SE RENDERIZAN LAS NOTICIAS (desde noticias-loader.js) -->
-            <div id="lista-noticias" class="noticias-dinamicas">
-                <!-- Aquí se insertarán las noticias automáticamente -->
-                <p class="loading-msg">Cargando noticias...</p>
-            </div>
-
-            <!-- Botón para volver al inicio (opcional) -->
-            <div class="more-news-container" style="margin-top: 3rem; text-align: center;">
-                <a href="index.html" class="back-link">← Volver al inicio</a>
-            </div>
+        <main id="noticia-detalle">
+            <!-- El contenido se carga dinámicamente -->
         </main>
     </div>
-
-    <!-- FOOTER (mismo que en index.html) -->
     <footer class="footer">
         <div class="footer-content">
             <p>&copy; 2026 TOKIO PANIC. Todos los derechos reservados.</p>
@@ -49,8 +32,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- SCRIPTS -->
     <script src="script.js"></script>
     <script src="noticias-loader.js"></script>
 </body>
