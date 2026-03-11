@@ -900,11 +900,9 @@ body.internal-page {
     border: 3px solid #ffe44e;
 }
 
-.noticia-detalle .noticia-contenido {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #333;
-    margin: 2rem 0;
+.noticia-detalle .noticia-contenido p {
+    margin-bottom: 1.8rem;
+    text-align: left;  /* Ahora alineado a la izquierda */
 }
 
 .noticia-detalle .noticia-contenido p {
@@ -948,4 +946,5 @@ body.internal-page {
         max-height: 300px;
     }
 }
+
 
