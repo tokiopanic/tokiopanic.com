@@ -3,25 +3,46 @@ const playButton = document.getElementById('play-button');
 const radioPlayer = document.getElementById('radio-player');
 let isPlaying = false;
 
-// Función para reproducir/pausar la radio
+// Función para reproducir/pausar la radio (VERSIÓN CORREGIDA)
 function toggleRadio() {
     if (isPlaying) {
+        // MODO STOP: Detener y limpiar el stream
         radioPlayer.pause();
+
+        // Limpiar la fuente para detener la descarga del stream
+        // Guardamos la URL original para poder restaurarla después
+        const streamUrl = radioPlayer.querySelector('source').src;
+
+        // Eliminar la fuente temporalmente para forzar que el stream se detenga completamente
+        radioPlayer.querySelector('source').src = '';
+        radioPlayer.load(); // Esto detiene la descarga del stream
+
+        // Restaurar la fuente después de un pequeño retraso (para que esté lista para el próximo play)
+        setTimeout(() => {
+            radioPlayer.querySelector('source').src = streamUrl;
+            radioPlayer.load(); // Precarga la nueva conexión (sin reproducir)
+        }, 100);
+
         playButton.textContent = 'Escuchar';
         playButton.classList.remove('playing');
+        isPlaying = false;
     } else {
-        // Intentar reproducir (requiere interacción del usuario)
+        // MODO PLAY: Iniciar el stream desde cero (en vivo)
         radioPlayer.play()
             .then(() => {
                 playButton.textContent = 'Detener';
                 playButton.classList.add('playing');
+                isPlaying = true;
+
+                // Forzar a que comience desde el tiempo actual (0) del stream
+                // Esto es crucial para streams en vivo
+                radioPlayer.currentTime = 0;
             })
             .catch(error => {
                 console.error('Error al reproducir:', error);
                 alert('No se pudo conectar con la radio. Intenta más tarde.');
             });
     }
-    isPlaying = !isPlaying;
 }
 
 // Manejar cuando el audio termina (por si acaso)
