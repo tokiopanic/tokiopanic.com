@@ -116,7 +116,7 @@ main {
     }
 
     .play-btn.playing {
-        background-color: #2a9d8f; /* Cambia a verde cuando está reproduciendo */
+        background-color: #ff0000; /* Cambia a verde cuando está reproduciendo */
     }
 
 /* Responsive */
@@ -946,5 +946,6 @@ body.internal-page {
         max-height: 300px;
     }
 }
+
 
 
