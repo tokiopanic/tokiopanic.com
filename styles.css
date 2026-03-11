@@ -18,7 +18,7 @@ body {
     position: relative;
 }
 
-    /* Capa oscura semitransparente para mejorar legibilidad */
+/* Capa oscura semitransparente para mejorar legibilidad */
 .container {
     position: relative;
     z-index: 2;
@@ -157,59 +157,59 @@ main {
     }
 }
 
-    /* Marquesina sobre fondo blanco */
-    .white-section .marquee-container {
-        width: 100%;
-        overflow: hidden;
-        background-color: #f8f8f8; /* Gris muy suave para destacar las bandas */
-        padding: 1.2rem 0;
-        border-top: 2px solid #ffe44e;
-        border-bottom: 2px solid #ffe44e;
-    }
+/* Marquesina sobre fondo blanco */
+.white-section .marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f8f8f8; /* Gris muy suave para destacar las bandas */
+    padding: 1.2rem 0;
+    border-top: 2px solid #ffe44e;
+    border-bottom: 2px solid #ffe44e;
+}
 
-    .white-section .marquee {
+.white-section .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 30s linear infinite;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333; /* Texto oscuro para que resalte sobre fondo blanco */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+    .white-section .marquee span {
         display: inline-block;
-        white-space: nowrap;
-        animation: scroll 30s linear infinite;
-        font-size: 2rem;
+        margin: 0 1.5rem;
+        color: #000000;
+        transition: all 0.3s;
+    }
+
+        .white-section .marquee span:hover {
+            color: #ffe44e;
+            transform: scale(1.1);
+        }
+
+
+.intro-text-white p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 0 0 1.5rem 0; /* Solo margen inferior entre párrafos */
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+    .intro-text-white p:first-child {
+        font-size: 1.5rem;
         font-weight: bold;
-        color: #333; /* Texto oscuro para que resalte sobre fondo blanco */
+        color: #000000;
         text-transform: uppercase;
-        letter-spacing: 3px;
+        letter-spacing: 1px;
     }
 
-        .white-section .marquee span {
-            display: inline-block;
-            margin: 0 1.5rem;
-            color: #000000;
-            transition: all 0.3s;
-        }
-
-            .white-section .marquee span:hover {
-                color: #ffe44e;
-                transform: scale(1.1);
-            }
-
-
-    .intro-text-white p {
-        font-size: 1.2rem;
-        line-height: 1.8;
-        margin: 0 0 1.5rem 0; /* Solo margen inferior entre párrafos */
-        color: #333;
-        font-family: 'Arial', sans-serif;
+    .intro-text-white p:last-child {
+        margin-bottom: 0;
     }
-
-        .intro-text-white p:first-child {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #000000; 
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .intro-text-white p:last-child {
-            margin-bottom: 0;
-        }
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -255,7 +255,7 @@ main {
 
     .left-column h2 {
         font-size: 2rem;
-        color: #000000; 
+        color: #000000;
         text-transform: uppercase;
         letter-spacing: 2px;
         line-height: 1.4;
@@ -362,7 +362,7 @@ main {
 .news-summary {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #000000;
+    color: white;
     margin-bottom: 1rem;
 }
 
@@ -621,25 +621,20 @@ body.podcast-episode-page {
     gap: 1rem;
 }
 
-.footer p {
-    margin: 0;
-    font-size: 1rem;
-    color: #cccccc; /* Gris claro */
+/* FOOTER - siempre con texto blanco */
+.footer,
+.footer p,
+.footer .footer-content p {
+    color: #ffffff !important; /* Blanco forzado */
 }
 
-.footer .social-links {
-    margin-top: 0.5rem;
-}
-
+    /* Los enlaces se mantienen amarillos */
     .footer .social-links a {
-        color: #ffe44e; /* Amarillo */
-        text-decoration: none;
-        margin: 0 0.5rem;
-        transition: color 0.3s;
+        color: #ffe44e !important;
     }
 
         .footer .social-links a:hover {
-            color: #ffffff; /* Blanco al pasar el mouse */
+            color: #ffffff !important;
         }
 
 /* Responsive para móviles */
@@ -750,7 +745,7 @@ body.internal-page {
     body.internal-page h2,
     body.internal-page h3,
     body.internal-page p {
-        color: #333; /* Texto oscuro */
+        color: black; /* Texto oscuro */
     }
 
 /* Si usas contenedor interno, puede ser útil */
@@ -771,7 +766,6 @@ body.internal-page {
     text-align: center;
     max-width: 600px;
     word-wrap: break-word;
-
 }
 
 
