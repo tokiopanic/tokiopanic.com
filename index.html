@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOKIO PANIC | MÚSICA 24/7</title>
+    <title>TOKIO PANIC</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -64,18 +63,7 @@
     <!-- SECCIÓN DE NOTICIAS CON IMÁGENES -->
     <section class="news-section" id="noticias">
         <h2 class="news-title">Noticias</h2>
-
-        <article class="news-item with-image">
-            <img src="images/aoi.jpeg" alt="Aoi" class="news-image">
-            <div class="news-content">
-                <h3 class="news-item-title">The GazettE anuncia la salida de su guitarrista Aoi</h3>
-                <p class="news-date">2026-03-09 / Takanori</p>
-                <p class="news-summary">La banda emitió un comunicado que tomó por sorpresa a los fans.</p>
-                <a href="0001.html" class="news-more">Más</a>
-            </div>
-        </article>
-
-        <!-- Botón para ver más noticias -->
+        <div id="lista-noticias"></div> <!-- Aquí se renderizan -->
         <div class="more-news-container">
             <a href="noticias.html" class="more-news-btn">Más noticias</a>
         </div>
@@ -85,19 +73,20 @@
     <section class="podcast-section" id="podcast">
         <h2 class="podcast-title">TOKIO PANIC Podcast</h2>
         <p class="podcast-intro">Un podcast de TOKIO PANIC disponible en Spotify conducido por Midori y Josué Guajardo, donde hablarán sobre el mundo del rock japonés y el visual kei. ¡No te lo puedes perder!</p>
-            <div class="podcast-list">
-                <article class="podcast-item">
-                    <p class="podcast-host">Marzo 2026</p>
-                    <h3 class="podcast-episode-title">Episodio 1: El visual kei en 2026.</h3>
-                    <a class="podcast-listen">Próximamente</a>
-                </article>
-            </div>
+        <div class="podcast-list">
+            <article class="podcast-item">
+                <p class="podcast-host">Host: Midori y Josué Guajardo.</p>
+                <h3 class="podcast-episode-title">Episodio 1: El visual kei en 2026.</h3>
+                <a class="podcast-listen">Próximamente</a>
+            </article>
+        </div>
     </section>
 
 
 
 
     <script src="script.js"></script>
+    <script src="noticias-loader.js"></script>
     <!-- PIE DE PÁGINA -->
     <footer class="footer">
         <div class="footer-content">
@@ -111,8 +100,5 @@
     </footer>
 </body>
 
+
 </html>
-
-
-
-
