@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOKIO PANIC | MÚSICA 24/7</title>
+    <title>TOKIO PANIC</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,101 +12,86 @@
         <source src="https://stream.zeno.fm/fydx26uk9rhvv" type="audio/mpeg">
         Tu navegador no soporta la etiqueta de audio.
     </audio>
-<div class="main-content">
-    <!-- SECCIÓN SUPERIOR - CON IMAGEN DE FONDO -->
-    <div class="container">
-        <header>
-            <a href="#"><img src="logo.png" alt="Logo" class="logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="tokiopanic.com">Inicio</a></li>
-                    <li><a href="noticias.html">Noticias</a></li>
-                    <li><a href="#podcast">Podcast</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <main>
-            <h2 class="main-title">LO MEJOR DE LA<br>MÚSICA JAPONESA</h2>
-            <p class="sub-text">SINTONIZA TOKIO PANIC RADIO - MÚSICA 24/7</p>
-            <button id="play-button" class="play-btn">Escuchar</button>
-            <p id="now-playing" class="now-playing-text"></p>
-        </main>
-    </div>
+    <!-- NUEVO: Contenedor principal que ocupará el espacio flexible -->
+    <div class="main-content">
+        <!-- SECCIÓN SUPERIOR - CON IMAGEN DE FONDO -->
+        <div class="container">
+            <header>
+                <a href="#"><img src="logo.png" alt="Logo" class="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="noticias.html">Noticias</a></li>
+                        <li><a href="#podcast">Podcast</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <h2 class="main-title">LO MEJOR DE LA<br>MÚSICA JAPONESA</h2>
+                <p class="sub-text">SINTONIZA TOKIO PANIC RADIO - MÚSICA 24/7</p>
+                <button id="play-button" class="play-btn">Escuchar</button>
+                <p id="now-playing" class="now-playing-text"></p>
+            </main>
+        </div>
 
-
-
-    <!-- NUEVA SECCIÓN CON FONDO BLANCO - FUERA DEL CONTAINER -->
-    <section class="white-section">
-        <!-- Texto deslizante de bandas (se mantiene igual pero con fondo blanco) -->
-        <div class="marquee-container">
-            <div class="marquee">
-                <span>THE GAZETTE</span> • <span>AN CAFE</span> • <span>VERSAILLES</span> • <span>HYDE</span> • <span>VIDOLL</span> •
-                <span>LUNA SEA</span> • <span>X JAPAN</span> • <span>12012</span> • <span>ALICE NINE</span> • <span>BUCK-TICK</span> •
-                <span>DEATHGAZE</span> • <span>JILUKA</span> • <span>LYNCH</span> • <span>MALICE MIZER</span> • <span>NIGHTMARE</span> •
-                <span>PLASTIC TREE/span> • <span>ONE OK ROCK</span> • <span>SCREW</span> • <span>SUKEKIYO</span> • <span>MUCC</span>
+        <!-- SECCIÓN CON FONDO BLANCO -->
+        <section class="white-section">
+            <!-- Texto deslizante de bandas (se mantiene igual pero con fondo blanco) -->
+            <div class="marquee-container">
+                <div class="marquee">
+                    <span>THE GAZETTE</span> • <span>AN CAFE</span> • <span>VERSAILLES</span> • <span>HYDE</span> • <span>VIDOLL</span> •
+                    <span>LUNA SEA</span> • <span>X JAPAN</span> • <span>12012</span> • <span>ALICE NINE</span> • <span>BUCK-TICK</span> •
+                    <span>DEATHGAZE</span> • <span>JILUKA</span> • <span>LYNCH</span> • <span>MALICE MIZER</span> • <span>NIGHTMARE</span> •
+                    <span>PLASTIC TREE</span> • <span>ONE OK ROCK</span> • <span>SCREW</span> • <span>SUKEKIYO</span> • <span>MUCC</span>
+</div>
             </div>
-        </div>
-
-        <!-- Texto introductorio SIN FONDO NI MÁRGENES (exactamente como en la imagen) -->
-        <div class="two-columns">
-            <div class="left-column">
-                <h2>Somos TOKIO PANIC</h2>
-                <img src="logo.png" alt="TOKIO PANIC" class="logo-presentacion">
+            <div class="two-columns">
+                <div class="left-column">
+                    <h2>Somos TOKIO PANIC</h2>
+                </div>
+                <div class="right-column">
+                    <p>La estación de radio online que te conecta con la escena del rock japonés y el visual kei. No te pierdas las noticias más recientes y nuestro podcast.</p>
+                </div>
             </div>
-            <div class="right-column">
-                <p>La estación de radio online que te conecta con la escena del rock japonés y el visual kei. No te pierdas las noticias más recientes y nuestro podcast.</p>
+        </section>
+
+        <!-- SECCIÓN DE NOTICIAS -->
+        <section class="news-section" id="noticias">
+            <h2 class="news-title">Noticias</h2>
+            <div id="lista-noticias"></div>
+            <div class="more-news-container">
+                <a href="noticias.html" class="more-news-btn">Más noticias</a>
             </div>
-        </div>
+        </section>
 
-    <!-- SECCIÓN DE NOTICIAS CON IMÁGENES -->
-    <section class="news-section" id="noticias">
-        <h2 class="news-title">Noticias recientes</h2>
-        <div id="lista-noticias"></div> <!-- Aquí se renderizan -->
-        <div class="more-news-container">
-            <a href="noticias.html" class="more-news-btn">Más noticias</a>
-        </div>
-    </section>
-
-    <!-- SECCIÓN DE PODCAST -->
-    <section class="podcast-section" id="podcast">
-        <h2 class="podcast-title">TOKIO PANIC Podcast</h2>
-        <p class="podcast-intro">Un podcast de TOKIO PANIC disponible en Spotify conducido por Midori y Josué Guajardo, donde hablarán sobre el mundo del rock japonés y el visual kei. ¡No te lo puedes perder!</p>
-        <div class="podcast-list">
-            <article class="podcast-item">
-                <p class="podcast-host">Marzo 2026</p>
-                <h3 class="podcast-episode-title">Episodio 1.</h3>
-                <a class="podcast-listen">Próximamente</a>
-            </article>
-        </div>
-    </section>
+        <!-- SECCIÓN DE PODCAST -->
+        <section class="podcast-section" id="podcast">
+            <h2 class="podcast-title">TOKIO PANIC Podcast</h2>
+            <p class="podcast-intro">Un podcast de TOKIO PANIC disponible en Spotify conducido por Midori y Josué Guajardo, donde hablarán sobre el mundo del rock japonés y el visual kei. ¡No te lo puedes perder!</p>
+            <div class="podcast-list">
+                <article class="podcast-item">
+                    <p class="podcast-host">Host: Midori y Josué Guajardo.</p>
+                    <h3 class="podcast-episode-title">Episodio 1: El visual kei en 2026.</h3>
+                    <a class="podcast-listen">Próximamente</a>
+                </article>
+            </div>
+        </section>
 
 
-
-
-    <script src="script.js"></script>
-    <script src="noticias-loader.js"></script>
-    <!-- PIE DE PÁGINA -->
-    </div>    
+    </div> <!-- Cierre del main-content -->
+    <!-- PIE DE PÁGINA (fuera del main-content) -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2026 TOKIO PANIC</p>
+            <p>&copy; 2026 TOKIO PANIC. Todos los derechos reservados.</p>
             <p>contacto@tokiopanic.com</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/tokiopanic" target="_blank">Instagram</a>
-                <a href="https://www.tiktok.com/@tokiopanic" target="_blank">Tiktok</a>
+                <a href="https://www.instagram.com/tokiopanic" target="_blank">Instagram</a> |
+                <a href="#" target="_blank">Spotify</a>
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-
-
 </html>
-
-
-
-
-
-
-
-
