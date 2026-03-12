@@ -423,10 +423,11 @@ main {
         gap: 1rem;
     }
 
-    .news-image {
-        width: 100%;
-        height: 200px;
-    }
+.news-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
 
     .news-title {
         font-size: 2rem;
@@ -435,6 +436,24 @@ main {
     .news-item-title {
         font-size: 1.5rem;
     }
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.news-card {
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    transition: transform 0.25s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
 }
 
 /* PÁGINAS DE DETALLE DE NOTICIAS */
@@ -922,6 +941,7 @@ body.internal-page header nav a {
     }
 
 }
+
 
 
 
