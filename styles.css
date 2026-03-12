@@ -934,15 +934,18 @@ body.internal-page {
 /* Responsive */
 @media (max-width: 768px) {
     .noticia-detalle {
-        padding: 1.5rem;
+        padding: 1.5rem 1.2rem;
         margin: 1rem;
     }
+
     .noticia-detalle h1 {
         font-size: 1.8rem;
     }
+
     .noticia-detalle .noticia-contenido {
         font-size: 1rem;
     }
+
     .noticia-detalle .noticia-imagen {
         max-height: 300px;
     }
@@ -968,6 +971,7 @@ body {
     flex: 1;
     width: 100%;
 }
+
 
 
 
