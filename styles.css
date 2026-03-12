@@ -48,7 +48,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 3rem;
+
+    max-width: 1200px;   /* mismo ancho que tu contenido */
+    margin: 0 auto;      /* centra el header */
+    width: 100%;
+
+    box-sizing: border-box;
 }
+
 
 .logo {
     height: 50px; /* Ajusta la altura según tu logo */
@@ -915,6 +922,7 @@ body.internal-page header nav a {
     }
 
 }
+
 
 
 
