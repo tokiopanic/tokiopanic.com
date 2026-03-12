@@ -19,9 +19,11 @@ body {
 .container {
     position: relative;
     z-index: 2;
-    height: 100vh; /* Altura completa de la ventana */
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    background: url('tokio-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
     .container::before {
@@ -165,7 +167,7 @@ main {
 
 /* NUEVA SECCIÓN BLANCA */
 .white-section {
-    background: url('tokio-bg.jpg') center center / cover no-repeat fixed;
+    background-color: white; /* Solo blanco, sin imagen */
     width: 100%;
     padding: 3rem 0 5rem 0;
     display: flex;
@@ -935,6 +937,7 @@ body.internal-page header nav a {
     }
 
 }
+
 
 
 
