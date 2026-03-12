@@ -62,7 +62,7 @@ nav ul {
     list-style: none;
     padding: 0.4rem 1.2rem;
     border-radius: 999px;
-    background: rgba(255,255,255,0.15);
+    background: black;
 }
 
 nav ul li a {
@@ -910,6 +910,7 @@ body.internal-page {
     }
 
 }
+
 
 
 
