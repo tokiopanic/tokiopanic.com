@@ -879,6 +879,24 @@ body.internal-page {
     width: 100%;
 }
 
+.logo-presentacion {
+    width: 220px;
+    height: auto;
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+
+    .logo-presentacion {
+        width: 160px;
+    }
+
+}
+
+
 
 
 
