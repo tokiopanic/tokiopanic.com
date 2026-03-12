@@ -65,21 +65,18 @@ nav ul {
     background: black;
 }
 
-nav ul li a.active {
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+header nav ul li a.active {
     color: #ffe44e;
-    font-weight: 600;
 }
 
-nav ul li a {
-    text-decoration: none;
+header nav ul li a {
     color: white;
-    font-weight: 500;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
 }
 
 nav a {
@@ -92,6 +89,12 @@ nav a {
     nav a:hover {
         opacity: 0.8;
     }
+
+
+nav ul li a.active {
+    color: #ffe44e;
+    font-weight: 600;
+}
 
 /* Contenido principal */
 main {
@@ -675,7 +678,7 @@ body.podcast-episode-page {
 
 body.news-page header nav a,
 body.podcast-episode-page header nav a {
-    color: #333; /* Texto oscuro para que se vea sobre fondo blanco */
+    color: white; /* Texto oscuro para que se vea sobre fondo blanco */
 }
 
     body.news-page header nav a:hover,
@@ -711,9 +714,6 @@ body.podcast-episode-page header nav a {
     }
 
     /* Ajustar el header en páginas internas */
-    body.internal-page header nav a {
-        color: #333; /* Texto oscuro para el menú */
-    }
 
         body.internal-page header nav a:hover {
             color: #000;
@@ -749,12 +749,12 @@ body.internal-page {
 }
 
     /* Ajustar el header en páginas internas */
-    body.internal-page header nav a {
-        color: #333; /* Enlaces del menú en oscuro */
-    }
+body.internal-page header nav a {
+    color: white;
+}
 
         body.internal-page header nav a:hover {
-            color: #000;
+            color: #ffe44e;
         }
 
     /* Ajustar títulos y textos comunes */
@@ -915,6 +915,7 @@ body.internal-page {
     }
 
 }
+
 
 
 
