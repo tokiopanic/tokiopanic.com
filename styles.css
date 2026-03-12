@@ -12,13 +12,6 @@ html {
 body {
     font-family: 'Arial', sans-serif;
     color: white;
-    height: 100vh;
-    background: url('tokio-bg.jpg') no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -172,13 +165,14 @@ main {
 
 /* NUEVA SECCIÓN BLANCA */
 .white-section {
-    background-color: white;
+    background: url('tokio-bg.jpg') center center / cover no-repeat fixed;
     width: 100%;
     padding: 3rem 0 5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    position: relative;
 }
 
 @keyframes scroll {
@@ -941,6 +935,7 @@ body.internal-page header nav a {
     }
 
 }
+
 
 
 
