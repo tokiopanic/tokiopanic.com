@@ -661,6 +661,7 @@ body.podcast-episode-page {
     padding: 2rem;
     text-align: center;
     border-top: 3px solid #ffe44e; /* Línea superior amarilla */
+    width: 100%;
 }
 
 .footer-content {
@@ -769,7 +770,9 @@ body.internal-page {
     height: auto;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    
+    align-items: center;
 }
 
     /* Ajustar el header en páginas internas */
