@@ -757,8 +757,8 @@ body.podcast-episode-page header nav a {
 /* Para el contenedor principal de las páginas internas */
 .internal-container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    margin: 0;
+    padding: 0;
     background-color: white;
 }
 
@@ -937,6 +937,7 @@ body.internal-page header nav a {
     }
 
 }
+
 
 
 
