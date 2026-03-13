@@ -337,7 +337,7 @@ main {
 
 .news-title {
     font-size: 2.5rem;
-    color: #ffe44e;
+    color: yellow;
     margin-bottom: 3rem;
     text-align: center;
     text-transform: uppercase;
@@ -379,7 +379,7 @@ main {
 
 .news-item-title {
     font-size: 1.8rem;
-    color: #ffe44e;
+    color: yellow;
     margin-bottom: 0.5rem;
 }
 
@@ -983,7 +983,7 @@ body.internal-page header {
 
 /* Enlaces destacados con fondo amarillo */
 .highlight-link {
-    background-color: yellow;
+    background-color: #ffe44e;
     padding: 4px 8px;
     border-radius: 20px;
     text-decoration: none;
