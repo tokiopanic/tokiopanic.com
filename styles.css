@@ -74,7 +74,7 @@ nav ul li a {
 }
 
 header nav ul li a.active {
-    color: #ffe44e;
+    color: yellow;
 }
 
 header nav ul li a {
@@ -126,7 +126,7 @@ main {
 }
 
 .play-btn {
-    background-color: #ffe44e;
+    background-color: yellow;
     border: none;
     color: black;
     font-size: 1.5rem;
@@ -399,7 +399,7 @@ main {
 
 .news-more {
     display: inline-block;
-    background-color: #ffe44e;
+    background-color: yellow;
     color: #000000;
     text-decoration: none;
     padding: 0.5rem 1.5rem;
@@ -409,7 +409,7 @@ main {
 }
 
     .news-more:hover {
-        background-color: #e6c300;
+        background-color: yellow;
     }
 
 /* Responsive: en móviles la imagen arriba y el texto abajo */
@@ -718,7 +718,7 @@ body.podcast-episode-page header nav a {
 
 .more-news-btn {
     display: inline-block;
-    background-color: #ffe44e;
+    background-color: yellow;
     color: #000000;
     text-decoration: none;
     padding: 1rem 3rem;
@@ -732,7 +732,7 @@ body.podcast-episode-page header nav a {
 }
 
     .more-news-btn:hover {
-        background-color: #e6c300;
+        background-color: yellow;
         transform: scale(1.05);
     }
 
@@ -983,7 +983,7 @@ body.internal-page header {
 
 /* Enlaces destacados con fondo amarillo */
 .highlight-link {
-    background-color: #e4d71f;
+    background-color: yellow;
     padding: 4px 8px;
     border-radius: 20px;
     text-decoration: none;
