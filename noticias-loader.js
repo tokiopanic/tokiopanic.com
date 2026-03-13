@@ -65,6 +65,10 @@ function renderizarNoticiaIndividual() {
     const noticia = noticias.find(n => n.id === id);
     
     if (noticia) {
+        // ✅ Cambiar el título de la página (esto es JavaScript, no HTML)
+        document.title = `${noticia.titulo} | NOTICIAS | TOKIO PANIC`;
+        
+        // Luego asignar el contenido HTML
         contenedor.innerHTML = `
             <h1>${noticia.titulo}</h1>
             <p class="news-date">${noticia.fecha} / ${noticia.autor}</p>
@@ -73,7 +77,8 @@ function renderizarNoticiaIndividual() {
             <a href="noticias.html" class="back-link">← Ver todas las noticias</a>
         `;
     } else {
-        contenedor.innerHTML = '<p class="error">Noticia no encontrada</p>';
+        document.title = "Noticia no encontrada | TOKIO PANIC";
+        contenedor.innerHTML = '<p class="error">Noticia no encontrada</p>';       
     }
 }
 
