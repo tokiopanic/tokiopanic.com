@@ -121,8 +121,7 @@ main {
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 1rem;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+
 }
 
 .sub-text {
@@ -1003,7 +1002,18 @@ body.internal-page header {
 .highlight-link:hover {
     background-color: #c4b519; /* Color más oscuro al pasar el mouse */
 }
+/* Ajuste de la marquesina para que toque el borde superior de la sección blanca */
+.white-section {
+    padding-top: 0; /* Elimina el padding superior de la sección blanca */
+}
 
+.white-section .marquee-container {
+    margin-top: 0; /* Asegura que no haya margen superior */
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
 
 
 
