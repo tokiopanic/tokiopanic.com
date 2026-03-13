@@ -761,6 +761,7 @@ body.podcast-episode-page header nav a {
     margin: 0;
     padding: 0;
     background-color: white;
+    margin-bottom: 2rem;
 }
 
 /* ESTILOS PARA PÁGINAS INTERNAS (fondo blanco) */
@@ -876,7 +877,7 @@ body.internal-page header nav a {
 /* Botón volver */
 .noticia-detalle .back-link {
     display: inline-block;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 0.8rem 2rem;
     background-color: #ffe44e;
     color: #000;
