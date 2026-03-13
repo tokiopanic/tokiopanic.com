@@ -39,7 +39,7 @@ function toggleRadio() {
         // Crear un nuevo elemento de audio (fresco) para el próximo play
         radioPlayer = crearNuevoAudio();
 
-        playButton.textContent = 'Escuchar';
+        playButton.textContent = 'En vivo';
         playButton.classList.remove('playing');
         isPlaying = false;
     } else {
@@ -60,7 +60,7 @@ function toggleRadio() {
 // Manejar cuando el audio termina (por si acaso)
 radioPlayer.addEventListener('ended', () => {
     isPlaying = false;
-    playButton.textContent = 'Escuchar';
+    playButton.textContent = 'EN VIVO';
     playButton.classList.remove('playing');
 });
 
@@ -68,7 +68,7 @@ radioPlayer.addEventListener('ended', () => {
 radioPlayer.addEventListener('error', (e) => {
     console.error('Error en el stream:', e);
     isPlaying = false;
-    playButton.textContent = 'Escuchar';
+    playButton.textContent = 'EN VIVO';
     playButton.classList.remove('playing');
 });
 
@@ -95,6 +95,6 @@ if (nowPlayingElement) {
 
     eventSource.addEventListener('error', (error) => {
         console.error('Error en conexión SSE:', error);
-        nowPlayingElement.textContent = '🎵 Conectando...';
+        nowPlayingElement.textContent = 'Conectando...';
     });
 }
