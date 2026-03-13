@@ -1016,7 +1016,15 @@ body.internal-page header {
 }
 
 
-
+@media (max-width: 768px) {
+    .white-section {
+        padding: 0 0 3rem 0; /* Sin padding superior en móvil */
+    }
+    
+    .white-section .marquee-container {
+        padding: 1rem 0;
+    }
+}
 
 
 
