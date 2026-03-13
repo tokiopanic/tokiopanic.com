@@ -768,6 +768,8 @@ body.internal-page {
     color: #333; /* Texto oscuro general */
     height: auto;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
     /* Ajustar el header en páginas internas */
@@ -937,6 +939,7 @@ body.internal-page header nav a {
     }
 
 }
+
 
 
 
