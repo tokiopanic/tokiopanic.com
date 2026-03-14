@@ -588,7 +588,21 @@ body.internal-page .podcast-section .podcast-listen:hover {
   width: auto;
   margin-top: 1.5rem;
 }
+/* Centrar botón en móvil */
+@media (max-width: 768px) {
+  .podcast-list {
+    align-items: center; /* Centra todos los hijos horizontalmente */
+  }
 
+  .podcast-list .more-news-btn {
+    align-self: center; /* Asegura que el botón no herede align-items: stretch */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: auto; /* Mantiene el ancho según contenido */
+    display: inline-block; /* Para que el texto se centre dentro del botón */
+  }
+}
 /* ===== PÁGINAS DE EPISODIOS DE PODCAST ===== */
 body.podcast-episode-page {
   background: white;
