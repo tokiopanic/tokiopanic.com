@@ -73,6 +73,11 @@ nav ul li a.active {
   font-weight: 600;
 }
 
+body.internal-page header nav a.active {
+  color: #ffe44e;
+  font-weight: 600;
+}
+
 /* ===== PÁGINA DE INICIO (CONTAINER) ===== */
 .container {
   position: relative;
@@ -477,7 +482,7 @@ main {
   font-family: "Impact", "Arial Black", sans-serif;
   font-size: 2.5rem;
   color: #000000;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -1792,4 +1797,38 @@ body.internal-page p {
       padding: 0;
     }
   }
+}
+/* Banner del podcast */
+.podcast-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin: 2rem 0 1rem 0; /* espacio superior e inferior */
+    padding: 0 1rem; /* margen lateral en móvil */
+    box-sizing: border-box;
+}
+
+.banner-podcast {
+    max-width: 900px;  /* ajusta según el ancho deseado */
+    width: 100%;
+    height: auto;
+    border-radius: 12px; /* opcional, bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* sombra suave */
+    transition: transform 0.3s ease;
+}
+
+.banner-podcast:hover {
+    transform: scale(1.02); /* pequeño efecto al pasar el mouse */
+}
+
+/* Responsive: en móvil se reduce el margen y el tamaño máximo */
+@media (max-width: 768px) {
+    .podcast-banner {
+        margin: 1.5rem 0 1rem 0;
+    }
+    .banner-podcast {
+        max-width: 100%;
+        border-radius: 8px;
+    }
 }
