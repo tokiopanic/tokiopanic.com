@@ -59,26 +59,53 @@ function renderizarNoticiaIndividual() {
     const urlParams = new URLSearchParams(window.location.search);
     const id = parseInt(urlParams.get('id'));
     const contenedor = document.getElementById('noticia-detalle');
-    
+
     if (!contenedor) return;
-    
+
     const noticia = noticias.find(n => n.id === id);
-    
+
     if (noticia) {
-        // ✅ Cambiar el título de la página (esto es JavaScript, no HTML)
+        // ✅ Cambiar el título de la página
         document.title = `${noticia.titulo} | NOTICIAS | TOKIO PANIC`;
-        
-        // Luego asignar el contenido HTML
-        contenedor.innerHTML = `
+
+        // ✅ Determinar la imagen principal (compatible con array o string)
+        let imagenSrc = 'images/placeholder.jpg';
+        if (noticia.imagenes && noticia.imagenes.length > 0) {
+            imagenSrc = noticia.imagenes[0];
+        } else if (noticia.imagen) {
+            imagenSrc = noticia.imagen;
+        }
+
+        // ✅ Generar Schema.org en JSON-LD
+        const schemaData = {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": noticia.titulo,
+            "image": noticia.imagenes || noticia.imagen, // Schema acepta array o string
+            "datePublished": noticia.fecha + "T12:00:00-06:00", // Ajusta zona horaria
+            "dateModified": noticia.fecha + "T12:00:00-06:00",
+            "author": [{
+                "@type": "Person",
+                "name": noticia.autor,
+                "url": "https://www.instagram.com/tuusuario/" // Cambia por el IG real si deseas
+            }],
+            "articleBody": noticia.contenidoCompleto.replace(/<[^>]*>/g, ''), // Texto plano
+            "url": "https://tokiopanic.com/noticia.html?id=" + noticia.id
+        };
+
+        const schemaScript = `<script type="application/ld+json">${JSON.stringify(schemaData, null, 2)}<\/script>`;
+
+        // ✅ Insertar el schema y el contenido en el contenedor
+        contenedor.innerHTML = schemaScript + `
             <h1>${noticia.titulo}</h1>
             <p class="news-date">${noticia.fecha} / ${noticia.autor}</p>
-            <img src="${noticia.imagen}" alt="${noticia.titulo}" class="noticia-imagen" onerror="this.src='images/placeholder.jpg'">
+            <img src="${imagenSrc}" alt="${noticia.titulo}" class="noticia-imagen" onerror="this.src='images/placeholder.jpg'">
             <div class="noticia-contenido">${noticia.contenidoCompleto}</div>
             <a href="noticias.html" class="back-link">← Ver todas las noticias</a>
         `;
     } else {
         document.title = "Noticia no encontrada | TOKIO PANIC";
-        contenedor.innerHTML = '<p class="error">Noticia no encontrada</p>';       
+        contenedor.innerHTML = '<p class="error">Noticia no encontrada</p>';
     }
 }
 
