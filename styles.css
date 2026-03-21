@@ -21,7 +21,7 @@
   /* ===== TIPOGRAFÍAS PERSONALIZADAS ===== */
   @font-face {
     font-family: "Impact";
-    src: url("impact.ttf") format("truetype");
+    src: url("Impact.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -99,9 +99,13 @@ main {
     text-align: center;
     padding: 2rem 1rem;           /* Padding vertical extra */
     width: 100%;
-    overflow: visible;       /* Asegura que no corte */
+    overflow-x: hidden;
 }
-
+img, iframe, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 .main-title {
     font-family: "Impact", "Arial Black", sans-serif;
     font-size: 3.5rem;
@@ -563,14 +567,13 @@ iframe {
   }
 
   /* ===== PÁGINA DE DETALLE DE NOTICIA ===== */
-  .noticia-detalle {
+ .noticia-detalle {
     max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  }
+    margin: 1rem auto; /* SOLO vertical */
+    padding: 1.5rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
 
   .noticia-detalle h1 {
     font-size: 2.5rem;
@@ -723,12 +726,9 @@ iframe {
     background-color: #000000;
     color: #ffffff;
     flex: 1; /* Ocupa el espacio restante */
-    width: 100vw;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   body.internal-page .podcast-section .podcast-title {
@@ -1047,7 +1047,7 @@ body.internal-page header nav a.active {
     /* Página de noticia individual */
     .noticia-detalle {
       padding: 1.5rem 1.3rem;
-      margin: 1rem;
+      margin: 1rem auto;
     }
     .noticia-detalle h1 {
       font-size: 1.8rem;
