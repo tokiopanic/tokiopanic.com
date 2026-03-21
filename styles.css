@@ -1,919 +1,5 @@
-/* ===== RESET Y ESTILOS BASE ===== */
-html {
-  scroll-behavior: smooth;
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Arial", sans-serif;
-  color: white;
-  min-height: 100vh;
-}
-
-/* ===== TIPOGRAFÍAS PERSONALIZADAS ===== */
-@font-face {
-  font-family: "Impact";
-  src: url("Impact.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* ===== CONTENEDORES PRINCIPALES ===== */
-.main-content {
-  flex: 1;
-  width: 100%;
-}
-
-/* ===== HEADER Y NAVEGACIÓN ===== */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.logo {
-  height: 50px;
-  width: auto;
-}
-
-nav ul {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-  padding: 0.4rem 1.2rem;
-  border-radius: 999px;
-  background: black;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  font-size: 1.1rem;
-  transition: opacity 0.3s;
-}
-
-nav ul li a:hover {
-  opacity: 0.8;
-}
-
-nav ul li a.active {
-  color: #ffe44e;
-  font-weight: 600;
-}
-
-body.internal-page header nav a.active {
-  color: #ffe44e;
-  font-weight: 600;
-}
-
-/* ===== PÁGINA DE INICIO (CONTAINER) ===== */
-.container {
-  position: relative;
-  z-index: 2;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: url("tokio-bg.jpg") no-repeat center center fixed;
-  background-size: cover;
-}
-
-.container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: -1;
-}
-
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 1rem;
-}
-
-.main-title {
-  font-family: "Impact", "Arial Black", sans-serif;
-  font-size: 3.5rem;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
-.sub-text {
-  font-size: 1.2rem;
-  letter-spacing: 2px;
-  margin-bottom: 2rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.play-btn {
-  background-color: yellow;
-  border: none;
-  color: black;
-  font-size: 1.5rem;
-  padding: 0.8rem 2.5rem;
-  border-radius: 50px;
-  cursor: pointer;
-  font-weight: bold;
-  text-transform: uppercase;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transition:
-    transform 0.2s,
-    background-color 0.2s;
-  margin-top: 2rem;
-}
-
-.play-btn:hover {
-  background-color: #ffe44e;
-  transform: scale(1.05);
-}
-
-.play-btn.playing {
-  background-color: #ff0000;
-}
-
-/* ===== SECCIÓN BLANCA ===== */
-.white-section {
-  padding-top: 0 !important;
-  background-color: white;
-  width: 100%;
-  padding: 1.5rem 0 1rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  position: relative;
-}
-
-/* Marquesina */
-.white-section .marquee-container {
-  width: 100%;
-  margin-top: 0;
-  overflow: hidden;
-  background-color: #f8f8f8;
-  padding: 1.2rem 0;
-  border-top: 2px solid #ffe44e;
-  border-bottom: 2px solid #ffe44e;
-  margin-top: 0;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.white-section .marquee {
-  display: inline-block;
-  white-space: nowrap;
-  animation: scroll 30s linear infinite;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.white-section .marquee span {
-  display: inline-block;
-  margin: 0 1.5rem;
-  color: #000000;
-  transition: all 0.3s;
-}
-
-.white-section .marquee span:hover {
-  color: #ffe44e;
-  transform: scale(1.1);
-}
-
-/* Columnas originales (pueden eliminarse si ya no se usan) */
-.two-columns {
-  display: flex;
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
-  gap: 3rem;
-  align-items: center;
-}
-
-.left-column {
-  flex: 1;
-  text-align: center;
-}
-
-.left-column h2 {
-  font-size: 2rem;
-  color: #000000;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 1.4;
-  margin: 0;
-}
-
-.right-column {
-  flex: 1.5;
-  text-align: left;
-}
-
-.right-column p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 1.2rem;
-  color: #333;
-  text-align: left;
-}
-
-.right-column p:last-child {
-  margin-bottom: 0;
-}
-
-/* Nueva sección de una sola columna centrada */
-.single-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-.single-column h2 {
-  font-size: 2rem;
-  color: #000000;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 1.4;
-  margin-bottom: 1.5rem;
-}
-
-.single-column .logo-presentacion {
-  width: 220px;
-  height: auto;
-  margin: 1rem auto;
-  display: block;
-}
-
-.single-column .description {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #333;
-  max-width: 600px;
-  margin: 1rem auto 0;
-}
-
-/* ===== SECCIÓN DE NOTICIAS ===== */
-.news-section {
-  background-color: #000000;
-  padding: 4rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  color: #ffffff;
-}
-
-.news-title {
-  font-size: 2.5rem;
-  color: yellow;
-  margin-bottom: 3rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  border-bottom: 3px solid #ffe44e;
-  display: inline-block;
-  padding-bottom: 0.5rem;
-  width: 100%;
-}
-
-.news-item.with-image {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px dashed #444;
-  align-items: flex-start;
-}
-
-.news-item.with-image:last-child {
-  border-bottom: none;
-}
-
-.news-image {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 3px solid #ffe44e;
-  flex-shrink: 0;
-}
-
-.news-content {
-  flex: 1;
-}
-
-.news-item-title {
-  font-size: 1.8rem;
-  color: yellow;
-  margin-bottom: 0.5rem;
-}
-
-.news-date {
-  font-size: 0.9rem;
-  color: #cccccc;
-  margin-bottom: 1rem;
-  font-style: italic;
-}
-
-.news-summary {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: white;
-  margin-bottom: 1rem;
-}
-
-.news-more {
-  display: inline-block;
-  background-color: yellow;
-  color: #000000;
-  text-decoration: none;
-  padding: 0.5rem 1.5rem;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.news-more:hover {
-  background-color: yellow; /* Considera un tono más oscuro, ej: #e6c300 */
-}
-
-/* Botón "Más noticias" */
-.more-news-container {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.more-news-btn {
-  display: inline-block;
-  background-color: yellow;
-  color: #000000;
-  text-decoration: none;
-  padding: 1rem 3rem;
-  border-radius: 50px;
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition:
-    background-color 0.3s,
-    transform 0.2s;
-  border: 2px solid #ffe44e;
-}
-
-.more-news-btn:hover {
-  background-color: yellow; /* Mismo comentario */
-  transform: scale(1.05);
-}
-
-/* ===== PÁGINA DE DETALLE DE NOTICIA ===== */
-.noticia-detalle {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-}
-
-.noticia-detalle h1 {
-  font-size: 2.5rem;
-  color: #e63946;
-  margin-bottom: 0.5rem;
-  line-height: 1.3;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-}
-
-.noticia-detalle .news-date {
-  font-size: 1rem;
-  color: #888;
-  margin-bottom: 1.5rem;
-  font-style: italic;
-  border-bottom: 2px solid #ffe44e;
-  padding-bottom: 1rem;
-  display: inline-block;
-}
-
-.noticia-detalle .noticia-imagen {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  max-height: 450px;
-  object-fit: cover;
-  display: block;
-  margin: 2rem auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  border: 3px solid #ffe44e;
-}
-
-.noticia-detalle .noticia-media {
-    width: 100%;
-    max-width: 700px;
-    height: auto;          /* Elimina cualquier altura fija */
-    max-height: none;      /* Elimina la restricción de altura */
-    object-fit: contain;   /* Muestra la imagen completa sin recortes */
-    display: block;
-    margin: 2rem auto;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    border: 3px solid #ffe44e;
-}
-
-.noticia-detalle .noticia-contenido p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #333;
-  margin-bottom: 1.8rem;
-  text-align: left;
-}
-
-.noticia-detalle .back-link {
-  display: inline-block;
-  margin-bottom: 2rem;
-  padding: 0.8rem 2rem;
-  background-color: #ffe44e;
-  color: #000;
-  text-decoration: none;
-  border-radius: 40px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  border: 2px solid #ffe44e;
-}
-
-.noticia-detalle .back-link:hover {
-  background-color: #e6c300;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255, 228, 78, 0.4);
-}
-
-/* ===== SECCIÓN DE PODCAST (estilos base y específicos) ===== */
-.podcast-section {
-  background-color: #f5f5f5; /* Fondo gris claro por defecto (para index) */
-  padding: 4rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  color: #333;
-}
-
-.podcast-title {
-  font-family: "Impact", "Arial Black", sans-serif;
-  font-size: 2.5rem;
-  color: #000000;
-  margin-bottom: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  border-bottom: 3px solid #ffe44e;
-  display: inline-block;
-  padding-bottom: 0.5rem;
-  width: 100%;
-}
-
-.podcast-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.podcast-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-  padding: 1.5rem 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-}
-
-.podcast-item:hover {
-  transform: translateX(5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.podcast-host {
-  font-size: 1rem;
-  color: #666;
-  font-style: italic;
-  min-width: 150px;
-}
-
-.podcast-episode-title {
-  font-size: 1.4rem;
-  color: #333;
-  flex: 1;
-  margin: 0 1rem;
-}
-
-.podcast-listen {
-  background-color: #ffe44e;
-  color: #000;
-  text-decoration: none;
-  padding: 0.6rem 1.8rem;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.podcast-listen:hover {
-  background-color: #e6c300;
-}
-
-/* Estilos específicos para la página de podcast (fondo negro) */
-body.internal-page .podcast-section {
-  background-color: #000000;
-  color: #ffffff;
-  flex: 1; /* Ocupa el espacio restante */
-  width: 100vw;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-body.internal-page .podcast-section .podcast-title {
-  color: #ffe44e;
-  border-bottom-color: #ffe44e;
-}
-
-body.internal-page .podcast-section .podcast-intro {
-  color: #ffffff;
-}
-
-body.internal-page .podcast-section .podcast-item {
-  background-color: #383838;
-  color: #ffffff;
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
-}
-
-body.internal-page .podcast-section .podcast-host {
-  color: #cccccc;
-}
-
-body.internal-page .podcast-section .podcast-episode-title {
-  color: #ffffff;
-}
-
-body.internal-page .podcast-section .podcast-listen {
-  background-color: #ffe44e;
-  color: #000000;
-}
-
-body.internal-page .podcast-section .podcast-listen:hover {
-  background-color: #e6c300;
-}
-
-/* Botón "TODOS LOS EPISODIOS" dentro de podcast-list */
-.podcast-list .more-news-btn {
-  align-self: center;
-  width: auto;
-  margin-top: 1.5rem;
-}
-/* Centrar botón en móvil */
-@media (max-width: 768px) {
-  .podcast-list {
-    align-items: center; /* Centra todos los hijos horizontalmente */
-  }
-
-  .podcast-list .more-news-btn {
-    align-self: center; /* Asegura que el botón no herede align-items: stretch */
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: auto; /* Mantiene el ancho según contenido */
-    display: inline-block; /* Para que el texto se centre dentro del botón */
-  }
-}
-/* ===== PÁGINAS DE EPISODIOS DE PODCAST ===== */
-body.podcast-episode-page {
-  background: white;
-  color: #333;
-  height: auto;
-  margin: 0;
-}
-
-.episode-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: white;
-  min-height: 100vh;
-}
-
-.episode-detail h1 {
-  font-size: 2.5rem;
-  color: #000000;
-  margin: 2rem 0 0.5rem;
-}
-
-.episode-host {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 1rem;
-  font-style: italic;
-}
-
-.episode-detail audio {
-  width: 100%;
-  margin: 2rem 0;
-}
-
-.episode-detail p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #333;
-  margin-bottom: 1.5rem;
-}
-
-.back-link {
-  display: inline-block;
-  margin-top: 2rem;
-  color: #ffe44e;
-  text-decoration: none;
-  font-weight: bold;
-  background-color: #333;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.back-link:hover {
-  background-color: #555;
-}
-
-/* ===== PÁGINAS INTERNAS (fondo blanco) ===== */
-body.internal-page {
-  background: white;
-  color: #333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.internal-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-  background-color: white;
-  width: 100%;
-  margin-bottom: 2rem;
-  flex: 1;
-}
-
-body.internal-page header {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-  padding: 2rem 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-body.internal-page header nav a {
-  color: white;
-}
-
-body.internal-page header nav a:hover {
-  color: #ffe44e;
-}
-
-body.internal-page h1,
-body.internal-page h2,
-body.internal-page h3,
-body.internal-page p {
-  color: black;
-}
-
-/* ===== FOOTER ===== */
-.footer {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 2rem;
-  text-align: center;
-  border-top: 3px solid #ffe44e;
-  width: 100%;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.footer,
-.footer p,
-.footer .footer-content p {
-  color: #ffffff !important;
-}
-
-.footer .social-links a {
-  color: #ffe44e !important;
-  text-decoration: none;
-  margin: 0 0.5rem;
-  transition: color 0.3s;
-}
-
-.footer .social-links a:hover {
-  color: #ffffff !important;
-}
-
-/* ===== UTILIDADES Y CLASES AUXILIARES ===== */
-.now-playing-text {
-  margin-top: 1rem;
-  font-size: 1.1rem;
-  color: #ffe44e;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-  font-style: italic;
-  min-height: 1.5rem;
-  text-align: center;
-  max-width: 600px;
-  word-wrap: break-word;
-}
-
-.podcast-intro {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #000000;
-  margin-bottom: 2rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
-}
-
-.highlight-link {
-  background-color: #ffe44e;
-  padding: 4px 8px;
-  border-radius: 20px;
-  text-decoration: none;
-  color: black;
-  display: inline-block;
-}
-
-.highlight-link:hover {
-  background-color: #c4b519;
-}
-
-/* ===== MEDIA QUERIES (agrupadas) ===== */
-@media (max-width: 768px) {
-  /* Header */
-  header,
-  body.internal-page header {
-    padding: 1rem;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  /* Títulos principales */
-  .main-title {
-    font-size: 2.5rem;
-  }
-  .sub-text {
-    font-size: 1rem;
-  }
-
-  /* Sección blanca */
-  .white-section {
-    padding: 1rem 0 3rem 0;
-    gap: 1rem;
-  }
-  .white-section .marquee {
-    font-size: 1.3rem;
-    animation-duration: 20s;
-  }
-  .white-section .marquee span {
-    margin: 0 0.8rem;
-  }
-
-  /* Columnas */
-  .two-columns {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .left-column h2 {
-    font-size: 1.5rem;
-  }
-  .right-column p {
-    font-size: 1rem;
-  }
-
-  /* Noticias */
-  .news-item.with-image {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .news-image {
-    width: 100%;
-    height: 220px;
-  }
-  .news-title {
-    font-size: 2rem;
-  }
-  .news-item-title {
-    font-size: 1.5rem;
-  }
-
-  /* Podcast */
-  .podcast-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  .podcast-host {
-    min-width: auto;
-  }
-  .podcast-episode-title {
-    margin: 0;
-  }
-  .podcast-listen {
-    align-self: flex-end;
-  }
-
-  /* Footer */
-  .footer {
-    padding: 1.5rem;
-  }
-  .footer p {
-    font-size: 0.9rem;
-  }
-
-  /* Página de noticia individual */
-  .noticia-detalle {
-    padding: 1.5rem 1.3rem;
-    margin: 1rem;
-  }
-  .noticia-detalle h1 {
-    font-size: 1.8rem;
-  }
-  .noticia-detalle .noticia-contenido p {
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-  .noticia-detalle .noticia-imagen {
-    max-height: 300px;
-  }
-
-  /* Single column */
-  .single-column h2 {
-    font-size: 1.5rem;
-  }
-  .single-column .logo-presentacion {
-    width: 160px;
-  }
-  .single-column .description {
-    font-size: 1rem;
-    line-height: 1.6;
-    padding: 0 1rem;
-  }
-
-  /* Contenedores internos */
-  .internal-container {
-    padding: 0;
-  }
-
-  /* ===== RESET Y ESTILOS BASE ===== */
+ /* ===== RESET Y ESTILOS BASE ===== */
   html {
     scroll-behavior: smooth;
   }
@@ -928,6 +14,8 @@ body.internal-page p {
     font-family: "Arial", sans-serif;
     color: white;
     min-height: 100vh;
+    display: flex;
+  flex-direction: column;
   }
 
   /* ===== TIPOGRAFÍAS PERSONALIZADAS ===== */
@@ -995,7 +83,7 @@ body.internal-page p {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url("tokio-bg.jpg") no-repeat center center fixed;
+    background: url("fondo3.jpg") no-repeat center center fixed;
     background-size: cover;
   }
 
@@ -1010,24 +98,31 @@ body.internal-page p {
     z-index: -1;
   }
 
-  main {
+main {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 1rem;
-  }
+    padding: 2rem 1rem;           /* Padding vertical extra */
+    width: 100%;
+    overflow: visible;       /* Asegura que no corte */
+}
 
-  .main-title {
+.main-title {
     font-family: "Impact", "Arial Black", sans-serif;
     font-size: 3.5rem;
     font-weight: 800;
-    line-height: 1.2;
+    line-height: 1.4;        /* Aumentar para dar espacio vertical */
+    margin-top: 8rem;
     margin-bottom: 1rem;
-  }
-
+    padding: 0.2rem 0;       /* Pequeño padding para respiro */
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    word-break: break-word;
+    display: inline-block;    /* Ayuda a que el padding se aplique correctamente */
+}
   .sub-text {
     font-size: 1.2rem;
     letter-spacing: 2px;
@@ -1035,31 +130,197 @@ body.internal-page p {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   }
 
-  .play-btn {
-    background-color: yellow;
-    border: none;
-    color: black;
+/* ===== REPRODUCTOR Y HISTORIAL ===== */
+.player-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 0;
+ 
+}
+
+.player {
+    width: 100%;
+    margin: 0 auto;
+}
+iframe {
+    max-width: 100%;
+    overflow: hidden;
+}
+.radio-iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+.history {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.history h3 {
+    font-family: "Impact", "Arial Black", sans-serif;
     font-size: 1.5rem;
-    padding: 0.8rem 2.5rem;
-    border-radius: 50px;
-    cursor: pointer;
-    font-weight: bold;
+    color: #ffe44e;
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition:
-      transform 0.2s,
-      background-color 0.2s;
-    margin-top: 2rem;
-  }
+}
 
-  .play-btn:hover {
-    background-color: #ffe44e;
-    transform: scale(1.05);
-  }
+.history-iframe {
+    width: 100%;
+    height: 320px;
+    border: none;
+    border-radius: 12px;
+    background: transparent;
+    display: block;
+    margin: 0;
+    padding: 0;
+    vertical-align: top; /* Elimina espacio bajo el iframe */
+}
 
-  .play-btn.playing {
-    background-color: #ff0000;
-  }
+
+/* Ajustes para escritorio */
+@media (min-width: 768px) {
+    .player-container {
+        max-width: 900px;
+    }
+    
+    .history-iframe {
+        min-height: 350px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .player-container {
+        max-width: 1000px;
+    }
+
+    .radio-iframe {
+        height: 180px;
+    }
+
+    .history-iframe {
+        min-height: 400px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .player-container {
+        max-width: 1200px;
+    }
+    
+    .radio-iframe {
+        height: 200px;
+    }
+    
+    .history-iframe {
+        min-height: 450px;
+    }
+}
+
+/* ===== AJUSTES PARA EL HISTORIAL ===== */
+.history-iframe {
+    width: 100%;
+    height: 380px;
+    border: none;
+    border-radius: 12px;
+    background: transparent;
+    display: block;
+    overflow: hidden; /* Evita scroll extra */
+}
+
+/* Forzar que el contenido del iframe se adapte */
+iframe {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Ajustes específicos para el historial en móvil */
+@media (max-width: 768px) {
+    /* Contenedor principal del reproductor e historial */
+    .player-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 0.5rem;
+        margin: 1rem auto;
+        gap: 1rem;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    
+    /* Reproductor */
+    .radio-iframe {
+        height: 140px;
+        width: 100%;
+    }
+    
+    /* Historial */
+    .history {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .history-iframe {
+        width: 100%;
+        height: 300px;
+        overflow-x: hidden;
+        display: block;
+    }
+    
+    .history h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Forzar que ningún elemento se desborde */
+    .container,
+    .white-section,
+    .news-section,
+    .podcast-section {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+}
+/* Para pantallas más grandes */
+@media (min-width: 1024px) {
+    .history-iframe {
+        height: 450px;
+    }
+}
+/* ===== ELIMINAR MÁRGENES INVISIBLES DEL PLAYER ===== */
+.player {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 0; /* Elimina espacio extra por line-height */
+    font-size: 0;  /* Elimina espacio extra por fuentes */
+}
+
+.radio-iframe {
+    width: 100%;
+    height: 152px;
+    border: none;
+    border-radius: 12px;
+    background: transparent;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Forzar que no haya espacio extra alrededor */
+.player-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 1rem auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
   /* ===== SECCIÓN BLANCA ===== */
   .white-section {
@@ -1350,6 +611,19 @@ body.internal-page p {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     border: 3px solid #ffe44e;
   }
+  .noticia-detalle .noticia-media {
+    width: 100%;
+    max-width: 700px;
+    height: auto;          /* Elimina cualquier altura fija */
+    max-height: none;      /* Elimina la restricción de altura */
+    object-fit: contain;   /* Muestra la imagen completa sin recortes */
+    display: block;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border: 3px solid #ffe44e;
+}
+
 
   .noticia-detalle .noticia-contenido p {
     font-size: 1.2rem;
@@ -1609,7 +883,9 @@ body.internal-page p {
   body.internal-page header nav a {
     color: white;
   }
-
+body.internal-page header nav a.active {
+  color: #ffe44e !important;
+}
   body.internal-page header nav a:hover {
     color: #ffe44e;
   }
@@ -1823,7 +1099,7 @@ body.internal-page p {
 }
 
 .banner-podcast {
-    max-width: 900px;  /* ajusta según el ancho deseado */
+    max-width: 100%;  /* ajusta según el ancho deseado */
     width: 100%;
     height: auto;
     border-radius: 12px; /* opcional, bordes redondeados */
@@ -1847,3 +1123,9 @@ body.internal-page p {
 }
 
 
+/* Forzar active en páginas internas */
+body.internal-page nav ul li a.active,
+body.internal-page header nav ul li a.active {
+    color: #ffe44e !important;
+    font-weight: 600 !important;
+}
