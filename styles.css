@@ -21,7 +21,7 @@
   /* ===== TIPOGRAFÍAS PERSONALIZADAS ===== */
   @font-face {
     font-family: "Impact";
-    src: url("Impact.ttf") format("truetype");
+    src: url("impact.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
