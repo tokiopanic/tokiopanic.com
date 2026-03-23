@@ -86,7 +86,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url("fondo3.png") no-repeat center center fixed;
+    background: url("fondotp.png") no-repeat center center fixed;
     background-size: cover;
     overflow: hidden;        /* Evita desbordamientos */
 }
