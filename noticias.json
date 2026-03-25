@@ -97,5 +97,14 @@
     "resumen": "Se modificó el line-up para que la banda toque más tiempo en el festival.",
     "imagen": "images/versailles.jpg",
     "contenidoCompleto": "<p>Las redes sociales del festival KNOTFEST acaban de anunciar una modificación en su line-up oficial, agregando más tiempo a la banda japonesa Versailles.</p>\n\n<img src=\"images/horarios.jpg\" alt=\"Horarios oficiales festival KNOTFEST\" class=\"noticia-media\">\n\n<p><strong>¿Por qué extendieron la presentación de Versailles?</p></strong><p>Los cambios en el festival se anunciaron luego de que en un principio se anunciara que Versailles tocaría por 35 minutos en el festival, lo que ocasionó la molestia de los fans de la agrupación liderada por Kamijo. Ante las criticas recibidas en redes sociales, el festival decidió extender la presentación de la banda de 35 minutos a 55 minutos.</p>"
-    }
+    },
+    {
+    "id": 12,
+    "titulo": "ELISE presenta su sencillo SATELLITE",
+    "fecha": "2026-03-24",
+    "autor": "<a href=\"https://www.instagram.com/midoridt/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@midoridt</a>",
+    "resumen": "El video musical se estrenó el pasado 13 de marzo.",
+    "imagen": "images/ELISE.jpg",
+    "contenidoCompleto": "<p>ELISE demuestra su elegancia a través del impresionante videoclip de <a href=\"https://www.youtube.com/watch?v=hpE63YEAOZw\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">SATELLITE</a>, lanzado el 13 de marzo.</p> <p>La formación de ELISE incluye al vocalista SAKU (朔) y al guitarrista AKANE (茜), provenientes de la banda NICOLAS; al bajista HINATA (向葵), de la banda Kuroneko (黑猫); y al baterista EISHIN (永真), antiguo miembro de Kane to Juusei (鐘ト銃声).</p>\n\n<img src=\"images/elisepv.png\" alt=\"ELISE - SATELLITE\" class=\"noticia-media\">\n\n <p>Formada por músicos del visual kei con carreras ya consolidadas, los años de experiencia dentro de ELISE se hacen evidentes en el magistral tema <strong>SATELLITE</strong>. El majestuoso arreglo resalta lujosas melodías de guitarra que dan paso a voces cargadas de sentimiento. Mientras tanto, la batería y el bajo crean una base sólida que eleva el sonido ambicioso. Un miniálbum homónimo busca mostrar aún más esta maestría con su lanzamiento programado para el 27 de junio.</P> <P>En sintonía con la slow grandeur de la canción, el videoclip de <strong>SATELLITE</strong> ilumina a todos los miembros con una luz blanca celestial. La acción se intercala con breves escenas de una niña, bañada por rayos de sol dorados, corriendo en medio de la naturaleza.</P>"    
+    }  
 ]
