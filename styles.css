@@ -1121,3 +1121,40 @@ body.internal-page header nav ul li a.active {
     color: #ffe44e !important;
     font-weight: 600 !important;
 }
+
+/* ===== BOTÓN DE RADIO (Zeno.FM) ===== */
+#play-button {
+    background-color: #ffe44e;
+    border: none;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#play-button:hover {
+    background-color: #e6c300;
+    transform: scale(1.05);
+}
+
+#play-button.playing {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* Texto de la canción actual */
+#now-playing {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #ffe44e;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    min-height: 2rem;
+}
