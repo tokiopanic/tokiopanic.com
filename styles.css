@@ -1158,3 +1158,155 @@ body.internal-page header nav ul li a.active {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
     min-height: 2rem;
 }
+
+
+/* ===== PÁGINA NOSOTROS ===== */
+.about-page {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.page-title {
+    font-family: "Impact", "Arial Black", sans-serif;
+    font-size: 2.8rem;
+    color: #e63946;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-content {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.about-intro {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 2.5rem;
+    text-align: justify;
+}
+
+.team-section h2 {
+    font-size: 1.8rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.team-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.team-card {
+    background: #f8f8f8;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffe44e;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.team-card h3 {
+    font-size: 1.4rem;
+    color: #e63946;
+    margin: 0.5rem 0 0.2rem 0;
+    text-align: center;
+}
+
+.team-role {
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+.team-bio {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .about-content {
+        padding: 1.5rem;
+    }
+    
+    .about-intro {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .team-card {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+        /* Ajuste para el texto introductorio en móvil */
+    .about-intro {
+        text-align: left;
+        padding: 0 0.5rem;
+    }
+    
+    /* También ajusta el texto de las tarjetas del equipo si es necesario */
+    .team-bio {
+        text-align: left;
+    }
+}
+
+.team-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: #ffe44e;
+    color: #000;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin: 0.5rem 0 0.8rem 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.team-social:hover {
+    background-color: #e6c300;
+    transform: scale(1.05);
+}
+
