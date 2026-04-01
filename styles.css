@@ -341,7 +341,7 @@ iframe {
     padding-top: 0 !important;
     background-color: white;
     width: 100%;
-    padding: 1.5rem 0 1rem 0;
+    padding: 1REM 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1001,6 +1001,7 @@ body.internal-page header nav a.active {
     .white-section {
       padding: 1rem 0 3rem 0;
       gap: 1rem;
+      padding-bottom: 0 !important;
     }
     .white-section .marquee {
       font-size: 1.3rem;
@@ -1275,6 +1276,7 @@ body.internal-page header nav ul li a.active {
     text-align: center;
     margin-top: 0.5rem;
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
