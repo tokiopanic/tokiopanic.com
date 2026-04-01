@@ -19,13 +19,15 @@
   }
 
   /* ===== TIPOGRAFÍAS PERSONALIZADAS ===== */
-  @font-face {
-    font-family: "Impact";
-    src: url("Impact.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
+@font-face {
+  font-family: "Impact";
+  src: url("impact.woff2") format("woff2"),
+       url("impact.woff") format("woff"),
+       url("impact.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
   /* ===== CONTENEDORES PRINCIPALES ===== */
   .main-content {
@@ -991,6 +993,7 @@ body.internal-page header nav a.active {
 
     /* Títulos principales */
     .main-title {
+      font-family: "Impact", "Arial Black", sans-serif;
       font-size: 2.5rem;
     }
     .sub-text {
