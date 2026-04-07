@@ -87,7 +87,7 @@ function renderizarNoticiaIndividual() {
             "author": [{
                 "@type": "Person",
                 "name": noticia.autor,
-                "url": "https://www.instagram.com/tuusuario/" // Cambia por el IG real si deseas
+                "url": "https://www.instagram.com/tokiopanic/" // Cambia por el IG real si deseas
             }],
             "articleBody": noticia.contenidoCompleto.replace(/<[^>]*>/g, ''), // Texto plano
             "url": "https://tokiopanic.com/noticia.html?id=" + noticia.id
