@@ -728,7 +728,7 @@ iframe {
   }
 
   .podcast-listen {
-    background-color: #ffe44e;
+    background-color: #1DB954;
     color: #000;
     text-decoration: none;
     padding: 0.6rem 1.8rem;
@@ -738,7 +738,7 @@ iframe {
   }
 
   .podcast-listen:hover {
-    background-color: #e6c300;
+    background-color: #1DB954;
   }
 
   /* Estilos específicos para la página de podcast (fondo negro) */
@@ -775,12 +775,12 @@ iframe {
   }
 
   body.internal-page .podcast-section .podcast-listen {
-    background-color: #ffe44e;
+    background-color: #1DB954;
     color: #000000;
   }
 
   body.internal-page .podcast-section .podcast-listen:hover {
-    background-color: #e6c300;
+    background-color: #1DB954;
   }
 
   /* Botón "TODOS LOS EPISODIOS" dentro de podcast-list */
