@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="es">
 <head>
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#ffe44e">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HNR8PWQDNB"></script>
     <script>
@@ -28,34 +26,26 @@
                         <li><a href="#" class="active">INICIO</a></li>
                         <li><a href="noticias.html">NOTICIAS</a></li>
                         <li><a href="podcast.html">PODCAST</a></li>
-                        <li><a href="nosotros.html">NOSOTROS</a></li>
+			<li><a href="nosotros.html">NOSOTROS</a></li>
+
                     </ul>
                 </nav>
             </header>
 
             <main>
-                <h2 class="main-title">LO MEJOR DE LA MÚSICA JAPONESA</h2>
-                <p class="sub-text">SINTONIZA TOKIO PANIC RADIO - MÚSICA 24/7</p>
-                <div class="player-container">
-                    <div class="player">
-                       <h3>En vivo</h3>
-                        <iframe src="https://radio.tokiopanic.com/public/tokio_panic/embed?theme=dark&primary_color=fde363&bg_color=000000&text_color=ffffff&rounded=1" 
-                                frameborder="0" 
-                                allowtransparency="true" 
-                                class="radio-iframe">
-                        </iframe>
-                    </div>
+    <h2 class="main-title">LO MEJOR DE LA MÚSICA JAPONESA</h2>
+    <p class="sub-text">SINTONIZA TOKIO PANIC RADIO - MÚSICA 24/7</p>
 
-                    <div class="history">
-                        <h3>Recientes</h3>
-                        <iframe src="https://radio.tokiopanic.com/public/tokio_panic/history?theme=dark" 
-                                frameborder="0" 
-                                allowtransparency="true" 
-                                class="history-iframe">
-                        </iframe>
-                    </div>
-                </div>
-            </main>
+    <audio id="radio-player" preload="none">
+        <source src="https://stream.zeno.fm/fydx26uk9rhvv" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
+    <button id="play-button" class="play-btn">EN VIVO</button>
+    <p id="now-playing" class="now-playing-text"></p>
+    <script src="script.js"></script>
+<script src="noticias-loader.js"></script>
+</main>
         </div>
 
         <!-- SECCIÓN CON FONDO BLANCO -->
@@ -72,7 +62,7 @@
                     <span>SCREW</span> • <span>SUKEKIYO</span> • <span>MUCC</span>
                 </div>
             </div>
-        </section>
+                   </section>
 
         <!-- SECCIÓN DE NOTICIAS -->
         <section class="news-section" id="noticias">
@@ -118,7 +108,7 @@
         </div>
     </footer>
 
-    
+
     <script src="noticias-loader.js"></script>
 </body>
 </html>
