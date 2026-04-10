@@ -98,3 +98,19 @@ if (nowPlayingElement) {
         nowPlayingElement.textContent = 'Conectando...';
     });
 }
+
+// No se requiere JavaScript adicional por el momento.
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('🎵 TOKIO PANIC - Música Japonesa 24/7');
+    
+    // Manejo de imágenes rotas
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        img.addEventListener('error', function() {
+            if (!this.src.includes('placeholder.jpg') && !this.src.includes('logo')) {
+                this.src = 'images/placeholder.jpg';
+            }
+        });
+    });
+});

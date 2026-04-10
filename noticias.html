@@ -23,7 +23,7 @@
   </head>
   <body class="internal-page">
     <div class="internal-container">
-      <!-- HEADER (copia exacta del que usas en index.html) -->
+      <!-- HEADER -->
       <header>
         <a href="index.html"
           ><img src="logo.png" alt="Logo TOKIO PANIC" class="logo"
@@ -41,40 +41,40 @@
       <!-- CONTENIDO PRINCIPAL -->
       <main>
         <h1 class="page-title">TODAS LAS NOTICIAS</h1>
+        
+        <!-- BUSCADOR -->
         <div class="search-container">
-    <input type="text" id="buscador" placeholder="Buscar noticias...(título, resumen o contenido)" class="search-input">
-    <button id="btn-buscar" class="search-btn">Buscar</button>
-    <div id="resultados-busqueda" style="display: none;"></div> <!-- opcional: mostrar cuántos resultados -->
-</div>
-        <!-- CONTENEDOR DONDE SE RENDERIZAN LAS NOTICIAS (desde noticias-loader.js) -->
+          <input type="text" id="buscador" placeholder="🔍 Buscar noticias... (título, resumen o contenido)" class="search-input">
+          <button id="btn-buscar" class="search-btn">Buscar</button>
+        </div>
+        
+        <!-- CONTENEDOR DE NOTICIAS -->
         <div id="lista-noticias" class="noticias-dinamicas">
-          <!-- Aquí se insertarán las noticias automáticamente -->
           <p class="loading-msg">Cargando noticias...</p>
         </div>
+        
+        <!-- PAGINACIÓN (FUERA del contenedor de noticias) -->
+        <div class="pagination-container" id="pagination-container">
+          <button id="btn-pagina-anterior" class="pagination-btn" disabled>« Anterior</button>
+          <span id="indicador-pagina" class="pagination-info">Página 1 de X</span>
+          <button id="btn-pagina-siguiente" class="pagination-btn">Siguiente »</button>
+        </div>
 
-        <!-- Botón para volver al inicio (opcional) -->
-        <div
-          class="more-news-container"
-          style="margin-top: 3rem; text-align: center"
-        >
+        <!-- BOTÓN VOLVER AL INICIO -->
+        <div class="more-news-container" style="margin-top: 2rem; text-align: center">
           <a href="index.html" class="back-link">← Volver al inicio</a>
         </div>
       </main>
     </div>
 
-    <!-- FOOTER (mismo que en index.html) -->
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-content">
         <p>&copy; 2026 TOKIO PANIC.</p>
         <p>contacto@tokiopanic.com</p>
         <div class="social-links">
-          <a href="https://www.instagram.com/tokiopanic" target="_blank"
-            >Instagram</a
-          >
-          |
-          <a href="https://www.tiktok.com/@tokiopanic" target="_blank"
-            >Tiktok</a
-          >
+          <a href="https://www.instagram.com/tokiopanic" target="_blank">Instagram</a> |
+          <a href="https://www.tiktok.com/@tokiopanic" target="_blank">Tiktok</a>
         </div>
       </div>
     </footer>
