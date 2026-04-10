@@ -41,7 +41,11 @@
       <!-- CONTENIDO PRINCIPAL -->
       <main>
         <h1 class="page-title">TODAS LAS NOTICIAS</h1>
-
+        <div class="search-container">
+    <input type="text" id="buscador" placeholder="Buscar noticias...(título, resumen o contenido)" class="search-input">
+    <button id="btn-buscar" class="search-btn">Buscar</button>
+    <div id="resultados-busqueda" style="display: none;"></div> <!-- opcional: mostrar cuántos resultados -->
+</div>
         <!-- CONTENEDOR DONDE SE RENDERIZAN LAS NOTICIAS (desde noticias-loader.js) -->
         <div id="lista-noticias" class="noticias-dinamicas">
           <!-- Aquí se insertarán las noticias automáticamente -->
