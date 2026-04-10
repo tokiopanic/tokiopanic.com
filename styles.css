@@ -1474,3 +1474,26 @@ body.internal-page .pagination-btn:disabled {
         padding: 0.4rem 0.8rem;
     }
 }
+/* Spinner de carga */
+.loading-spinner {
+    text-align: center;
+    padding: 2rem;
+    color: #ffe44e;
+    font-size: 1.2rem;
+}
+
+.loading-spinner::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border: 2px solid #ffe44e;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
