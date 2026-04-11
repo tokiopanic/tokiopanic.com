@@ -96,9 +96,7 @@
         white-space: nowrap; /* Evita que se parta el texto */
     }
 }
-  /* ===== PÁGINA DE INICIO (CONTAINER) ===== */
-
-
+/* ===== PÁGINA DE INICIO (CONTAINER) ===== */
 
 .container {
     position: relative;
@@ -106,9 +104,35 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url("fondotp.png") no-repeat center center fixed;
     background-size: cover;
-    overflow: hidden;        /* Evita desbordamientos */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Opcional: fondo fijo al hacer scroll */
+    transition: background-image 1s ease-in-out;
+    overflow: hidden;
+}
+
+/* Elimina el overlay o déjalo transparente */
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Transparente - no afecta la imagen */
+    z-index: 1;
+}
+
+/* Asegurar que el contenido esté por encima */
+.container > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* styles.css - Añadir para fade más suave */
+.container {
+    transition: background-image 1s ease-in-out;
 }
 main {
     flex: 1;
