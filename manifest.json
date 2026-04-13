@@ -1,8 +1,8 @@
 {
   "name": "TOKIO PANIC: J-ROCK 24/7",
-  "short_name": "TokioPanic",
+  "short_name": "TOKIOPANIC",
   "description": "Música Japonesa 24/7 - Rock Japonés y Visual Kei",
-  "start_url": "/",
+  "start_url": "/index.html",
   "display": "standalone",
   "theme_color": "#ffe44e",
   "background_color": "#000000",
@@ -22,5 +22,12 @@
       "sizes": "512x512",
       "type": "image/png"
     }
+  ],
+  "id": "1",
+  "lang": "es",
+  "orientation": "portrait",
+  "display_override": [
+    "fullscreen",
+    "window-controls-overlay"
   ]
 }
