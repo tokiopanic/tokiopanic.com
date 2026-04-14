@@ -1672,3 +1672,33 @@ body.internal-page .pagination-btn:disabled {
         padding: 0 !important;
     }
 }
+/* Botón "Todos los capítulos" */
+.btn-todos-capitulos {
+    display: inline-block;
+    background-color: #ffe44e;
+    color: #000000;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition:
+      background-color 0.3s,
+      transform 0.2s;
+    border: 2px solid #ffe44e;
+}
+
+.btn-todos-capitulos:hover {
+    background-color: #ffe44e;
+    transform: scale(1.02);
+}
+
+/* Ajuste para móvil */
+@media (max-width: 768px) {
+    .btn-todos-capitulos {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
