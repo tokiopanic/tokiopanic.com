@@ -1559,3 +1559,28 @@ body.internal-page .pagination-btn:disabled {
         min-height: 180px;
     }
 }
+
+/* ===== EVITAR DESLIZAMIENTO HORIZONTAL EN MÓVIL ===== */
+@media (max-width: 768px) {
+    /* Contenedor principal de la página */
+    .internal-container,
+    .podcast-section,
+    .episodios-lista {
+        overflow-x: hidden !important;
+        max-width: 100% !important;
+    }
+    
+    /* Widgets de Spotify */
+    .episodios-lista iframe {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    
+    /* Asegurar que el body no permita scroll lateral */
+    body.internal-page {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        position: relative;
+    }
+}
