@@ -1584,3 +1584,91 @@ body.internal-page .pagination-btn:disabled {
         position: relative;
     }
 }
+/* ===== ELIMINAR ESPACIOS BLANCOS LATERALES EN MÓVIL - VERSIÓN FUERTE ===== */
+@media (max-width: 768px) {
+    /* Forzar que todo el body ocupe todo el ancho */
+    body.internal-page {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* Contenedor principal interno */
+    .internal-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+    
+    /* Header en móvil */
+    .internal-container header {
+        padding: 1rem 0.5rem !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    
+    /* Contenido principal */
+    .internal-container main {
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    /* Sección de podcast */
+    .podcast-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 1rem 0.75rem !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* Título */
+    .podcast-title {
+        width: 100% !important;
+        font-size: 1.5rem !important;
+        padding: 0 !important;
+        margin-bottom: 1rem !important;
+        text-align: center !important;
+    }
+    
+    /* Banner */
+    .podcast-banner {
+        padding: 0 !important;
+        margin: 0.5rem 0 !important;
+        width: 100% !important;
+    }
+    
+    .banner-podcast {
+        width: 100% !important;
+        border-radius: 8px !important;
+    }
+    
+    /* Texto introductorio */
+    .podcast-intro {
+        padding: 0 !important;
+        margin: 0.5rem 0 1rem 0 !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    
+    /* Lista de episodios */
+    .episodios-lista {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        gap: 0.5rem !important;
+    }
+    
+    /* Widgets de Spotify */
+    .episodios-lista iframe {
+        width: 100% !important;
+        height: 180px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
