@@ -1520,3 +1520,35 @@ body.internal-page .pagination-btn:disabled {
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+
+/* ===== WIDGETS DE SPOTIFY - Reducir espacio entre episodios ===== */
+.episodios-lista {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem; /* Espacio mínimo entre episodios (4 píxeles) */
+}
+
+.episodios-lista iframe {
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none;
+}
+
+/* Eliminar márgenes adicionales del contenedor podcast-list */
+.podcast-list {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajustar el margen inferior del párrafo introductorio */
+.podcast-intro {
+    margin-bottom: 1rem;
+}
+
+/* Eliminar espacio extra del banner */
+.podcast-banner {
+    margin-bottom: 0.5rem;
+}

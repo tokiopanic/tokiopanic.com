@@ -3,6 +3,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
+      "site": "https://www.tokiopanic.com",
       "package_name": "com.tokiopanic.app",
       "sha256_cert_fingerprints": [
         "D2:1B:5D:55:E3:58:30:38:38:13:44:ED:B8:51:E9:1F:7A:BE:79:C0:CA:F5:2C:6E:24:FC:54:03:36:9B:FF:A6"
