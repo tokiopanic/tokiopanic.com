@@ -1552,3 +1552,10 @@ body.internal-page .pagination-btn:disabled {
 .podcast-banner {
     margin-bottom: 0.5rem;
 }
+/* ===== MEJORAR WIDGET DE SPOTIFY EN MÓVIL ===== */
+@media (max-width: 768px) {
+    .episodios-lista iframe {
+        height: 180px !important; /* Aumentar altura en móvil */
+        min-height: 180px;
+    }
+}
