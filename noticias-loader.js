@@ -62,7 +62,7 @@ function renderizarNoticiasIndex(limite = 6) {
             <img src="${noticia.imagen}" alt="${noticia.titulo}" class="news-card-image" onerror="this.src='images/placeholder.jpg'">
             <div class="news-card-content">
                 <h3 class="news-card-title">${escapeHtml(noticia.titulo)}</h3>
-                <p class="news-card-date">${noticia.fecha}</p>
+                <p class="news-card-date">${noticia.fecha} / ${noticia.autor}</p>
                 <p class="news-card-summary">${escapeHtml(noticia.resumen.substring(0, 100))}${noticia.resumen.length > 100 ? '...' : ''}</p>
                 <a href="noticia.html?id=${noticia.id}" class="news-card-link">Leer más</a>
             </div>
