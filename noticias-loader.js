@@ -19,7 +19,7 @@ async function cargarNoticias() {
         if (contenedorNoticiasIndex) {
             // PÁGINA PRINCIPAL (index.html) - Diseño de tarjetas
             await cargarNoticiasCompleto();
-            renderizarNoticiasIndex(6);
+            renderizarNoticiasIndex(8);
         } else if (contenedorNoticias) {
             // PÁGINA DE NOTICIAS (noticias.html) - Diseño de lista con paginación
             const esPaginaPrincipal = false;

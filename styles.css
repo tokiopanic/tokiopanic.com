@@ -1824,3 +1824,34 @@ body.internal-page .pagination-btn:disabled {
         height: 180px;
     }
 }
+
+/* ===== SECCIÓN DE NOTICIAS A TODO ANCHO ===== */
+.news-section-index {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 4rem 2rem !important;
+    margin: 0 !important;
+    background-color: #000000;
+}
+
+/* El contenedor del grid se mantiene centrado pero con ancho flexible */
+.news-grid {
+    width: 100%;
+    max-width: 1400px; /* Opcional: límite para pantallas muy grandes */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+/* Ajuste para móvil */
+@media (max-width: 768px) {
+    .news-section-index {
+        padding: 2rem 1rem !important;
+    }
+    
+    .news-grid {
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+    }
+}
