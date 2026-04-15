@@ -1855,3 +1855,46 @@ body.internal-page .pagination-btn:disabled {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== SECCIÓN DE PODCAST A TODO ANCHO ===== */
+.podcast-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 4rem 2rem !important;
+    margin: 0 !important;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+/* Centrar el título */
+.podcast-section .podcast-title {
+    text-align: center !important;
+    width: 100% !important;
+}
+
+/* Centrar los demás elementos */
+.podcast-section .podcast-banner,
+.podcast-section .podcast-intro,
+.podcast-section .episodios-lista,
+.podcast-section .btn-todos-capitulos {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* El banner ya debería estar centrado por su propio estilo, pero forzamos */
+.podcast-banner {
+    text-align: center;
+}
+
+/* Asegurar que los títulos de episodios dentro del iframe no afecten */
+.episodios-lista {
+    width: 100%;
+}
+
+/* Ajuste para móvil */
+@media (max-width: 768px) {
+    .podcast-section {
+        padding: 2rem 1rem !important;
+    }
+}
