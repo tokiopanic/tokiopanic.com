@@ -948,39 +948,131 @@ body.internal-page header nav a.active {
     color: black;
   }
 
-  /* ===== FOOTER ===== */
-  .footer {
+ /* ===== FOOTER MEJORADO ===== */
+.footer {
     background-color: #000000;
     color: #ffffff;
-    padding: 2rem;
-    text-align: center;
+    padding: 3rem 2rem 1.5rem;
     border-top: 3px solid #ffe44e;
     width: 100%;
-  }
+}
 
-  .footer-content {
+.footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
 
-  .footer,
-  .footer p,
-  .footer .footer-content p {
-    color: #ffffff !important;
-  }
-  .footer .social-links a {
-    color: #ffe44e !important;
+.footer-col {
+    flex: 1;
+    min-width: 180px;
+    text-align: left;
+}
+
+.footer-logo {
+    height: 60px;
+    width: auto;
+    margin-bottom: 0.5rem;
+}
+
+.footer-brand {
+    font-family: "Impact", "Arial Black", sans-serif;
+    font-size: 1.3rem;
+    color: #ffe44e;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.footer-title {
+    font-size: 0.85rem;
+    color: #ffe44e;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.footer-email {
+    color: #ffffff;
     text-decoration: none;
-    margin: 0 0.5rem;
+    font-size: 0.9rem;
     transition: color 0.3s;
-  }
+}
 
-  .footer .social-links a:hover {
-    color: #ffffff !important;
-  }
+.footer-email:hover {
+    color: #ffe44e;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-icon-footer {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.social-icon-footer:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.footer-media-kit {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.footer-media-kit:hover {
+    color: #ffe44e;
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #333;
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+/* Responsive para móvil */
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 1rem 1rem;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .footer-col {
+        text-align: center;
+        min-width: 100%;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+    
+    .footer-logo {
+        margin: 0 auto 0.5rem;
+    }
+}
 
   /* ===== UTILIDADES Y CLASES AUXILIARES ===== */
   .now-playing-text {
@@ -1096,13 +1188,6 @@ body.internal-page header nav a.active {
       align-self: flex-end;
     }
 
-    /* Footer */
-    .footer {
-      padding: 1.5rem;
-    }
-    .footer p {
-      font-size: 0.9rem;
-    }
 
     /* Página de noticia individual */
     .noticia-detalle {
@@ -1898,3 +1983,4 @@ body.internal-page .pagination-btn:disabled {
         padding: 2rem 1rem !important;
     }
 }
+
