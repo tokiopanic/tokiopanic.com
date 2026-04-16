@@ -1,0 +1,17 @@
+{
+  "pagina": 3,
+  "totalNoticias": 1,
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "The GazettE anuncia la salida de su guitarrista Aoi",
+      "fecha": "2026-03-09",
+      "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
+      "resumen": "La banda emitió un comunicado que tomó por sorpresa a los fans. El guitarrista Aoi deja la agrupación después de más de 20 años de carrera.",
+      "imagen": "images/aoi.jpeg",
+      "contenidoCompleto": "<p>La banda japonesa The GazettE ha emitido un <a href=\"https://the-gazette.com/news/article/260310_2.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">comunicado oficial</a> en el que informa la salida de su guitarrista Aoi, tomando por sorpresa a los fans de todo el mundo. Según el comunicado publicado por los integrantes, la situación comenzó cuando Aoi se apartó unilateralmente de las actividades de la banda, realizando acciones que terminaron afectando lanzamientos y giras que ya estaban programados. Además, indicaron que hubo comportamientos repetidos que debilitaron la confianza dentro del grupo.</p><p>Aoi, fue miembro fundador de la banda en 2002 y participó en todos los álbumes de estudio. Su estilo único y su presencia en el escenario lo convirtieron en uno de los guitarristas más queridos del movimiento visual kei.</p><p>Pese a esta decisión, la banda aseguró que sus actividades continuarán. También indicaron que revisarán los lanzamientos que ya estaban previstos y que anunciarán más detalles una vez que los nuevos planes estén definidos.</p>"
+    }
+  ],
+  "tieneSiguiente": false,
+  "tieneAnterior": true
+}

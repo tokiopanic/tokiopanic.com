@@ -178,5 +178,14 @@
     "resumen": "Te presentamos los lanzamientos destacados del rock japonés/visual kei de hoy",
     "imagen": "images/abril15.png",
     "contenidoCompleto": "<p>Abril está siendo un mes interesante en cuanto a lanzamientos. Ya tuvimos <a href=\"https://tokiopanic.com/noticia.html?id=19\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">MORTAL DOWNER</a> de <strong>DIR EN GREY</strong> el pasado 8 de abril. A continuación te presentamos los lanzamientos destacados de este dia.</p><p><strong>Sugar - VITAL</strong></p>\n<img src=\"images/abril15-2.png\" alt=\"Sugar presenta su sencillo VITAL\" class=\"noticia-media\"><p></P><P><strong>Utakata to ame - Jinchounge</strong></p>\n<img src=\"images/abril15-3.png\" alt=\"utakata to ameL\" class=\"noticia-media\"></p><p><strong>Saisai no Kuzu - Utsukushii Fukushuu</p></strong>\n<img src=\"images/abril15-4.png\" alt=\"saisai no kuzu single\" class=\"noticia-media\"><p><strong>Ano ko no heya no calendula wa - Kuroyuri no to</p></strong>\n<img src=\"images/abril15-5.png\" alt=\"Ano ko no heya no calendula wa\" class=\"noticia-media\"><p>¡Recuerda que en TOKIO PANIC te estaremos trayendo los lanzamientos más recientes de Japón! No olvides seguirnos en nuestras redes sociales."
-    } 
+    },
+    {
+    "id": 21,
+    "titulo": "JIGSAW lanza su sencillo -hedo-",
+    "fecha": "2026-04-16",
+    "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
+    "resumen": "El lanzamiento está disponible en todas las plataformas digitales",
+    "imagen": "images/hedo-web.png",
+    "contenidoCompleto": "<p>La banda formada en 2018 por el vocalista <strong>BUKIMI</STRONG> ha estrenado su nuevo sencillo -hedo- (VOMIT) en todas las plataformas digitales. El sencillo incluye dos temas:</p><p><strong>1.</strong> -Hedo- (VOMIT)</p><p><strong>2.</strong> Kikuruimasu (気狂います).</p><iframe style='border-radius:12px' src='https://open.spotify.com/embed/album/6CY4Smjt6WmujZx1PwkUBm?utm_source=generator' width='100%' height='352' frameBorder='0' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy'></iframe>"
+    }
   ]
