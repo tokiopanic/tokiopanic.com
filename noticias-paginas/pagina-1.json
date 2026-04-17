@@ -3,6 +3,15 @@
   "totalNoticias": 10,
   "noticias": [
     {
+      "id": 24,
+      "titulo": "Entrevista: Tsuzuku presenta su proyecto más personal, tzkwym, y sueña con un one-man en México",
+      "fecha": "2026-04-17",
+      "autor": "<a href=\"https://www.facebook.com/profile.php?id=100079499591010\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">Visual Violence</a>",
+      "resumen": "Visual Violence nos presenta su entrevistaa realizada a Tsuzuku",
+      "imagen": "images/tsuzuku-web.png",
+      "contenidoCompleto": "<p>Dentro del visual kei, Tsuzuku se ha consolidado como una voz que conecta por su forma tan directa de transmitir emociones. Con su proyecto solista tzkwym, lleva esa esencia a un terreno más personal, donde cada canción funciona como una continuación de su propia historia y una forma de expresar lo que normalmente no se dice.</p><p>En esta nueva etapa, su música se siente más cercana, más honesta y enfocada en su mundo interno.</p><p>Te dejamos la entrevista cortesía de <a href=\"https://www.facebook.com/profile.php?id=100079499591010\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">Visual Violence</a>.<p><strong>1.- Para comenzar, ¿cómo describirías el concepto detrás de tu proyecto tzkwym?</p></strong><p>・Es como mi “estantería de seguir leyendo”… ese es el concepto.</p><p><strong>2.- A lo largo de tu trayectoria como artista, ¿qué te inspiró a convertirte en cantante y cómo se refleja esa motivación en tzkwym?</p></strong>"
+    },
+    {
       "id": 23,
       "titulo": "Kyoso DOPPEL estrena su sencillo: watercolor, KITAHAMA, 11Pm",
       "fecha": "2026-04-17",
@@ -82,15 +91,6 @@
       "resumen": "La banda está conformada por integrantes de bandas como Versailles, D y Matenrou Opera.",
       "imagen": "images/fatum.jpg",
       "contenidoCompleto": "<p>Mana-Sama supervisará una nueva banda de música gótica llamada Fatüm</p><p>En su comunicado, Mana describió el proyecto cobrará vida bajo su supervisión, con el objetivo de expresar un mundo oculto y fantástico.</p><p><strong>Integrantes:</p></strong><p><strong>Voz:</strong> SUI (David/Megaromania)</p><p><strong>Guitarra y voz:</strong> HIDE-ZOU (D)</p><p><strong>Supervisor:</strong> Mana Sama (Moi dix Mois)</p>\n<img src=\"images/fatum2.jpg\" alt=\"SUI\" class=\"noticia-media\">\n<img src=\"images/fatum3.jpg\" alt=\"HIDE-ZOU\" class=\"noticia-media\"><p>La banda debutará con un showcase titulado «Vox Dei» el 30 de mayo de 2026 en Shibuya REX.</p><p><strong>Músicos de apoyo:</p></strong><p><strong>Bajo:</strong> Masashi (Versailles)</p><p><strong>Batería:</strong>Hibiki (Matenrou Opera/Like-an-Angel)</p>"
-    },
-    {
-      "id": 14,
-      "titulo": "ONE OK ROCK llegará a los cines",
-      "fecha": "2026-03-31",
-      "autor": "<a href=\"https://www.instagram.com/midoridt/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@midoridt</a>",
-      "resumen": "Su tour ONE OK ROCK DETOX JAPAN TOUR 2025 llegará a las salas de cine en abril.",
-      "imagen": "images/oor.jpg",
-      "contenidoCompleto": "<p>De la mano de CJ Distribución Latam, <strong>ONE OK ROCK DETOX JAPAN TOUR 2025</strong>, realizado en el Nissan Stadium llega a las salas para una experiencia cinematográfica única.</p><p><strong>¿En qué ciudades se estará proyectando?</p></strong>\n<img src=\"images/oneokrock.png\" alt=\"Funciones ONE OK ROCK DETOX TOUR\" class=\"noticia-media\"><p>A partir del próximo 17 de abril, los fans de la banda japonesa podrán ser testigos de una faceta inédita de Taka, Toru, Ryota y Tomoya. Esta producción no solo captura la potencia musical de la agrupación, sino que ofrece una calidad visual y sonora diseñada específicamente para la pantalla grande, permitiendo a los asistentes vivir el show como si estuvieran en Japón</p><p>Aún no se publica información sobre si ONE OK ROCK DETOX JAPAN TOUR 2025 llegará a los cines de México.</p>"
     }
   ],
   "tieneSiguiente": true,
