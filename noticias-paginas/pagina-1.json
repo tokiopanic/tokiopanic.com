@@ -3,12 +3,21 @@
   "totalNoticias": 10,
   "noticias": [
     {
+      "id": 27,
+      "titulo": "[Entrevista] Ano Ko no Keya no Calendula wa y el arte de habitar las emociones",
+      "fecha": "2026-04-20",
+      "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
+      "resumen": "Desde Tokio con melancolia, te presentamos nuestra entrevista exclusiva a la nueva banda de visual kei que debutará el 1 de junio",
+      "imagen": "images/anocale.png",
+      "contenidoCompleto": ""
+    },
+    {
       "id": 26,
       "titulo": "Nueva banda: Kaishin no ichigeki",
       "fecha": "2026-04-19",
       "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
       "resumen": "La banda se presentó oficialmente el 19 de abril",
-      "imagen": "images/kaishin.jpg",
+      "imagen": "images/kaishin-web.jpg",
       "contenidoCompleto": "<p>Kaishin no ichigeki (かいしんの一撃) es una nueva banda que se presentó oficialmente el 19 de abril.</p><p>Todos sus miembros son exintegrantes de <strong>JACK CAPER</strong> (ジャックケイパー), aunque no pertenecían a la alineación final de esa banda. El primer anuncio del grupo se realizó en forma de un video con estilo de videojuego antiguo, similar a Dragon Quest, seguido de la presentación de cada miembro junto con un adelanto de su música.</p><p>Su primer concierto, titulado 『GAME START』, se llevará a cabo el 22 de junio en Aoyama RiZM.</p>\n<img src=\"images/kaishin-2.jpg\" alt=\"KAISHIN NO ICHIGEKI\" class=\"noticia-media\"><p>Kaishin no ichigeki (かいしんの一撃) está conformada por:</p><p><strong>Voz:</strong> Hiro (飛炉)</p>\n<img src=\"images/hiro.jpg\" alt=\"KAISHIN NO ICHIGEKI\" class=\"noticia-media\"><p><strong>Guitarra:</strong> Choco (ちょこ)</p>\n<img src=\"images/choco.jpg\" alt=\"KAISHIN NO ICHIGEKI\" class=\"noticia-media\"><p><strong>Bajo:</strong> U</p>\n<img src=\"images/u.jpg\" alt=\"KAISHIN NO ICHIGEKI\" class=\"noticia-media\"><p><strong>Batería:</strong>Suguru (英)</p>\n<img src=\"images/suguru.jpg\" alt=\"KAISHIN NO ICHIGEKI\" class=\"noticia-media\">"
     },
     {
@@ -82,15 +91,6 @@
       "resumen": "Goashun dejó a la banda el pasado 6 de abril.",
       "imagen": "images/gdh.jpg",
       "contenidoCompleto": "<p>El bajista <strong>Goashun</strong> dejó oficialmente la banda <strong>Hearts de Geist</strong> el pasado 6 de abril de 2026.</p><p>A pesar de lo repentino de la noticia, el grupo confirmó que continuará sus proyectos musicales como un cuarteto, mientras que goashun seguirá activo con su carrera por separado.</p>\n<img src=\"images/goashun.jpg\" alt=\"Hearts de Geist\" class=\"noticia-media\"><p>La banda se disculpó con sus seguidores por la sorpresa y agradeció el apoyo recibido, invitando a los fans a seguir acompañando a ambas partes en esta nueva etapa.</p>"
-    },
-    {
-      "id": 17,
-      "titulo": "ALI PROJECT: Cuando la elegancia aristocrática, el Lolita fashion y la oscuridad sinfónica se niegan a seguir modas",
-      "fecha": "2026-04-02",
-      "autor": "<a href=\"https://www.facebook.com/profile.php?id=100079499591010\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">Visual Violence</a>",
-      "resumen": "Visual Violence nos trae su reseña sobre ALI PROJECT: el dúo que vive y respira la estética Lolita desde 1985.",
-      "imagen": "images/ali.jpg",
-      "contenidoCompleto": "<p>Apartado del visual kei y la música japonesa, hay proyectos que no solo se escuchan si no también se viven y combinan con la elegancia de lo aristócrata, lo tradicional y hasta lo militar en cuanto a imagen bajo el concepto del <strong>Lolita fashion</strong>.</p><p>Ahí entra <strong>ALI PROJECT</strong>, es un dúo formado en 1985 por Arika Takarano y Mikiya Katakura, lograron construir un estilo muy particular. Su sonido mezcla elementos de música clásica, rock, darkwave y arreglos orquestales, con una identidad que se ha mantenido firme durante décadas.</p>\n<img src=\"images/ali2.jpg\" alt=\"ALI PROJECT\" class=\"noticia-media\"><p>En sus inicios tenían un enfoque más cercano al <strong>synthpop</strong>, pero con el paso del tiempo evolucionaron hacia un estilo más teatral y oscuro, incorporando estructuras más complejas y una estética más definida hasta llegar al sonido que los ha hecho únicos.</p><p><strong>ALI PROJECT</strong> no busco seguir tendencias y su propuesta está centrada en el concepto, la estética y la atmósfera compartida con una intensa carga teatral y visual y claro ser un punto clave y un icono distintivo para el <strong>Lolita fashion</strong>.</p>\n<img src=\"images/ali3.jpg\" alt=\"ALI PROJECT\" class=\"noticia-media\"><p>Sus letras suelen abordar temas como la belleza, la muerte, la religión, la decadencia y la fantasía. Muchas veces hacen referencia a literatura europea, simbolismo histórico y elementos del imaginario aristocrático. La voz de <strong>Arika Takarano</strong> funciona más como una narración que como un canto convencional, lo que refuerza esa sensación de estar escuchando una historia.</p><p>Otro punto clave en su carrera es su fuerte presencia en el anime. Han interpretado temas para series como <strong>Rozen Maiden</strong>, <strong>Code Geass</strong> y <strong>Another</strong>, lo que les permitió llegar a una audiencia internacional sin cambiar su estilo.</p><p>También han tenido presencia en escenarios importantes dentro de la escena. Un ejemplo claro es su participación como invitados en un concierto de <strong>Moi dix Mois</strong>, el proyecto de Mana.</p>\n<img src=\"images/alimoi.jpg\" alt=\"ALI PROJECT\" class=\"noticia-media\"><p>Esto ocurrió el 26 de febrero de 2012 en el evento <strong>Fragments of Philosophy Chapter 3 Unusual Destiny Regime</strong>, realizado en LIQUIDROOM, como parte del décimo aniversario de Moi dix Mois.</p><p>No fue una colaboración al azar. Ambas propuestas comparten una visión similar en cuanto a estética, composición y construcción de atmósferas. Ese concierto dejó claro que, aunque sus estilos no son idénticos, sí dialogan dentro del mismo universo.</p><p>Además, ya habían coincidido anteriormente en eventos como el V-Rock Festival 2009, donde compartieron escenario con otras bandas importantes del género.</p>\n<img src=\"images/ali4.jpg\" alt=\"ALI PROJECT\" class=\"noticia-media\"><p>A lo largo de su trayectoria, ALI PROJECT ha construido una base de seguidores sólida, especialmente dentro de nichos como el gothic lolita, el visual kei más estético y los fans del anime con propuestas más oscuras. En una escena donde muchas bandas evolucionan hacia lo más pesado o moderno, <strong>ALI PROJECT</strong> ha optado por mantenerse fiel a su identidad. No es una banda masiva. Pero sí es una de las más consistentes dentro de su estilo.</p><p>Cortesía de <a href=\"https://www.facebook.com/profile.php?id=100079499591010\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">Visual Violence</a></p>"
     }
   ],
   "tieneSiguiente": true,

@@ -1,7 +1,16 @@
 {
   "pagina": 3,
-  "totalNoticias": 6,
+  "totalNoticias": 7,
   "noticias": [
+    {
+      "id": 7,
+      "titulo": "Versailles regresa a Latinoamérica",
+      "fecha": "2026-03-17",
+      "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
+      "resumen": "A través de redes sociales se confirmó su llegada con dos fechas.",
+      "imagen": "images/versailles.jpg",
+      "contenidoCompleto": "<p>En redes sociales, la promotora <strong>Ninshi Entertainment</strong>ha publicado la llegada de Versailles con dos fechas en Latinoamérica, siendo en Chile y México respectivamente.</p><p><Strong>Versailles - Chateau de Versailles</p></strong><p><strong>Diciembre 3:</strong> Santiago (Chile) / Teatro Coliseo</p><p><strong>Venta de boletos:</strong> 27 de Marzo a las 11 A.M.por PUNTOTICKET</p><p><strong>Diciembre 5:</strong> KNOT FEST MÉXICO / ESTADIO FRAY NANO</P><p><strong>Venta de boletos:</strong> 23 de marzo a las 11 A.M. por FUNITICKET</P><P>Pronto más información sobre ambas fechas.</P>"
+    },
     {
       "id": 6,
       "titulo": "MASKED 2026: El festival que reunirá lo mejor del visual kei (line-up completo)",
