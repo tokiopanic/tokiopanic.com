@@ -4,8 +4,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <link rel="stylesheet" href="styles.css?v=2">
-    <script src="script.js?v=2"></script>
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HNR8PWQDNB"></script>
     <script>
@@ -42,29 +41,27 @@
                 </nav>
             </header>
 
-            <main>
-                <h2 class="main-title">LO MEJOR DE LA MÚSICA JAPONESA</h2>
-                <p class="sub-text">SINTONIZA TOKIO PANIC RADIO - MÚSICA 24/7</p>
-                <div class="player-container">
-                    <div class="player">
-                       <h3>En vivo</h3>
-                        <iframe src="https://radio.tokiopanic.com/public/tokio_panic/embed?theme=dark&primary_color=fde363&bg_color=000000&text_color=ffffff&rounded=1"
-                                frameborder="0"
-                                allowtransparency="true"
-                                class="radio-iframe">
-                        </iframe>
-                    </div>
+<main class="hero-feature">
 
-                    <div class="history">
-                        <h3>Recientes</h3>
-                        <iframe src="https://radio.tokiopanic.com/public/tokio_panic/history?theme=dark"
-                                frameborder="0"
-                                allowtransparency="true"
-                                class="history-iframe">
-                        </iframe>
-                    </div>
-                </div>
-            </main>
+    <div class="hero-content">
+        <span class="tag">EN PORTADA</span>
+
+        <h1 class="hero-title">
+            Ano Ko no Heya no Calendula wa:
+            la belleza de la resignación en el nuevo visual kei
+        </h1>
+
+        <p class="hero-description">
+            La banda emergente explora la tristeza, los silencios y las historias no resueltas 
+            a través de una propuesta íntima y sensorial.
+        </p>
+
+        <a href="https://tokiopanic.com/noticia.html?id=27" class="hero-btn">
+             Leer entrevista
+        </a>
+    </div>
+
+</main>
         </div>
 
 
@@ -150,7 +147,36 @@
 </footer>
 
     <script src="noticias-loader.js"></script>
-    <script src="script.js"></script>  <!-- ← ESTA LÍNEA FALTA -->
-</body>
+    <script src="script.js"></script> 
+    
+ <div class="radio-floating" id="radioPlayer">
+
+<div class="radio-bar">
+    <span class="radio-live">● EN VIVO</span>
+    <span class="radio-text">TOKIO PANIC RADIO</span>
+    <span class="radio-toggle">▲</span>
+</div>
+
+    <div class="radio-expand" id="radioExpand">
+
+        <div class="player">
+            <iframe src="https://radio.tokiopanic.com/public/tokio_panic/embed?theme=dark&primary_color=fde363&bg_color=111111&text_color=ffffff&rounded=1"
+                frameborder="0"
+                allowtransparency="true"
+                class="radio-iframe">
+            </iframe>
+        </div>
+
+        <div class="history">
+            <iframe src="https://radio.tokiopanic.com/public/tokio_panic/history?theme=dark"
+                frameborder="0"
+                allowtransparency="true"
+                class="history-iframe">
+            </iframe>
+        </div>
+
+    </div>
+
+</div>   
 </body>
 </html>
