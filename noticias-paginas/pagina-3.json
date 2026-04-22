@@ -1,7 +1,16 @@
 {
   "pagina": 3,
-  "totalNoticias": 8,
+  "totalNoticias": 9,
   "noticias": [
+    {
+      "id": 9,
+      "titulo": "Ado se presentará en Lollapalooza",
+      "fecha": "2026-03-18",
+      "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
+      "resumen": "La cantante Ado figura en la lista de artistas del line-up del festival.",
+      "imagen": "images/loollapalooza.jpg",
+      "contenidoCompleto": "<p>Se ha revelado el line-up completo para el Lollapalooza de este 2026, en el que figura la favorita de los fans del anime: Ado.</p>\n\n<p><strong>Detalles del festival</strong></p>\n\n<img src=\"images/loollapalooza.png\" alt=\"Cartel Lollapalooza 2026\" class=\"noticia-media\">\n\n<p>Fecha: del 30 de julio al 2 de agosto de 2026.</p>\n<p>Lugar: Grant Park, Chile</p>\n<p>Puedes consultar toda la información del festival en el sitio web de <a href=\"https://lollapaloozacl.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">Lollapalooza</a>.</p>"
+    },
     {
       "id": 8,
       "titulo": "Versailles sólo tocará 35 minutos en México: Fans muestran su molestia",

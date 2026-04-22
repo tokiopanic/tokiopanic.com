@@ -3,6 +3,14 @@
   "totalNoticias": 10,
   "noticias": [
     {
+      "id": 29,
+      "titulo": "[Entrevista] CISSNÉ: atmósferas que rompen el silencio del underground japonés",
+      "fecha": "2026-04-22",
+      "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
+      "resumen": "En muy poco tiempo, el proyecto ha llamado la atención tanto dentro como fuera de su país, gracias a un sonido que apuesta por la experimentación emocional y sonora.",
+      "imagen": "images/cissne.webp"
+    },
+    {
       "id": 28,
       "titulo": "Tragedy of Murder fusiona el deathcore tailandés con el Visual Kei en una colaboración que rompe fronteras con el vocalista japonés Kagami de DEXCORE",
       "fecha": "2026-04-21",
@@ -13,7 +21,7 @@
     },
     {
       "id": 27,
-      "titulo": "Entrevista: Ano Ko no Heya no Calendula wa y el arte de habitar las emociones",
+      "titulo": "[Entrevista] Ano Ko no Heya no Calendula wa y el arte de habitar las emociones",
       "fecha": "2026-04-20",
       "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
       "resumen": "Desde Tokio con melancolia, te presentamos nuestra entrevista exclusiva a la nueva banda de visual kei que debutará el 1 de junio",
@@ -40,7 +48,7 @@
     },
     {
       "id": 24,
-      "titulo": "Entrevista: Tsuzuku presenta su proyecto más personal, tzkwym, y sueña con un one-man en México",
+      "titulo": "[Entrevista] Tsuzuku presenta su proyecto más personal, tzkwym, y sueña con un one-man en México",
       "fecha": "2026-04-17",
       "autor": "<a href=\"https://www.facebook.com/profile.php?id=100079499591010\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">Visual Violence</a>",
       "resumen": "Visual Violence nos presenta su entrevista realizada a Tsuzuku",
@@ -82,15 +90,6 @@
       "resumen": "Te presentamos los lanzamientos destacados del rock japonés/visual kei de hoy",
       "imagen": "images/abril15.png",
       "contenidoCompleto": "<p>Abril está siendo un mes interesante en cuanto a lanzamientos. Ya tuvimos <a href=\"https://tokiopanic.com/noticia.html?id=19\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">MORTAL DOWNER</a> de <strong>DIR EN GREY</strong> el pasado 8 de abril. A continuación te presentamos los lanzamientos destacados de este dia.</p><p><strong>Sugar - VITAL</strong></p>\n<img src=\"images/abril15-2.png\" alt=\"Sugar presenta su sencillo VITAL\" class=\"noticia-media\"><p></P><P><strong>Utakata to ame - Jinchounge</strong></p>\n<img src=\"images/abril15-3.png\" alt=\"utakata to ameL\" class=\"noticia-media\"></p><p><strong>Saisai no Kuzu - Utsukushii Fukushuu</p></strong>\n<img src=\"images/abril15-4.png\" alt=\"saisai no kuzu single\" class=\"noticia-media\"><p><strong>Ano ko no heya no calendula wa - Kuroyuri no to</p></strong>\n<img src=\"images/abril15-5.png\" alt=\"Ano ko no heya no calendula wa\" class=\"noticia-media\"><p>¡Recuerda que en TOKIO PANIC te estaremos trayendo los lanzamientos más recientes de Japón! No olvides seguirnos en nuestras redes sociales."
-    },
-    {
-      "id": 19,
-      "titulo": "RESEÑA: MORTAL DOWNER y la tensión como lenguaje",
-      "fecha": "2026-04-09",
-      "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
-      "resumen": "Analizamos y calificamos el nuevo disco de DIR EN GREY: MORTAL DOWNER",
-      "imagen": "images/md.jpg",
-      "contenidoCompleto": "<p>A más de dos décadas de haber redefinido los límites del metal japonés, <strong>Dir En Grey</strong> regresa con <stong>MORTAL DOWNER</strong>, su duodécimo álbum de estudio, lanzado el 8 de abril de 2026. Lejos de buscar una reinvención abrupta, el quinteto apuesta por una obra que se construye desde la contención: <strong>un disco denso</strong>, <strong>cohesivo</strong> y <strong>deliberadamente incómodo</strong>.</p><p>Desde sus primeras canciones, <strong>MORTAL DOWNER</strong> se percibe como un concepto global más que como una colección de canciones individuales. A lo largo de 14 temas, la banda explora una narrativa sonora donde la tensión rara vez se libera por completo. Este enfoque marca una diferencia respecto a trabajos previos como <strong>Phalaris (2022)</strong>, donde los contrastes eran más evidentes.</p>\n<img src=\"images/deg.png\" alt=\"DIR EN GREY\" class=\"noticia-media\"><p><strong>Análisis musical:</p></strong><p>Musicalmente, <strong>DIR EN GREY</strong> ha roto su propio molde. En trabajos anteriores como <strong>The Insulated World</strong> predominaba la ira cruda y la velocidad. En <strong>MORTAL DOWNER</strong>, la ira se ha enquistado y se ha convertido en depresión clínica.</p><p><strong>La Voz (Kyo):</strong> Kyo abandona los guturales por texturas más cercanas al susurro psicótico y el llanto disociado. Es un \"downer\" vocal; la energía no está en el ataque, sino en el desmoronamiento de la nota. Las técnicas extremas se usan para simular tics nerviosos o espasmos musculares, no para parecer demoníaco.</p><p><strong>Las Guitarras (Kaoru y Die):</strong> El álbum se sumerge en texturas Drone y Doom. Los riffs pesados son opresivos. Kaoru ha mencionado en entrevistas (revistas visual kei) que buscaban un sonido que \"pesara en el pecho del oyente\", como una losa.</p><p><strong>La Base Rítmica (Toshiya y Shinya):</strong> Shinya toca con una precisión casi robótica y lenta, imitando el sonido de un corazón en paro. Toshiya, por su parte, lleva el bajo al frente como una vibración que genera ansiedad.</p><p>Musicalmente, el álbum se inclina hacia un groove más pausado y menos explosivo, con estructuras que privilegian la atmósfera sobre el impacto inmediato. La presencia de temas como <strong>The Devil In Me</strong> (publicado previamente como sencillo) funciona como ancla dentro de una obra que rehúye los picos fáciles. Aquí, la banda parece más interesada en construir paisajes que en ofrecer himnos. Sin embargo, esta decisión estética no está exenta de riesgos. Parte de la recepción inicial señala que el disco puede resultar homogéneo, con riffs y patrones que tienden a repetirse, sacrificando la sorpresa en favor de la cohesión. En comunidades de fans, algunos oyentes destacan la solidez compositiva, mientras otros lo perciben como un material menos innovador, incluso cercano a terrenos ya explorados por la banda.</p><p><strong>MORTAL DOWNER</strong> <strong>es un trabajo que exige tiempo y atención</strong>, y que probablemente encontrará mayor recompensa con el pasar del tiempo. <strong>DIR EN GREY</strong> ha logrado la hazaña de sonar más pesados tocando lento que tocando rápido. Han sustituido la rabia por la desesperanza. Kyo ya nos preguntó en 2018: \"¿Por quién estás viviendo?\". En 2026, con <strong>MORTAL DOWNER</strong>, la respuesta es: \"Ya no lo sé\".</p><p><strong>Calificacion: 9/10</p></strong>"
     }
   ],
   "tieneSiguiente": true,
