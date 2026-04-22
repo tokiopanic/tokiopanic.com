@@ -3,6 +3,15 @@
   "totalNoticias": 10,
   "noticias": [
     {
+      "id": 18,
+      "titulo": "Hearts de Geist anuncia la salida de su bajista",
+      "fecha": "2026-04-07",
+      "autor": "<a href=\"https://www.instagram.com/midoridt/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@midoridt</a>",
+      "resumen": "Goashun dejó a la banda el pasado 6 de abril.",
+      "imagen": "images/gdh.jpg",
+      "contenidoCompleto": "<p>El bajista <strong>Goashun</strong> dejó oficialmente la banda <strong>Hearts de Geist</strong> el pasado 6 de abril de 2026.</p><p>A pesar de lo repentino de la noticia, el grupo confirmó que continuará sus proyectos musicales como un cuarteto, mientras que goashun seguirá activo con su carrera por separado.</p>\n<img src=\"images/goashun.jpg\" alt=\"Hearts de Geist\" class=\"noticia-media\"><p>La banda se disculpó con sus seguidores por la sorpresa y agradeció el apoyo recibido, invitando a los fans a seguir acompañando a ambas partes en esta nueva etapa.</p>"
+    },
+    {
       "id": 17,
       "titulo": "ALI PROJECT: Cuando la elegancia aristocrática, el Lolita fashion y la oscuridad sinfónica se niegan a seguir modas",
       "fecha": "2026-04-02",
@@ -82,15 +91,6 @@
       "resumen": "La cantante Ado figura en la lista de artistas del line-up del festival.",
       "imagen": "images/loollapalooza.jpg",
       "contenidoCompleto": "<p>Se ha revelado el line-up completo para el Lollapalooza de este 2026, en el que figura la favorita de los fans del anime: Ado.</p>\n\n<p><strong>Detalles del festival</strong></p>\n\n<img src=\"images/loollapalooza.png\" alt=\"Cartel Lollapalooza 2026\" class=\"noticia-media\">\n\n<p>Fecha: del 30 de julio al 2 de agosto de 2026.</p>\n<p>Lugar: Grant Park, Chile</p>\n<p>Puedes consultar toda la información del festival en el sitio web de <a href=\"https://lollapaloozacl.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">Lollapalooza</a>.</p>"
-    },
-    {
-      "id": 8,
-      "titulo": "Versailles sólo tocará 35 minutos en México: Fans muestran su molestia",
-      "fecha": "2026-03-17",
-      "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
-      "resumen": "El KNOTFEST confirmó los horarios del festival, dando a la banda sólamente 35 minutos de presentación.",
-      "imagen": "images/knotfest.jpg",
-      "contenidoCompleto": "<p>El festival KNOTFEST, a realizarse este 5 de diciembre en la Ciudad de México, reveló sus horarios oficiales para el evento, donde bandas de renombre como LAMB OF GOD tendrán más de una hora de presentación.</p><p><strong>La molestia de los fans: Versailles tendrá 35 minutos de presentación</p></strong><p>En el horario oficial del festival, se muestra que la banda encargada de abrir el evento será Versailles, empezando a las 2:50 de la tarde y con 35 minutos de presentación. Los <a href=\"https://www.facebook.com/photo/?fbid=1473232294168976&locale=es_LA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">comentarios</a> en las redes sociales del KNOTFEST muestran descontento por el horario asignado a la banda liderada por Kamijo, se desconoce si Versailles programará otra fecha en solitario para la Ciudad de México.</p>"
     }
   ],
   "tieneSiguiente": true,

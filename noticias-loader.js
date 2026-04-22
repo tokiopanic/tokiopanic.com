@@ -1,3 +1,11 @@
+// Función para crear slugs amigables para URLs
+function crearSlug(titulo) {
+    return titulo
+        .toLowerCase()
+        .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // eliminar acentos
+        .replace(/[^a-z0-9]+/g, "-") // reemplazar espacios y caracteres especiales con -
+        .replace(/^-|-$/g, ""); // eliminar guiones al inicio/final
+}
 // noticias-loader.js - Versión con carga por páginas y diseño de tarjetas en index
 let noticias = [];
 let todasLasNoticias = [];
@@ -64,7 +72,7 @@ function renderizarNoticiasIndex(limite = 6) {
                 <h3 class="news-card-title">${escapeHtml(noticia.titulo)}</h3>
                 <p class="news-card-date">${noticia.fecha} / ${noticia.autor}</p>
                 <p class="news-card-summary">${escapeHtml(noticia.resumen.substring(0, 100))}${noticia.resumen.length > 100 ? '...' : ''}</p>
-                <a href="noticia.html?id=${noticia.id}" class="news-card-link">Leer más</a>
+                <a href="noticia.html?id=${noticia.id}&titulo=${crearSlug(noticia.titulo)}" class="news-card-link">Leer más</a>
             </div>
         </article>
     `).join('');
@@ -160,7 +168,7 @@ function renderizarListaNoticiasConArray(noticiasArray) {
                 <h3 class="news-item-title">${escapeHtml(noticia.titulo)}</h3>
                 <p class="news-date">${noticia.fecha} / ${noticia.autor}</p>
                 <p class="news-summary">${escapeHtml(noticia.resumen)}</p>
-                <a href="noticia.html?id=${noticia.id}" class="news-more">Leer más</a>
+                <a href="noticia.html?id=${noticia.id}&titulo=${crearSlug(noticia.titulo)}" class="news-more">Leer más</a>
             </div>
         </article>
     `).join('');
