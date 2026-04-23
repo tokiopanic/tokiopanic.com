@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargando Media Kit - TOKIO PANIC</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 500px;
+            padding: 2rem;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #ffe44e;
+            border-top-color: transparent;
+            border-radius: 50%;
+            margin: 1rem auto;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        a {
+            color: #ffe44e;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>TOKIO PANIC</h2>
+        <h3>Media Kit</h3>
+        <div class="spinner"></div>
+        <p>Tu descarga comenzará en breve...</p>
+        <p>Si no inicia automáticamente, <a href="#" id="downloadLink">haz clic aquí</a>.</p>
+        <p><a href="/">← Volver al inicio</a></p>
+    </div>
+
+    <script>
+        // Forzar la descarga del PDF al cargar la página
+        window.addEventListener('DOMContentLoaded', function() {
+            const link = document.getElementById('downloadLink');
+            
+            // Crear un enlace temporal para la descarga
+            const downloadLink = document.createElement('a');
+            downloadLink.href = 'metricas_tokiopanic_abril.pdf';
+            downloadLink.download = 'tokiopanic_mediakit.pdf'; // Nombre del archivo a descargar
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+            
+            // Actualizar el enlace de respaldo
+            link.href = 'metricas_tokiopanic_abril.pdf';
+        });
+    </script>
+</body>
+</html>
