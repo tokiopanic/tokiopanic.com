@@ -1,131 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-HNR8PWQDNB"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-HNR8PWQDNB");
-    </script>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>PODCAST: VISUAL NOISE | TOKIO PANIC</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  </head>
-  <body class="internal-page">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body class="internal-page podcast-page">
     <div class="internal-container">
-      <!-- HEADER (igual que en otras páginas) -->
-      <header>
-        <a href="index.html"
-          ><img src="logo.png" alt="Logo TOKIO PANIC" class="logo"
-        /></a>
-        <nav>
-          <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="noticias.html">NOTICIAS</a></li>
-            <li><a href="#" class="active">PODCAST</a></li>
-            <li><a href="nosotros.html">NOSOTROS</a></li>
-          </ul>
-        </nav>
-      </header>
+        <header>
+            <a href="index.html"><img src="logo.png" alt="Logo TOKIO PANIC" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="noticias.html">NOTICIAS</a></li>
+                    <li><a href="podcast.html" class="active">PODCAST</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<!-- CONTENIDO PRINCIPAL -->
-<main>
-  <section class="podcast-section">
-    <h2 class="podcast-title">PODCAST: Visual Noise</h2>
-
-    <div class="podcast-banner">
-      <img src="images/PODCAST.png" alt="TOKIO PANIC Podcast" class="banner-podcast">
-    </div>
-
-    <br><br>
-
-    <p class="podcast-intro">
-      Visual Noise es un podcast de TOKIO PANIC disponible en Spotify conducido por Midori
-      y Josué Guajardo, donde hablarán sobre el mundo del rock japonés y
-      el visual kei. ¡No te lo puedes perder!
-    </p>
-
-<div class="episodios-lista">
-  
-  <div class="episodio">
-    <iframe 
-      src="https://open.spotify.com/embed/episode/3KKopaImABwBgO1UwnJYLo"
-      width="100%" 
-      height="152"
-      frameborder="0"
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-      style="border-radius:12px">
-    </iframe>
-  </div>
-
-  <div class="episodio">
-    <iframe 
-      src="https://open.spotify.com/embed/episode/25snWycPdhIl9IbWL8RiMs"
-      width="100%" 
-      height="152"
-      frameborder="0"
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-      style="border-radius:12px">
-    </iframe>
-  </div>
-
-</div>
-    </div>
-
-  </section>
-</main>
-    </div>
-    <!-- Cierre de internal-container -->
-
-<footer class="footer">
-    <div class="footer-container">
-        <!-- Columna 1: Logo y nombre -->
-        <div class="footer-col">
-            <img src="images/logofooter.png" alt="TOKIO PANIC" class="footer-logo">
-        </div>
-
-
-
-        <!-- Columna 3: Redes Sociales -->
-        <div class="footer-col">
-            <h4 class="footer-title">NUESTRAS REDES SOCIALES:</h4>
-            <div class="footer-social">
-                <a href="https://www.tiktok.com/@tokiopanic" target="_blank" class="social-icon-link">
-                    <img src="images/tiktok.png" alt="TikTok" class="social-icon-footer">
-                </a>
-                <a href="https://www.instagram.com/tokiopanic" target="_blank" class="social-icon-link">
-                    <img src="images/insta.png" alt="Instagram" class="social-icon-footer">
-                </a>
-                <a href="https://www.youtube.com/@tokio-panic" target="_blank" class="social-icon-link">
-                    <img src="images/yt.png" alt="Instagram" class="social-icon-footer">
-                </a>
+        <!-- HERO EDITORIAL PARA PODCAST -->
+        <div class="hero-podcast">
+            <div class="hero-podcast-content">
+                <span class="tag-podcast">Podcast original de TOKIO PANIC</span>
+                <h1 class="hero-podcast-title">VISUAL NOISE</h1>
+                <p class="hero-podcast-description">
+                    Un espacio para explorar el sonido, la estética y las historias detrás del rock japonés y el visual kei.<br>
+                    Conducido por <strong>Midori</strong> y <strong>Josué Guajardo</strong>.
+                </p>
+                <div class="hero-podcast-badge">
+                    <span>Disponible en</span>
+                    <img src="images/spotify-ar21.svg" alt="Spotify" class="spotify-badge">
+                </div>
             </div>
         </div>
 
-        <!-- Columna 4: Prensa -->
-        <div class="footer-col">
-            <h4 class="footer-title">PRENSA Y COLABORACIONES:</h4>
-            <a href="#" class="footer-media-kit">contacto@tokiopanic.com</a>
-        </div>
+        <!-- SECCIÓN DE EPISODIOS -->
+        <section class="episodios-section">
+            <h2 class="episodios-title">EPISODIOS RECIENTES</h2>
+            
+            <div class="episodios-lista">
+                <!-- Episodio 1 -->
+                <div class="episodio-card">
+                    <div class="episodio-info">
+                        <span class="episodio-number">#001</span>
+                        <h3 class="episodio-titulo">Vamos a presentarnos</h3>
+                        <p class="episodio-fecha">7 de abril, 2026</p>
+                        <p class="episodio-descripcion">
+                            En este episodio Midori y Josué hablan sobre cómo se conocieron, 
+                            los orígenes de TOKIO PANIC y contestan preguntas para conocer mejor 
+                            sus gustos musicales.
+                        </p>
+                    </div>
+                    <div class="episodio-player">
+                        <iframe src="https://open.spotify.com/embed/episode/25snWycPdhIl9IbWL8RiMs" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy" 
+                                style="border-radius:12px">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Episodio 2 -->
+                <div class="episodio-card">
+                    <div class="episodio-info">
+                        <span class="episodio-number">#002</span>
+                        <h3 class="episodio-titulo">KLACK: La banda que se ganó el repudio de Japón</h3>
+                        <p class="episodio-fecha">14 de abril, 2026</p>
+                        <p class="episodio-descripcion">
+                            Analizamos el controvertido caso de KLACK, una banda que cruzó todos los límites 
+                            en el Beauti-fool's Fest 04 y las consecuencias que enfrentaron.
+                        </p>
+                    </div>
+                    <div class="episodio-player">
+                        <iframe src="https://open.spotify.com/embed/episode/3KKopaImABwBgO1UwnJYLo" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy" 
+                                style="border-radius:12px">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
     </div>
 
-</footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <img src="images/logofooter.png" alt="TOKIO PANIC" class="footer-logo">
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">NUESTRAS REDES SOCIALES:</h4>
+                <div class="footer-social">
+                    <a href="https://www.tiktok.com/@tokiopanic" target="_blank">
+                        <img src="images/tiktok.png" alt="TikTok" class="social-icon-footer">
+                    </a>
+                    <a href="https://www.instagram.com/tokiopanic" target="_blank">
+                        <img src="images/insta.png" alt="Instagram" class="social-icon-footer">
+                    </a>
+                    <a href="https://www.youtube.com/@tokio-panic" target="_blank">
+                        <img src="images/yt.png" alt="YouTube" class="social-icon-footer">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">PRENSA Y COLABORACIONES:</h4>
+                <a href="/mediakit" class="footer-media-kit">contacto@tokiopanic.com</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
-    <script src="noticias-loader.js"></script>
-  </body>
+</body>
 </html>

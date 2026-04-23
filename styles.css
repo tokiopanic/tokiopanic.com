@@ -530,6 +530,221 @@ iframe {
     transform: scale(1.02);
 }
 
+/* ===== PÁGINA DE PODCAST - DISEÑO EDITORIAL ===== */
+.podcast-page {
+    background: #000;
+}
+
+/* Hero editorial */
+.hero-podcast {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    background: url("images/podcast.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    border-bottom: 3px solid #ffe44e;
+}
+
+/* Overlay para mejorar la legibilidad del texto */
+.hero-podcast::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Oscurece un poco la imagen */
+    z-index: 1;
+}
+
+.hero-podcast-content {
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-podcast-content {
+    max-width: 800px;
+}
+
+.tag-podcast {
+    display: inline-block;
+    background-color: #ffe44e;
+    color: #000;
+    font-weight: bold;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.hero-podcast-title {
+    font-family: "Impact", "Arial Black", sans-serif;
+    font-size: 4.5rem;
+    color: #ffe44e;
+    margin-bottom: 1rem;
+    letter-spacing: 4px;
+}
+
+.hero-podcast-description {
+    font-size: 1.2rem;
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.hero-podcast-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.spotify-badge {
+    height: 30px;
+    width: auto;
+}
+
+/* Sección de episodios */
+.episodios-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.episodios-title {
+    font-family: "Impact", "Arial Black", sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #ffe44e;
+    display: inline-block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0.5rem;
+}
+
+/* Tarjetas de episodios */
+.episodio-card {
+    background: #111;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #333;
+}
+
+.episodio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: #ffe44e;
+}
+
+.episodio-info {
+    padding: 2rem 2rem 1rem;
+}
+
+.episodio-number {
+    display: inline-block;
+    background-color: #ffe44e;
+    color: #000;
+    font-weight: bold;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.episodio-titulo {
+    font-size: 1.6rem;
+    color: #ffe44e;
+    margin-bottom: 0.5rem;
+}
+
+.episodio-fecha {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.episodio-descripcion {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.episodio-player {
+    padding: 0 2rem 2rem;
+}
+
+/* Botón más episodios */
+.more-episodios {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.btn-more-episodios {
+    display: inline-block;
+    background-color: transparent;
+    color: #ffe44e;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid #ffe44e;
+    transition: all 0.3s ease;
+}
+
+.btn-more-episodios:hover {
+    background-color: #ffe44e;
+    color: #000;
+    transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-podcast {
+        padding: 3rem 1rem;
+        min-height: 50vh;
+    }
+    
+    .hero-podcast-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-podcast-description {
+        font-size: 1rem;
+    }
+    
+    .episodios-section {
+        padding: 2rem 1rem;
+    }
+    
+    .episodio-info {
+        padding: 1.5rem;
+    }
+    
+    .episodio-player {
+        padding: 0 1.5rem 1.5rem;
+    }
+    
+    .episodio-titulo {
+        font-size: 1.3rem;
+    }
+}
+
 /* ===== FOOTER ===== */
 .footer {
     background-color: #000;
