@@ -350,7 +350,7 @@ iframe {
 
 .news-item-title {
     font-size: 1.8rem;
-    color: yellow;
+    color: rgb(0, 0, 0);
     margin-bottom: 0.5rem;
 }
 
@@ -364,7 +364,7 @@ iframe {
 .news-summary {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: white;
+    color: rgb(0, 0, 0);
     margin-bottom: 1rem;
 }
 
