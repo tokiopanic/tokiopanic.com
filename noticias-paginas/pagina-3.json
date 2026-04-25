@@ -1,7 +1,16 @@
 {
   "pagina": 3,
-  "totalNoticias": 9,
+  "totalNoticias": 10,
   "noticias": [
+    {
+      "id": 10,
+      "titulo": "GACKT lanza su nueva red social: POPOPO",
+      "fecha": "2026-03-19",
+      "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
+      "resumen": "La nueva red social fue desarrollada en conjunto por Gackt, Hideaki Anno y otras figuras de la industria.",
+      "imagen": "images/popopo.png",
+      "contenidoCompleto": "<p>La empresa Popopo ha anunciado una nueva plataforma desarrollada con la colaboración de personalidades como Hideaki Anno, Gackt, Nobuo Kawakami, Hiroyuki Nishimura y Makoto Tezuka.</p><p><strong>La red social promete videollamadas sin cámara</p></strong><p>La presentación oficial fue el mediodía del 18 de marzo en Japón, donde se revelaron detalles sobre el funcionamiento y los objetivos de la nueva plataforma. Entre las funcionalidades de la plataforma, detallaron en su conferencia de prensa que la app contará con un sistema para hacer videollamadas sin la necesidad de una cámara, un concepto bastante experimental del que aún no se han dado más detalles.</p>\n\n<img src=\"images/popopo2.png\" alt=\"Conferencia de prensa POPOPO\" class=\"noticia-media\">\n\n<p>POPOPO promete ser <strong>la última red social desarrollada por humanos</strong> en un mundo donde la IA gana cada vez más terreno. La app ya se encuentra disponible para descargar desde su <a href=\"https://www.popopo.com/ja/spaces/bTxj6Fx2fuK77NxATp2F/lives/45NpTj29PoVJ8dervjyy\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">sitio web</a> para dispositivos Android y iOS."
+    },
     {
       "id": 9,
       "titulo": "Ado se presentará en Lollapalooza",

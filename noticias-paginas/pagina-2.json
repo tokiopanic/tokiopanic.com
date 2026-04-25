@@ -3,6 +3,15 @@
   "totalNoticias": 10,
   "noticias": [
     {
+      "id": 20,
+      "titulo": "Lanzamientos destacados: 15 de abril",
+      "fecha": "2026-04-15",
+      "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
+      "resumen": "Te presentamos los lanzamientos destacados del rock japonés/visual kei de hoy",
+      "imagen": "images/abril15.png",
+      "contenidoCompleto": "<p>Abril está siendo un mes interesante en cuanto a lanzamientos. Ya tuvimos <a href=\"https://tokiopanic.com/noticia.html?id=19\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">MORTAL DOWNER</a> de <strong>DIR EN GREY</strong> el pasado 8 de abril. A continuación te presentamos los lanzamientos destacados de este dia.</p><p><strong>Sugar - VITAL</strong></p>\n<img src=\"images/abril15-2.png\" alt=\"Sugar presenta su sencillo VITAL\" class=\"noticia-media\"><p></P><P><strong>Utakata to ame - Jinchounge</strong></p>\n<img src=\"images/abril15-3.png\" alt=\"utakata to ameL\" class=\"noticia-media\"></p><p><strong>Saisai no Kuzu - Utsukushii Fukushuu</p></strong>\n<img src=\"images/abril15-4.png\" alt=\"saisai no kuzu single\" class=\"noticia-media\"><p><strong>Ano ko no heya no calendula wa - Kuroyuri no to</p></strong>\n<img src=\"images/abril15-5.png\" alt=\"Ano ko no heya no calendula wa\" class=\"noticia-media\"><p>¡Recuerda que en TOKIO PANIC te estaremos trayendo los lanzamientos más recientes de Japón! No olvides seguirnos en nuestras redes sociales."
+    },
+    {
       "id": 19,
       "titulo": "RESEÑA: MORTAL DOWNER y la tensión como lenguaje",
       "fecha": "2026-04-09",
@@ -82,15 +91,6 @@
       "resumen": "Se modificó el line-up para que la banda toque más tiempo en el festival.",
       "imagen": "images/versailles.jpg",
       "contenidoCompleto": "<p>Las redes sociales del festival KNOTFEST acaban de anunciar una modificación en su line-up oficial, agregando más tiempo a la banda japonesa Versailles.</p>\n\n<img src=\"images/horarios.jpg\" alt=\"Horarios oficiales festival KNOTFEST\" class=\"noticia-media\">\n\n<p><strong>¿Por qué extendieron la presentación de Versailles?</p></strong><p>Los cambios en el festival se anunciaron luego de que en un principio se anunciara que Versailles tocaría por 35 minutos en el festival, lo que ocasionó la molestia de los fans de la agrupación liderada por Kamijo. Ante las criticas recibidas en redes sociales, el festival decidió extender la presentación de la banda de 35 minutos a 55 minutos.</p>"
-    },
-    {
-      "id": 10,
-      "titulo": "GACKT lanza su nueva red social: POPOPO",
-      "fecha": "2026-03-19",
-      "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
-      "resumen": "La nueva red social fue desarrollada en conjunto por Gackt, Hideaki Anno y otras figuras de la industria.",
-      "imagen": "images/popopo.png",
-      "contenidoCompleto": "<p>La empresa Popopo ha anunciado una nueva plataforma desarrollada con la colaboración de personalidades como Hideaki Anno, Gackt, Nobuo Kawakami, Hiroyuki Nishimura y Makoto Tezuka.</p><p><strong>La red social promete videollamadas sin cámara</p></strong><p>La presentación oficial fue el mediodía del 18 de marzo en Japón, donde se revelaron detalles sobre el funcionamiento y los objetivos de la nueva plataforma. Entre las funcionalidades de la plataforma, detallaron en su conferencia de prensa que la app contará con un sistema para hacer videollamadas sin la necesidad de una cámara, un concepto bastante experimental del que aún no se han dado más detalles.</p>\n\n<img src=\"images/popopo2.png\" alt=\"Conferencia de prensa POPOPO\" class=\"noticia-media\">\n\n<p>POPOPO promete ser <strong>la última red social desarrollada por humanos</strong> en un mundo donde la IA gana cada vez más terreno. La app ya se encuentra disponible para descargar desde su <a href=\"https://www.popopo.com/ja/spaces/bTxj6Fx2fuK77NxATp2F/lives/45NpTj29PoVJ8dervjyy\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">sitio web</a> para dispositivos Android y iOS."
     }
   ],
   "tieneSiguiente": true,
