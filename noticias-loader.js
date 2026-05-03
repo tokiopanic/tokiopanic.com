@@ -314,3 +314,4 @@ function escapeHtml(text) {
 
 // Iniciar
 document.addEventListener('DOMContentLoaded', cargarNoticias);
+
