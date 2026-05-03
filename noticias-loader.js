@@ -56,8 +56,11 @@ async function cargarNoticias() {
 function renderizarNoticiasIndex(limite = 6) {
     if (!contenedorNoticiasIndex) return;
 
-    // Ordenar por ID más reciente (mayor ID primero)
-    const noticiasOrdenadas = [...noticias].sort((a, b) => b.id - a.id);
+    // Filtrar solo noticias visibles
+    const noticiasVisibles = noticias.filter(n => n.visible !== false);
+    
+    // Ordenar por ID más reciente
+    const noticiasOrdenadas = [...noticiasVisibles].sort((a, b) => b.id - a.id);
     const noticiasAMostrar = noticiasOrdenadas.slice(0, limite);
 
     if (noticiasAMostrar.length === 0) {
