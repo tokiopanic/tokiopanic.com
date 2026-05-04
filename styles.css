@@ -1335,3 +1335,71 @@ body.internal-page .podcast-section .podcast-item {
         max-width: 280px;
     }
 }
+
+/* Tarjetas de episodios */
+.episodio-card {
+    background: #111;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #333;
+}
+
+.episodio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: #ffe44e;
+}
+
+.episodio-info {
+    padding: 2rem 2rem 1rem;
+}
+
+.episodio-number {
+    display: inline-block;
+    background-color: #ffe44e;
+    color: #000;
+    font-weight: bold;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.episodio-titulo {
+    font-size: 1.6rem;
+    color: #ffe44e;
+    margin-bottom: 0.5rem;
+}
+
+.episodio-fecha {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.episodio-descripcion {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.episodio-player {
+    padding: 0 2rem 2rem;
+}
+
+/* Etiqueta "Episodio reciente" - misma fuente que news-title pero negra */
+.episodio-reciente-tag {
+    font-family: "Impact", "Arial Black", sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
