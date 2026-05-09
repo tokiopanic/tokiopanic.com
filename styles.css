@@ -84,7 +84,7 @@ nav ul li a.active {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url("images/anocale.webp") no-repeat center center fixed;
+    background: url("images/fondokakuriyo.webp") no-repeat center center fixed;
     background-size: cover;
     transition: background-image 1s ease-in-out;
     overflow: hidden;
