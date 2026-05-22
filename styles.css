@@ -1473,3 +1473,10 @@ body.internal-page .podcast-section .podcast-item {
     width: 100%;
     margin-bottom: 1rem;
 }
+
+/* Espacio adicional en móvil entre footer y reproductor flotante */
+@media (max-width: 768px) {
+    .footer {
+        padding-bottom: 90px; /* Aumenta el espacio inferior del footer */
+    }
+}
