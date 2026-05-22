@@ -901,7 +901,8 @@ body.internal-page .podcast-section .podcast-item {
     transform: scale(1.05);
 }
 
-/* ===== PLAYER FLOTANTE ===== */
+/* ===== REPRODUCTOR FLOTANTE TIPO CHAT - SOLO ESCRITORIO ===== */
+/* Estilos base (móvil por defecto) - como estaba antes */
 .radio-floating {
     position: fixed;
     bottom: 0;
@@ -912,20 +913,29 @@ body.internal-page .podcast-section .podcast-item {
 }
 
 .radio-bar {
+    background: #000;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.8rem 1.5rem;
     cursor: pointer;
     border-top: 2px solid #ffe44e;
 }
 
 .radio-live {
+    font-size: 0.9rem;
+    opacity: 0.8;
     color: #ffe44e;
 }
 
 .radio-text {
+    font-size: 1rem;
     font-weight: bold;
+}
+
+.radio-toggle {
+    font-size: 1.2rem;
 }
 
 .radio-expand {
@@ -948,6 +958,66 @@ body.internal-page .podcast-section .podcast-item {
     width: 100%;
     height: 150px;
     border-radius: 12px;
+}
+
+/* ===== VERSIÓN ESCRITORIO (pantallas mayores a 768px) ===== */
+@media (min-width: 769px) {
+    .radio-floating {
+        bottom: 20px;
+        left: 20px;
+        width: 340px;
+        max-width: calc(100% - 40px);
+        border-radius: 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+    }
+
+    .radio-bar {
+        padding: 1rem 1.2rem;
+    }
+
+    .radio-live {
+        font-size: 0.85rem;
+        font-weight: bold;
+    }
+
+    .radio-text {
+        font-size: 0.9rem;
+    }
+
+    .radio-toggle {
+        font-size: 1.1rem;
+    }
+
+    .radio-expand {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .radio-floating.active .radio-expand {
+        max-height: 380px;
+    }
+
+    .radio-iframe {
+        height: 140px;
+        border-radius: 0;
+    }
+
+    .history-iframe {
+        height: 200px;
+        border-radius: 0;
+    }
+}
+
+/* Ajuste para móvil muy pequeño */
+@media (max-width: 480px) {
+    .radio-iframe {
+        height: 100px;
+    }
+    
+    .history-iframe {
+        height: 120px;
+    }
 }
 
 /* ===== BUSCADOR ===== */
