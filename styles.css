@@ -536,6 +536,7 @@ iframe {
 }
 
 /* Hero editorial */
+/* Hero editorial - Versión escritorio (por defecto) */
 .hero-podcast {
     min-height: 60vh;
     display: flex;
@@ -543,10 +544,38 @@ iframe {
     justify-content: center;
     text-align: center;
     padding: 4rem 2rem;
-    background: url("images/PODCAST.png") no-repeat center center;
+    background: url("images/PODCAST.webp") no-repeat center center;
     background-size: cover;
     position: relative;
     border-bottom: 3px solid #ffe44e;
+}
+
+/* Overlay para mejorar la legibilidad del texto */
+.hero-podcast::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-podcast-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+/* 📱 Versión móvil - imagen diferente */
+@media (max-width: 768px) {
+    .hero-podcast {
+        background: url("images/PODCAST-movil.webp") no-repeat center center;
+        background-size: cover;
+        min-height: 40vh;
+        padding: 2rem 1rem;
+    }
 }
 
 /* Overlay para mejorar la legibilidad del texto */
