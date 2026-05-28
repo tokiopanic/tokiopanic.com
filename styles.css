@@ -536,7 +536,6 @@ iframe {
 }
 
 /* Hero editorial */
-/* Hero editorial - Versión escritorio (por defecto) */
 .hero-podcast {
     min-height: 60vh;
     display: flex;
@@ -550,7 +549,7 @@ iframe {
     border-bottom: 3px solid #ffe44e;
 }
 
-/* Overlay para mejorar la legibilidad del texto */
+/* Overlay */
 .hero-podcast::before {
     content: '';
     position: absolute;
@@ -568,38 +567,6 @@ iframe {
     max-width: 800px;
 }
 
-/* 📱 Versión móvil - imagen diferente */
-@media (max-width: 768px) {
-    .hero-podcast {
-        background: url("images/PODCAST-movil.webp") no-repeat center center;
-        background-size: cover;
-        min-height: 40vh;
-        padding: 2rem 1rem;
-    }
-}
-
-/* Overlay para mejorar la legibilidad del texto */
-.hero-podcast::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Oscurece un poco la imagen */
-    z-index: 1;
-}
-
-.hero-podcast-content {
-    max-width: 800px;
-    position: relative;
-    z-index: 2;
-}
-
-.hero-podcast-content {
-    max-width: 800px;
-}
-
 .tag-podcast {
     display: inline-block;
     background-color: #ffe44e;
@@ -612,12 +579,13 @@ iframe {
     text-transform: uppercase;
 }
 
+/* TÍTULO - Tamaño base (móvil) */
 .hero-podcast-title {
     font-family: "Impact", "Arial Black", sans-serif;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     color: #ffe44e;
     margin-bottom: 1rem;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 .hero-podcast-description {
@@ -636,6 +604,23 @@ iframe {
     font-size: 0.9rem;
 }
 
+/* 📱 Móvil - imagen diferente */
+@media (max-width: 768px) {
+    .hero-podcast {
+        background: url("images/PODCAST-movil.webp") no-repeat center center;
+        background-size: cover;
+        min-height: 40vh;
+        padding: 2rem 1rem;
+    }
+}
+
+/* 💻 Escritorio - título más grande */
+@media (min-width: 769px) {
+    .hero-podcast-title {
+        font-size: 4rem;
+        letter-spacing: 4px;
+    }
+}
 .spotify-badge {
     height: 30px;
     width: auto;
