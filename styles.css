@@ -613,6 +613,52 @@ iframe {
         padding: 2rem 1rem;
     }
 }
+/* Móvil - Episodios de podcast a ancho completo */
+@media (max-width: 768px) {
+    /* Eliminar padding lateral del contenedor principal */
+    .episodios-section {
+        padding: 2rem 0 !important;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    /* Tarjetas de episodio - ancho completo sin bordes redondeados */
+    .episodio-card {
+        border-radius: 0;
+        margin-bottom: 1rem;
+        border-left: none;
+        border-right: none;
+    }
+    
+    /* Contenido de la tarjeta - ajustar padding */
+    .episodio-info {
+        padding: 1rem;
+    }
+    
+    .episodio-player {
+        padding: 0 0 1rem 0;
+    }
+    
+    /* Eliminar márgenes laterales del contenedor interno */
+    .internal-container {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    
+    /* Asegurar que el body no tenga márgenes blancos */
+    body.podcast-page {
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* El iframe ocupa todo el ancho */
+    .episodio-player iframe {
+        width: 100%;
+        border-radius: 0;
+    }
+}
 
 /* 💻 Escritorio - título más grande */
 @media (min-width: 769px) {
