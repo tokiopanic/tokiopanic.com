@@ -1016,8 +1016,8 @@ body.internal-page .podcast-section .podcast-item {
 @media (max-width: 768px) {
     .hero-feature {
         width: 100%;
-        min-height: 70svh;
-        min-height: 70dvh;
+        min-height: 58svh;
+        min-height: 58dvh;
         padding: 1.25rem;
         align-items: flex-end;
         overflow: hidden;
@@ -1035,29 +1035,28 @@ body.internal-page .podcast-section .podcast-item {
     }
 
     .tag {
-        font-size: 0.75rem;
-        margin-bottom: 0.75rem;
+        font-size: 0.72rem;
+        padding: 0.3rem 0.9rem;
+        margin-bottom: 0.7rem;
     }
 
     .hero-title {
-        font-size: clamp(2rem, 9vw, 3rem);
-        line-height: 1;
+        font-size: clamp(2rem, 8.5vw, 2.7rem);
+        line-height: 0.95;
         margin-bottom: 0.8rem;
     }
 
     .hero-description {
-        font-size: 1rem;
-        line-height: 1.4;
-        margin-bottom: 1.25rem;
-        max-width: 100%;
+        font-size: 0.95rem;
+        line-height: 1.35;
+        margin-bottom: 1.1rem;
+        max-width: 95%;
     }
 
     .hero-btn {
-        width: auto;
-        max-width: 100%;
-        padding: 0.8rem 1.5rem;
-        font-size: 0.85rem;
-        text-align: center;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.82rem;
+        letter-spacing: 0.5px;
     }
 }
 /* ===== REPRODUCTOR FLOTANTE TIPO CHAT - SOLO ESCRITORIO ===== */
