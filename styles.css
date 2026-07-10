@@ -146,8 +146,7 @@ header nav a.active::after{
     flex-direction: column;
     background: url("images/hero.jpg") no-repeat center center fixed;
     background-size: cover;
-    transition: background-image 1s ease-in-out;
-    overflow: hidden;
+    
 }
 
 .container::before {
