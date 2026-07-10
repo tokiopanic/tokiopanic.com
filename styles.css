@@ -935,14 +935,18 @@ body.internal-page .podcast-section .podcast-item {
 
 /* ===== HERO FEATURE ===== */
 .hero-feature {
+    
+.hero-feature {
     position: relative;
     display: flex;
-    align-items: flex-end;      /* Alinea el contenido al fondo */
-    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
     min-height: 80vh;
-    text-align: left;           /* Texto alineado a la izquierda */
+    text-align: left;
     padding: 2rem;
     overflow: hidden;
+}
 }
 
 .hero-content {
@@ -1009,14 +1013,51 @@ body.internal-page .podcast-section .podcast-item {
 
 
 
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 2rem;
+@media (max-width: 768px) {
+    .hero-feature {
+        width: 100%;
+        min-height: 70svh;
+        min-height: 70dvh;
+        padding: 1.25rem;
+        align-items: flex-end;
+        overflow: hidden;
     }
-    
+
     .hero-content {
-        left: 15px;
-        bottom: 30px;
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        width: 100%;
+        max-width: 100%;
+        margin-top: auto;
+        z-index: 5;
+    }
+
+    .tag {
+        font-size: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2rem, 9vw, 3rem);
+        line-height: 1;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 1.25rem;
+        max-width: 100%;
+    }
+
+    .hero-btn {
+        width: auto;
+        max-width: 100%;
+        padding: 0.8rem 1.5rem;
+        font-size: 0.85rem;
+        text-align: center;
     }
 }
 /* ===== REPRODUCTOR FLOTANTE TIPO CHAT - SOLO ESCRITORIO ===== */
