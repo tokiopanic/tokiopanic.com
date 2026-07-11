@@ -1,74 +1,278 @@
 <!doctype html>
 <html lang="es">
+
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HNR8PWQDNB"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag("js", new Date());
         gtag("config", "G-HNR8PWQDNB");
     </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>NOTICIA - TOKIO PANIC</title>
-    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Estilos principales de TOKIO PANIC -->
+    <link rel="stylesheet" href="styles.css?v=3">
+
+    <!-- Iconos de Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
 </head>
+
 <body class="internal-page">
+
     <!-- CONTENEDOR PRINCIPAL QUE EMPUJA EL FOOTER -->
-        <div class="internal-container">
-            <header>
-                <a href="index.html"><img src="header.png" alt="Logo" class="logo" /></a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">INICIO</a></li>
-                        <li><a href="noticias.html" class="active">NOTICIAS</a></li>
-                        <li><a href="podcast.html">PODCAST</a></li>
-                        <li><a href="revista.html">REVISTA</a></li>
-                        <li><a href="nosotros.html">NOSOTROS</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main id="noticia-detalle" class="noticia-detalle">
-                <!-- El contenido se carga dinámicamente -->
-            </main>
-        </div>
+    <div class="internal-container">
 
-<footer class="footer">
-    <div class="footer-container">
-        <!-- Columna 1: Logo y nombre -->
-        <div class="footer-col">
-            <img src="images/logofooter.png" alt="TOKIO PANIC" class="footer-logo">
-        </div>
+        <header>
+            <a href="index.html">
+                <img src="header.png" alt="TOKIO PANIC" class="logo">
+            </a>
 
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="noticias.html" class="active">NOTICIAS</a></li>
+                    <li><a href="podcast.html">PODCAST</a></li>
+                    <li><a href="revista.html">REVISTA</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </header>
 
+        <main id="noticia-detalle" class="noticia-detalle">
+            <!-- El contenido se carga dinámicamente -->
+        </main>
 
-        <!-- Columna 3: Redes Sociales -->
-        <div class="footer-col">
-            <h4 class="footer-title">NUESTRAS REDES SOCIALES:</h4>
-            <div class="footer-social">
-                <a href="https://www.tiktok.com/@tokiopanic" target="_blank" class="social-icon-link">
-                    <img src="images/tiktok.png" alt="TikTok" class="social-icon-footer">
-                </a>
-                <a href="https://www.instagram.com/tokiopanic" target="_blank" class="social-icon-link">
-                    <img src="images/insta.png" alt="Instagram" class="social-icon-footer">
-                </a>
-                <a href="https://www.youtube.com/@tokio-panic" target="_blank" class="social-icon-link">
-                    <img src="images/yt.png" alt="Instagram" class="social-icon-footer">
-                </a>
-            </div>
-        </div>
+        <!-- COMPARTIR NOTICIA -->
+        <section class="share-news">
+            <span class="share-news-title">Comparte esta noticia con más fans</span>
 
-        <!-- Columna 4: Prensa -->
-        <div class="footer-col">
-            <h4 class="footer-title">PRENSA Y COLABORACIONES:</h4>
-            <a href="#" class="footer-media-kit">contacto@tokiopanic.com</a>
-        </div>
+            <div class="share-news-buttons">
+
+    <button id="nativeShareButton" class="share-icon" type="button">
+        <i class="fa-solid fa-share-nodes"></i>
+    </button>
+
+    <a id="shareWhatsapp" class="share-icon" href="#">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a id="shareFacebook" class="share-icon" href="#">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a id="shareX" class="share-icon" href="#">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+
+    <a id="shareTelegram" class="share-icon" href="#">
+        <i class="fa-brands fa-telegram"></i>
+    </a>
+
+    <button id="copyNewsLink" class="share-icon" type="button">
+        <i class="fa-regular fa-copy"></i>
+    </button>
+
+</div>
+
+            <span
+                id="copyLinkMessage"
+                class="copy-link-message"
+                aria-live="polite"
+            ></span>
+        </section>
+
     </div>
 
-</footer>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <img
+                    src="images/logofooter.png"
+                    alt="TOKIO PANIC"
+                    class="footer-logo"
+                >
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">NUESTRAS REDES SOCIALES:</h4>
+
+                <div class="footer-social">
+                    <a
+                        href="https://www.tiktok.com/@tokiopanic"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-icon-link"
+                    >
+                        <img
+                            src="images/tiktok.png"
+                            alt="TikTok"
+                            class="social-icon-footer"
+                        >
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/tokiopanic"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-icon-link"
+                    >
+                        <img
+                            src="images/insta.png"
+                            alt="Instagram"
+                            class="social-icon-footer"
+                        >
+                    </a>
+
+                    <a
+                        href="https://www.youtube.com/@tokio-panic"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-icon-link"
+                    >
+                        <img
+                            src="images/yt.png"
+                            alt="YouTube"
+                            class="social-icon-footer"
+                        >
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">PRENSA Y COLABORACIONES:</h4>
+
+                <a
+                    href="mailto:contacto@tokiopanic.com"
+                    class="footer-media-kit"
+                >
+                    contacto@tokiopanic.com
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
     <script src="script.js"></script>
     <script src="noticias-loader.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const shareWhatsapp = document.getElementById("shareWhatsapp");
+            const shareFacebook = document.getElementById("shareFacebook");
+            const shareX = document.getElementById("shareX");
+            const shareTelegram = document.getElementById("shareTelegram");
+            const nativeShareButton = document.getElementById("nativeShareButton");
+            const copyNewsLink = document.getElementById("copyNewsLink");
+            const copyLinkMessage = document.getElementById("copyLinkMessage");
+
+            function getNewsTitle() {
+                const titleElement =
+                    document.querySelector(".noticia-titulo") ||
+                    document.querySelector(".noticia-title") ||
+                    document.querySelector(".article-title") ||
+                    document.querySelector("#noticia-detalle h1");
+
+                return titleElement
+                    ? titleElement.textContent.trim()
+                    : document.title;
+            }
+
+            function configureShareButtons() {
+                const currentUrl = window.location.href;
+                const newsTitle = getNewsTitle();
+
+                const encodedUrl = encodeURIComponent(currentUrl);
+                const encodedTitle = encodeURIComponent(
+                    `${newsTitle} | TOKIO PANIC`
+                );
+
+                shareWhatsapp.href =
+                    `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`;
+
+                shareFacebook.href =
+                    `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+
+                shareX.href =
+                    `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`;
+
+                shareTelegram.href =
+                    `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`;
+            }
+
+            copyNewsLink.addEventListener("click", async () => {
+                try {
+                    await navigator.clipboard.writeText(window.location.href);
+
+                    copyNewsLink.textContent = "Enlace copiado";
+                    copyLinkMessage.textContent =
+                        "El enlace de la noticia se copió correctamente.";
+
+                    setTimeout(() => {
+                        copyNewsLink.textContent = "Copiar enlace";
+                        copyLinkMessage.textContent = "";
+                    }, 2500);
+                } catch (error) {
+                    copyLinkMessage.textContent =
+                        "No fue posible copiar el enlace.";
+                    console.error(error);
+                }
+            });
+
+            if (navigator.share) {
+                nativeShareButton.addEventListener("click", async () => {
+                    try {
+                        await navigator.share({
+                            title: getNewsTitle(),
+                            text: `${getNewsTitle()} | TOKIO PANIC`,
+                            url: window.location.href
+                        });
+                    } catch (error) {
+                        if (error.name !== "AbortError") {
+                            console.error(error);
+                        }
+                    }
+                });
+            } else {
+                nativeShareButton.style.display = "none";
+            }
+
+            /*
+             * noticias-loader.js carga la noticia dinámicamente.
+             * Este observador espera hasta que aparezca el contenido.
+             */
+            const noticiaDetalle =
+                document.getElementById("noticia-detalle");
+
+            const observer = new MutationObserver(() => {
+                if (noticiaDetalle.querySelector("h1")) {
+                    configureShareButtons();
+                    observer.disconnect();
+                }
+            });
+
+            observer.observe(noticiaDetalle, {
+                childList: true,
+                subtree: true
+            });
+
+            configureShareButtons();
+        });
+    </script>
+
 </body>
 </html>
-
