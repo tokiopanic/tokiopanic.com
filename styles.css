@@ -144,11 +144,12 @@ header nav a.active::after{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url("images/hero.jpg") no-repeat center center fixed;
+    background-image: url("images/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    
+    background-attachment: scroll;
 }
-
 .container::before {
     content: '';
     position: absolute;
@@ -934,8 +935,7 @@ body.internal-page .podcast-section .podcast-item {
 
 
 /* ===== HERO FEATURE ===== */
-.hero-feature {
-    
+
 .hero-feature {
     position: relative;
     display: flex;
@@ -946,7 +946,6 @@ body.internal-page .podcast-section .podcast-item {
     text-align: left;
     padding: 2rem;
     overflow: hidden;
-}
 }
 
 .hero-content {
@@ -981,13 +980,13 @@ body.internal-page .podcast-section .podcast-item {
 }
 
 .hero-description {
-    font-size: 1.5rem;           /* Aumentado de 1.3rem */
-    font-weight: 600;             /* Añadido: semibold (600) o bold (700) */
-    color: #ffffff;              /* Blanco puro */
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
     margin-bottom: 2rem;
     line-height: 1.5;
     max-width: 650px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Sombra más fuerte */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .hero-btn {
@@ -1011,30 +1010,37 @@ body.internal-page .podcast-section .podcast-item {
     background-color: #e6c300;
 }
 
-
+/* ===========================
+   HERO MÓVIL
+=========================== */
 
 @media (max-width: 768px) {
+
     .hero-feature {
         position: relative;
         width: 100%;
 
-        /* Respaldo para WebView */
+        /* Altura */
         height: 500px;
         min-height: 500px;
-
-        /* Los navegadores compatibles usarán esta medida */
         height: clamp(500px, 70vh, 620px);
 
         padding: 0;
         overflow: hidden;
+
+        /* Ajustes para Safari */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 48% center;
+        background-attachment: scroll;
     }
 
-.hero-content {
-    position: absolute;
-    left: 20px;
-    right: 20px;
-    bottom: 100px;
-}
+    .hero-content {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 100px;
+    }
 
     .tag {
         font-size: 0.72rem;
@@ -2331,5 +2337,21 @@ background-color: #ffe44e;
         margin-top: 18px !important;
         font-size: 0.8rem !important;
         color: #666666 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .container,
+    .hero-feature {
+        background-attachment: scroll !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-feature {
+        background-position: 48% center !important;
     }
 }
