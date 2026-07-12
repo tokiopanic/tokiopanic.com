@@ -1,0 +1,1320 @@
+
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Política de privacidad | TOKIO PANIC</title>
+
+    <meta
+        name="description"
+        content="Consulta la política de privacidad de TOKIO PANIC y conoce cómo recopilamos, utilizamos y protegemos la información de nuestros visitantes."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <link
+        rel="canonical"
+        href="https://tokiopanic.com/politica-de-privacidad.html"
+    >
+
+    <meta
+        property="og:title"
+        content="Política de privacidad | TOKIO PANIC"
+    >
+
+    <meta
+        property="og:description"
+        content="Conoce cómo TOKIO PANIC recopila, utiliza y protege la información de sus visitantes."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:url"
+        content="https://tokiopanic.com/politica-de-privacidad.html"
+    >
+
+    <meta
+        property="og:site_name"
+        content="TOKIO PANIC"
+    >
+
+    <meta
+        name="theme-color"
+        content="#000000"
+    >
+
+    <!-- Hoja de estilos principal de TOKIO PANIC -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        :root {
+            --privacy-background: #0c0c0c;
+            --privacy-surface: #151515;
+            --privacy-surface-secondary: #1d1d1d;
+            --privacy-text: #f5f5f5;
+            --privacy-text-secondary: #bdbdbd;
+            --privacy-accent: #ffe44e;
+            --privacy-accent-hover: #fff07d;
+            --privacy-border: #333333;
+            --privacy-max-width: 1050px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: var(--privacy-background);
+            color: var(--privacy-text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        /*
+        El header utiliza los estilos existentes de styles.css.
+        Solo se añaden ajustes mínimos para evitar conflictos
+        con el contenido de esta página.
+        */
+
+        header {
+            position: relative;
+            z-index: 100;
+        }
+
+        .privacy-main a {
+            color: var(--privacy-accent);
+            text-decoration: none;
+        }
+
+        .privacy-main a:hover,
+        .privacy-main a:focus {
+            color: var(--privacy-accent-hover);
+            text-decoration: underline;
+        }
+
+        .privacy-main a:focus-visible {
+            outline: 3px solid var(--privacy-accent);
+            outline-offset: 4px;
+        }
+
+        .privacy-hero {
+            padding: 90px 20px 70px;
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255, 228, 78, 0.12),
+                    transparent 55%
+                ),
+                #101010;
+            border-bottom: 1px solid var(--privacy-border);
+        }
+
+        .privacy-hero-container {
+            width: min(100%, var(--privacy-max-width));
+            margin: 0 auto;
+        }
+
+        .privacy-label {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 7px 14px;
+            border-radius: 999px;
+            background-color: var(--privacy-accent);
+            color: #000000;
+            font-size: 0.78rem;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .privacy-hero h1 {
+            max-width: 850px;
+            margin: 0 0 22px;
+            color: #ffffff;
+            font-size: clamp(2.7rem, 7vw, 5.5rem);
+            font-weight: 900;
+            letter-spacing: -0.06em;
+            line-height: 0.95;
+            text-transform: uppercase;
+        }
+
+        .privacy-hero p {
+            max-width: 760px;
+            margin: 0;
+            color: var(--privacy-text-secondary);
+            font-size: 1.08rem;
+        }
+
+        .privacy-update-date {
+            display: block;
+            margin-top: 20px;
+            color: var(--privacy-accent);
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .privacy-layout {
+            width: min(
+                calc(100% - 40px),
+                var(--privacy-max-width)
+            );
+            margin: 0 auto;
+            padding: 60px 0 90px;
+            display: grid;
+            grid-template-columns: 260px minmax(0, 1fr);
+            gap: 50px;
+            align-items: start;
+        }
+
+        .privacy-index {
+            position: sticky;
+            top: 110px;
+            padding: 24px;
+            border: 1px solid var(--privacy-border);
+            border-radius: 14px;
+            background-color: var(--privacy-surface);
+        }
+
+        .privacy-index h2 {
+            margin: 0 0 16px;
+            color: #ffffff;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        .privacy-index ol {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--privacy-text-secondary);
+        }
+
+        .privacy-index li {
+            margin-bottom: 9px;
+        }
+
+        .privacy-index a {
+            color: var(--privacy-text-secondary);
+            font-size: 0.88rem;
+        }
+
+        .privacy-index a:hover,
+        .privacy-index a:focus {
+            color: var(--privacy-accent);
+        }
+
+        .privacy-content {
+            min-width: 0;
+        }
+
+        .privacy-notice {
+            margin-bottom: 38px;
+            padding: 22px;
+            border-left: 5px solid var(--privacy-accent);
+            border-radius: 0 10px 10px 0;
+            background-color: rgba(255, 228, 78, 0.08);
+        }
+
+        .privacy-notice p {
+            margin: 0;
+            color: var(--privacy-text-secondary);
+        }
+
+        .privacy-notice strong {
+            color: var(--privacy-accent);
+        }
+
+        .privacy-section {
+            margin-bottom: 48px;
+            scroll-margin-top: 120px;
+        }
+
+        .privacy-section h2 {
+            margin: 0 0 18px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--privacy-border);
+            color: #ffffff;
+            font-size: clamp(1.45rem, 3vw, 2rem);
+            line-height: 1.2;
+        }
+
+        .privacy-section h3 {
+            margin: 26px 0 12px;
+            color: #ffffff;
+            font-size: 1.15rem;
+        }
+
+        .privacy-section p {
+            margin: 0 0 16px;
+            color: var(--privacy-text-secondary);
+        }
+
+        .privacy-section ul,
+        .privacy-section ol {
+            margin: 0 0 20px 24px;
+            padding: 0;
+            color: var(--privacy-text-secondary);
+        }
+
+        .privacy-section li {
+            margin-bottom: 10px;
+            padding-left: 4px;
+        }
+
+        .privacy-section strong {
+            color: var(--privacy-text);
+        }
+
+        .privacy-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            border: 1px solid var(--privacy-border);
+            background-color: var(--privacy-surface);
+        }
+
+        .privacy-table th,
+        .privacy-table td {
+            padding: 16px;
+            border: 1px solid var(--privacy-border);
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .privacy-table th {
+            width: 30%;
+            background-color: var(--privacy-surface-secondary);
+            color: var(--privacy-accent);
+        }
+
+        .privacy-table td {
+            color: var(--privacy-text-secondary);
+        }
+
+        .privacy-contact-card {
+            margin-top: 22px;
+            padding: 26px;
+            border: 1px solid var(--privacy-border);
+            border-radius: 14px;
+            background-color: var(--privacy-surface);
+        }
+
+        .privacy-contact-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .privacy-contact-email {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 1.08rem;
+            font-weight: 800;
+            word-break: break-word;
+        }
+
+        .privacy-top-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            margin-top: 16px;
+            padding: 10px 18px;
+            border: 1px solid var(--privacy-accent);
+            border-radius: 999px;
+            color: var(--privacy-accent);
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .privacy-top-button:hover {
+            background-color: var(--privacy-accent);
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .privacy-footer {
+            padding: 45px 20px;
+            border-top: 1px solid var(--privacy-border);
+            background-color: #000000;
+            text-align: center;
+        }
+
+        .privacy-footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px 22px;
+            margin-bottom: 18px;
+        }
+
+        .privacy-footer-links a {
+            color: var(--privacy-accent);
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .privacy-footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .privacy-footer p {
+            margin: 0 0 10px;
+            color: var(--privacy-text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .privacy-footer p:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 850px) {
+            .privacy-layout {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .privacy-index {
+                position: static;
+            }
+
+            .privacy-index ol {
+                columns: 2;
+                column-gap: 30px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .privacy-hero {
+                padding: 65px 18px 50px;
+            }
+
+            .privacy-layout {
+                width: min(
+                    calc(100% - 28px),
+                    var(--privacy-max-width)
+                );
+                padding-top: 38px;
+            }
+
+            .privacy-index ol {
+                columns: 1;
+            }
+
+            .privacy-table,
+            .privacy-table tbody,
+            .privacy-table tr,
+            .privacy-table th,
+            .privacy-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .privacy-table th {
+                border-bottom: 0;
+            }
+
+            .privacy-table tr:not(:last-child) td {
+                border-bottom-width: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body id="inicio">
+
+    <header>
+        <a href="/">
+            <img
+                src="header.png"
+                alt="Logo de TOKIO PANIC"
+                class="logo"
+            />
+        </a>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li>
+                    <a href="/">INICIO</a>
+                </li>
+
+                <li>
+                    <a href="noticias.html">NOTICIAS</a>
+                </li>
+
+                <li>
+                    <a href="podcast.html">PODCAST</a>
+                </li>
+
+                <li>
+                    <a href="revista.html">REVISTA</a>
+                </li>
+
+                <li>
+                    <a href="nosotros.html">NOSOTROS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="privacy-main">
+
+        <section class="privacy-hero">
+            <div class="privacy-hero-container">
+
+                <span class="privacy-label">
+                    Información legal
+                </span>
+
+                <h1>Política de privacidad</h1>
+
+                <p>
+                    En TOKIO PANIC respetamos la privacidad de nuestros
+                    lectores, artistas, colaboradores y visitantes. En este
+                    documento explicamos qué información podemos recopilar,
+                    para qué la utilizamos y qué opciones tienen las personas
+                    respecto al tratamiento de sus datos.
+                </p>
+
+                <span class="privacy-update-date">
+                    Última actualización: 12 de julio de 2026
+                </span>
+
+            </div>
+        </section>
+
+        <div class="privacy-layout">
+
+            <aside
+                class="privacy-index"
+                aria-label="Índice de la política de privacidad"
+            >
+                <h2>Contenido</h2>
+
+                <ol>
+                    <li>
+                        <a href="#responsable">Responsable</a>
+                    </li>
+
+                    <li>
+                        <a href="#alcance">Alcance</a>
+                    </li>
+
+                    <li>
+                        <a href="#datos-recopilados">
+                            Datos recopilados
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#finalidades">Finalidades</a>
+                    </li>
+
+                    <li>
+                        <a href="#analytics">Google Analytics</a>
+                    </li>
+
+                    <li>
+                        <a href="#cookies">Cookies</a>
+                    </li>
+
+                    <li>
+                        <a href="#contenido-externo">
+                            Contenido externo
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#transferencias">Transferencias</a>
+                    </li>
+
+                    <li>
+                        <a href="#conservacion">Conservación</a>
+                    </li>
+
+                    <li>
+                        <a href="#seguridad">Seguridad</a>
+                    </li>
+
+                    <li>
+                        <a href="#derechos-arco">Derechos ARCO</a>
+                    </li>
+
+                    <li>
+                        <a href="#menores">Menores de edad</a>
+                    </li>
+
+                    <li>
+                        <a href="#enlaces">Enlaces externos</a>
+                    </li>
+
+                    <li>
+                        <a href="#cambios">
+                            Cambios a la política
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ol>
+            </aside>
+
+            <article class="privacy-content">
+
+                <div class="privacy-notice">
+                    <p>
+                        <strong>Aviso importante:</strong>
+                        al visitar
+                        <a href="https://tokiopanic.com/">
+                            tokiopanic.com
+                        </a>,
+                        navegar por sus secciones o comunicarse con TOKIO
+                        PANIC, la información correspondiente podrá ser
+                        tratada conforme a esta política de privacidad.
+                    </p>
+                </div>
+
+                <section
+                    class="privacy-section"
+                    id="responsable"
+                >
+                    <h2>1. Identidad del responsable</h2>
+
+                    <p>
+                        <strong>TOKIO PANIC</strong>, medio de comunicación
+                        digital independiente enfocado en Visual Kei, J-Rock,
+                        música japonesa y cultura relacionada para audiencias
+                        de México y Latinoamérica, es responsable del
+                        tratamiento de los datos personales recabados a través
+                        del sitio web:
+                    </p>
+
+                    <p>
+                        <a href="https://tokiopanic.com/">
+                            https://tokiopanic.com
+                        </a>
+                    </p>
+
+                    <p>
+                        Para consultas relacionadas con privacidad o
+                        protección de datos personales, puede utilizarse el
+                        siguiente correo electrónico:
+                    </p>
+
+                    <p>
+                        <a
+                            class="privacy-contact-email"
+                            href="mailto:contacto@tokiopanic.com"
+                        >
+                            contacto@tokiopanic.com
+                        </a>
+                    </p>
+                </section>
+
+                <section
+                    class="privacy-section"
+                    id="alcance"
+                >
+                    <h2>2. Alcance de esta política</h2>
+
+                    <p>
+                        Esta política se aplica a la información recopilada
+                        mediante el sitio web de TOKIO PANIC, sus formularios,
+                        enlaces de contacto, herramientas de medición,
+                        contenidos integrados y comunicaciones enviadas
+                        directamente al medio.
+                    </p>
+
+                    <p>
+                        No se aplica a sitios, aplicaciones, plataformas o
+                        servicios operados por terceros, incluso cuando sean
+                        enlazados o mostrados dentro de alguna publicación de
+                        TOKIO PANIC.
+                    </p>
+                </section>
+
+                <section
+                    class="privacy-section"
+                    id="datos-recopilados"
+                >
+                    <h2>3. Datos que podemos recopilar</h2>
+
+                    <p>
+                        TOKIO PANIC puede recopilar información de forma
+                        directa cuando una persona se comunica voluntariamente
+                        con el medio, así como cierta información técnica
+                        generada durante la navegación.
+                    </p>
+
+                    <table class="privacy-table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    Datos de contacto
+                                </th>
+
+                                <td>
+                                    Nombre, nombre artístico, dirección de
+                                    correo electrónico, usuario de redes
+                                    sociales, medio de contacto y cualquier
+                                    otro dato proporcionado voluntariamente.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    Comunicaciones
+                                </th>
+
+                                <td>
+                                    Mensajes, solicitudes, propuestas,
+                                    comunicados de prensa, respuestas de
+                                    entrevistas, archivos y demás información
+                                    enviada a TOKIO PANIC.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    Información técnica
+                                </th>
+
+                                <td>
+                                    Tipo de dispositivo, navegador, sistema
+                                    operativo, resolución de pantalla, idioma,
+                                    páginas visitadas, duración aproximada de
+                                    la sesión, fuente de acceso y eventos de
+                                    navegación.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    Ubicación aproximada
+                                </th>
+
+                                <td>
+                                    País, región o ciudad aproximada inferida
+                                    mediante la conexión a internet o
+                                    herramientas de analítica. TOKIO PANIC no
+                                    solicita la ubicación GPS precisa de sus
+                                    visitantes.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    Cookies e identificadores
+                                </th>
+
+                                <td>
+                                    Identificadores relacionados con cookies,
+                                    sesiones del navegador y herramientas de
+                                    medición de audiencia.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Datos personales sensibles</h3>
+
+                    <p>
+                        TOKIO PANIC no solicita intencionalmente datos
+                        personales sensibles, como información sobre salud,
+                        creencias religiosas, orientación sexual, origen
+                        étnico, información genética o afiliación política.
+                    </p>
+
+                    <p>
+                        Se recomienda no enviar esta clase de información
+                        mediante correos, mensajes, formularios o propuestas,
+                        salvo que resulte estrictamente necesario.
+                    </p>
+                </section>
+
+                <section
+                    class="privacy-section"
+                    id="finalidades"
+                >
+                    <h2>4. Finalidades del tratamiento</h2>
+
+                    <p>
+                        La información recopilada podrá utilizarse para:
+                    </p>
+
+                    <ul>
+                        <li>
+                            Responder mensajes, preguntas, solicitudes y
+                            propuestas de colaboración.
+                        </li>
+
+                        <li>
+                            Gestionar entrevistas, noticias, comunicados de
+                            prensa y cobertura de eventos.
+                        </li>
+
+                        <li>
+                            Mantener comunicación con artistas, bandas,
+                            representantes, agencias, promotores,
+                            colaboradores y lectores.
+                        </li>
+
+                        <li>
+                            Preparar, editar y publicar contenido periodístico
+                            o editorial autorizado.
+                        </li>
+
+                        <li>
+                            Operar, mantener y mejorar el funcionamiento del
+                            sitio web.
+                        </li>
+
+                        <li>
+                            Conocer estadísticamente cómo se utiliza el sitio
+                            y qué contenidos generan mayor interés.
+                        </li>
+
+                        <li>
+                            Detectar errores técnicos, abuso, fraude,
+                            actividades automatizadas o riesgos de seguridad.
+                        </li>
+
+                        <li>
+                            Cumplir obligaciones legales o atender
+                            requerimientos válidos de autoridades competentes.
+                        </li>
+                    </ul>
+
+                    <p>
+                        TOKIO PANIC no vende ni renta bases de datos personales
+                        de sus visitantes, entrevistados o colaboradores.
+                    </p>
+                </section>
+
+                <section
+                    class="privacy-section"
+                    id="analytics"
+                >
+                    <h2>5. Google Analytics</h2>
+
+                    <p>
+                        TOKIO PANIC utiliza
+                        <strong>Google Analytics 4</strong>
+                        para obtener estadísticas sobre el uso del sitio web,
+                        como el número aproximado de visitas, páginas
+                        consultadas, duración de sesiones, dispositivos,
+                        navegadores, ubicación aproximada y origen del tráfico.
+                    </p>
+
+                    <p>
+                        Google Analytics puede utilizar cookies,
+                        identificadores técnicos y tecnologías similares para
+                        distinguir navegadores, usuarios o sesiones.
+                    </p>
+
+                    <p>
+                        La información obtenida se utiliza principalmente de
+                        forma estadística para comprender el desempeño del
+                        sitio, mejorar la experiencia de navegación y evaluar
+                        el alcance de las publicaciones.
+                    </p>
+
+                    <p>
+                        Puede obtener más información en:
+                    </p>
+
+                    <p>
+                        <a
+                            href="https://policies.google.com/technologies/partner-sites?hl=es"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Cómo utiliza Google los datos de sitios y
+                            aplicaciones
+                        </a>
+                    </p>
+
+                    <p>
+                        <a
+                            href="https://policies.google.com/privacy?hl=es"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Política de privacidad de Google
+                        </a>
+                    </p>
+
+                    <p>
+                        <a
+                            href="https://tools.google.com/dlpage/gaoptout?hl=es"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Complemento para inhabilitar Google Analytics
+                        </a>
+                    </p>
+                </section>
+
+                <section
+                    class="privacy-section"
+                    id="cookies"
+                >
+                    <h2>6. Uso de cookies</h2>
+
+                    <p>
+                        Las cookies son pequeños archivos que un sitio puede
+                        guardar en el navegador o dispositivo de una persona.
+                        Pueden utilizarse para permitir funciones técnicas,
+                        recordar preferencias y generar estadísticas de
+                        navegación.
+                    </p>
+
+                    <p>
+                        TOKIO PANIC puede utilizar:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>Cookies necesarias:</strong>
+                            permiten el funcionamiento básico, la seguridad o
+                            la correcta presentación del sitio.
+                        </li>
+
+                        <li>
+                            <strong>Cookies de analítica:</strong>
+                            ayudan a conocer el número aproximado de visitas,
+                            sesiones, páginas consultadas y comportamiento
+                            general de navegación.
+                        </li>
+
+                        <li>
+                            <strong>Cookies de terceros:</strong>
+                            pueden ser instaladas por reproductores, videos,
+                            música, publicaciones sociales u otros servicios
+                            externos.
+                        </li>
+                    </ul>
+
+                    <p>
+                        El visitante puede eliminar, bloquear o restringir las
+                        cookies desde la configuración de su navegador. Al
+                        desactivarlas, algunas funciones o contenidos
+                        integrados podrían no funcionar correctamente.
+                    </p>
+                </section>
+
+                <section
+                    class="privacy-section"
+                    id="contenido-externo"
+                >
+                    <h2>7. Contenidos y servicios de terceros</h2>
+
+                    <p>
+                        Algunas páginas de TOKIO PANIC pueden incluir:
+                    </p>
+
+                    <ul>
+                        <li>Videos y reproductores multimedia.</li>
+                        <li>Reproductores de música o radio.</li>
+                        <li>Publicaciones o perfiles de redes sociales.</li>
+                        <li>Plataformas de streaming.</li>
+                        <li>
+                            Enlaces de artistas, bandas, promotores o agencias.
+                        </li>
+                        <li>Botones para compartir publicaciones.</li>
+                    </ul>
+
+                    <p>
+                        Al cargar o interactuar con estos contenidos, el
+                        proveedor correspondiente puede recopilar información
+                        técnica, utilizar cookies o registrar actividad
+                        conforme a sus propias políticas.
+                    </p>
+
+                    <p>
+                        TOKIO PANIC no controla directamente las tecnologías,
+                        prácticas de privacidad ni bases de datos administradas
+                        por estos terceros.
+                    </p>
+                </section>
+
+                <section
+                    class="privacy-section"
+                    id="transferencias"
+                >
+                    <h2>8. Transferencias y proveedores</h2>
+
+                    <p>
+                        Para operar el sitio, TOKIO PANIC puede apoyarse en
+                        proveedores de alojamiento web, analítica, correo
+                        electrónico, infraestructura tecnológica, seguridad,
+                        distribución de contenido y otros servicios digitales.
+                    </p>
+
+                    <p>
+                        Estos proveedores pueden procesar cierta información
+                        técnica o de contacto únicamente para prestar sus
+                        servicios, conforme a sus condiciones y políticas.
+                    </p>
+
+                    <p>
+                        Algunos proveedores pueden encontrarse fuera de México,
+                        por lo que la información podría ser procesada o
+                        almacenada en otros países.
+                    </p>
+
+                    <p>
+                        La información también podrá comunicarse cuando:
+                    </p>
+
+                    <ul>
+                        <li>
+                            Sea necesario para atender una solicitud realizada
+                            por la propia persona.
+                        </li>
+
+                        <li>
+                            La persona haya autorizado expresamente su
+                            publicación o comunicación.
+                        </li>
+
+                        <li>
+                            Exista una obligación legal o un requerimiento
+                            válido de una autoridad competente.
+                        </li>
+
+                        <li>
+                            Sea necesario para proteger derechos, seguridad o
+                            integridad de TOKIO PANIC, sus colaboradores,
+                            visitantes o terceros.
+                        </li>
+                    </ul>
+                </section>
+
+                <section
+                    class="privacy-section"
+                    id="conservacion"
+                >
+                    <h2>9. Conservación de la información</h2>
+
+                    <p>
+                        TOKIO PANIC conservará la información durante el tiempo
+                        razonablemente necesario para cumplir las finalidades
+                        descritas en esta política, atender comunicaciones,
+                        mantener registros editoriales, resolver controversias
+                        o cumplir obligaciones legales.
+                    </p>
+
+                    <p>
+                        Las respuestas de entrevistas, comunicados, fotografías
+                        y materiales entregados para publicación podrán
+                        conservarse mientras formen parte del archivo
+                        periodístico o histórico de TOKIO PANIC.
+                    </p>
+
+                    <p>
+                        Cuando la información deje de ser necesaria y no exista
+                        una razón legítima para conservarla, podrá ser
+                        eliminada, anonimizada o bloqueada.
+                    </p>
+                </section>
+
+                <section
+                    class="privacy-section"
+                    id="seguridad"
+                >
+                    <h2>10. Medidas de seguridad</h2>
+
+                    <p>
+                        TOKIO PANIC adopta medidas administrativas y técnicas
+                        razonables para proteger la información contra acceso,
+                        uso, modificación, pérdida, divulgación o destrucción
+                        no autorizada.
+                    </p>
+
+                    <p>
+                        Sin embargo, ningún sistema de transmisión o
+                        almacenamiento de información por internet puede
+                        garantizar una seguridad absoluta.
+                    </p>
+                </section>
+
+                <section
+                    class="privacy-section"
+                    id="derechos-arco"
+                >
+                    <h2>11. Derechos ARCO</h2>
+
+                    <p>
+                        Las personas titulares de datos personales pueden
+                        solicitar el ejercicio de sus derechos de:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>Acceso:</strong>
+                            conocer qué datos conserva TOKIO PANIC y cómo son
+                            utilizados.
+                        </li>
+
+                        <li>
+                            <strong>Rectificación:</strong>
+                            solicitar la corrección o actualización de datos
+                            incorrectos o incompletos.
+                        </li>
+
+                        <li>
+                            <strong>Cancelación:</strong>
+                            solicitar la eliminación de los datos cuando
+                            resulte legalmente procedente.
+                        </li>
+
+                        <li>
+                            <strong>Oposición:</strong>
+                            solicitar que los datos no sean utilizados para
+                            determinadas finalidades.
+                        </li>
+                    </ul>
+
+                    <p>
+                        También puede solicitarse la revocación del
+                        consentimiento previamente otorgado o la limitación
+                        del uso y divulgación de los datos personales.
+                    </p>
+
+                    <h3>Cómo presentar una solicitud</h3>
+
+                    <p>
+                        La solicitud deberá enviarse a:
+                    </p>
+
+                    <p>
+                        <a
+                            class="privacy-contact-email"
+                            href="mailto:contacto@tokiopanic.com?subject=Solicitud%20de%20derechos%20ARCO"
+                        >
+                            contacto@tokiopanic.com
+                        </a>
+                    </p>
+
+                    <p>
+                        Se recomienda utilizar el asunto:
+                        <strong>“Solicitud de derechos ARCO”</strong>
+                        e incluir:
+                    </p>
+
+                    <ol>
+                        <li>Nombre de la persona titular.</li>
+
+                        <li>
+                            Medio para recibir comunicaciones relacionadas con
+                            la solicitud.
+                        </li>
+
+                        <li>
+                            Descripción clara del derecho que desea ejercer.
+                        </li>
+
+                        <li>
+                            Identificación de los datos o comunicaciones
+                            relacionadas.
+                        </li>
+
+                        <li>
+                            Información que permita localizar los datos
+                            correspondientes.
+                        </li>
+
+                        <li>
+                            Cuando resulte necesario, documentación para
+                            acreditar la identidad o representación legal.
+                        </li>
+                    </ol>
+
+                    <p>
+                        TOKIO PANIC podrá solicitar información adicional
+                        únicamente cuando sea necesaria para verificar la
+                        identidad, localizar los datos o atender correctamente
+                        la solicitud.
+                    </p>
+                </section>
+
+                <section
+                    class="privacy-section"
+                    id="menores"
+                >
+                    <h2>12. Privacidad de menores de edad</h2>
+
+                    <p>
+                        El contenido de TOKIO PANIC está disponible para una
+                        audiencia general, pero el sitio no está diseñado para
+                        recopilar intencionalmente datos personales de niñas,
+                        niños o adolescentes.
+                    </p>
+
+                    <p>
+                        Las personas menores de edad deben contar con la
+                        autorización y supervisión de su madre, padre, tutor o
+                        representante legal antes de enviar información
+                        personal, participar en entrevistas o comunicarse con
+                        TOKIO PANIC.
+                    </p>
+                </section>
+
+                <section
+                    class="privacy-section"
+                    id="enlaces"
+                >
+                    <h2>13. Enlaces externos</h2>
+
+                    <p>
+                        Las publicaciones de TOKIO PANIC pueden contener
+                        enlaces a páginas de artistas, redes sociales,
+                        plataformas de venta de boletos, servicios musicales,
+                        medios de comunicación y otros sitios externos.
+                    </p>
+
+                    <p>
+                        TOKIO PANIC no es responsable del contenido, seguridad,
+                        disponibilidad ni prácticas de privacidad de estos
+                        sitios. Se recomienda revisar la política de privacidad
+                        de cada plataforma antes de proporcionar información.
+                    </p>
+                </section>
+
+                <section
+                    class="privacy-section"
+                    id="cambios"
+                >
+                    <h2>14. Cambios a esta política</h2>
+
+                    <p>
+                        TOKIO PANIC puede modificar esta política para reflejar
+                        cambios en sus servicios, herramientas, prácticas
+                        editoriales, tecnologías utilizadas o disposiciones
+                        legales aplicables.
+                    </p>
+
+                    <p>
+                        Las modificaciones se publicarán en esta misma página y
+                        se indicará la fecha de la actualización más reciente.
+                    </p>
+                </section>
+
+                <section
+                    class="privacy-section"
+                    id="contacto"
+                >
+                    <h2>15. Contacto</h2>
+
+                    <p>
+                        Para preguntas, comentarios o solicitudes relacionadas
+                        con esta política o con el tratamiento de datos
+                        personales, puede contactarse a TOKIO PANIC mediante:
+                    </p>
+
+                    <div class="privacy-contact-card">
+                        <p>
+                            <strong>Responsable:</strong>
+                            TOKIO PANIC
+                        </p>
+
+                        <p>
+                            <strong>Sitio web:</strong>
+                            <a href="https://tokiopanic.com/">
+                                tokiopanic.com
+                            </a>
+                        </p>
+
+                        <p>
+                            <strong>Correo electrónico:</strong><br>
+
+                            <a
+                                class="privacy-contact-email"
+                                href="mailto:contacto@tokiopanic.com"
+                            >
+                                contacto@tokiopanic.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <a
+                        class="privacy-top-button"
+                        href="#inicio"
+                    >
+                        Volver al inicio
+                    </a>
+                </section>
+
+            </article>
+        </div>
+
+    </main>
+
+    <footer class="privacy-footer">
+
+        <nav
+            class="privacy-footer-links"
+            aria-label="Enlaces del sitio"
+        >
+            <a href="/">Inicio</a>
+
+            <a href="noticias.html">Noticias</a>
+
+            <a href="podcast.html">Podcast</a>
+
+            <a href="revista.html">Revista</a>
+
+            <a href="nosotros.html">Nosotros</a>
+
+            <a
+                href="politica-de-privacidad.html"
+                aria-current="page"
+            >
+                Política de privacidad
+            </a>
+        </nav>
+
+        <p>
+            © <span id="current-year">2026</span> TOKIO PANIC.
+            Todos los derechos reservados.
+        </p>
+
+        <p>J-Rock y Visual Kei 24/7.</p>
+
+    </footer>
+
+    <script>
+        const currentYear =
+            document.getElementById("current-year");
+
+        if (currentYear) {
+            currentYear.textContent =
+                new Date().getFullYear();
+        }
+    </script>
+
+</body>
+</html>
+
