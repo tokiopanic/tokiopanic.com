@@ -2355,3 +2355,13 @@ background-color: #ffe44e;
         background-position: 48% center !important;
     }
 }
+
+.noticia-contenido ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.noticia-contenido ul li {
+    margin-bottom: 0.25rem;
+}
