@@ -2365,3 +2365,118 @@ background-color: #ffe44e;
 .noticia-contenido ul li {
     margin-bottom: 0.25rem;
 }
+
+/* ===== BANNER REVISTA ===== */
+
+.revista-banner{
+    width:100%;
+    background:#f8d557;
+    overflow:hidden;
+}
+
+.revista-link{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    text-decoration:none;
+    color:#000;
+    min-height:85px;
+    font-family: 'ImpactCustom', Impact, sans-serif;
+}
+
+.revista-left{
+    background:#fff;
+    padding:0 4rem;
+    height:85px;
+    display:flex;
+    align-items:center;
+    font-size:3.4rem;
+    line-height:1;
+    position:relative;
+    white-space:nowrap;
+}
+
+.revista-left::after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:-42px;
+    width:0;
+    height:0;
+    border-top:85px solid #fff;
+    border-right:42px solid transparent;
+}
+
+.revista-center{
+    flex:1;
+    text-align:center;
+    font-size:3.3rem;
+    line-height:1;
+    padding:0 2rem;
+    white-space:nowrap;
+}
+
+.revista-right{
+    padding:0 2.5rem;
+    font-size:2.2rem;
+    white-space:nowrap;
+    transition:.2s;
+}
+
+.revista-link:hover .revista-right{
+    transform:translateX(6px);
+}
+
+@media (max-width: 768px) {
+
+    .revista-banner {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .revista-link {
+        display: grid;
+        grid-template-columns: 35% 42% 23%;
+        align-items: center;
+        width: 100%;
+        min-height: 65px;
+    }
+
+    .revista-left {
+        width: auto;
+        height: 65px;
+        padding: 0 0.7rem;
+        justify-content: center;
+        font-size: 1.05rem;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .revista-left::after {
+        display: block;
+        right: -22px;
+        border-top: 65px solid #fff;
+        border-right: 22px solid transparent;
+    }
+
+    .revista-center {
+        padding: 0 0.35rem 0 1rem;
+        font-size: 0.95rem;
+        line-height: 1.05;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .revista-right {
+        padding: 0 0.4rem;
+        font-size: 0.8rem;
+        line-height: 1;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .revista-link:hover .revista-right {
+        transform: none;
+    }
+}
