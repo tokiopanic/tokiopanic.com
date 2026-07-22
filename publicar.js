@@ -16,7 +16,7 @@ const CONFIG = {
         "/noticias.html",
         "/podcast.html",
         "/revista.html",
-        "/nosotros.html"
+        "/nosotros.html",
     ]
 };
 
@@ -372,7 +372,6 @@ function generarHtmlNoticia(noticia) {
 ${JSON.stringify(datosEstructurados, null, 2).replace(/</g, "\\u003c")}
     </script>
 </head>
-
 <body class="internal-page">
 
     <div class="internal-container">
@@ -386,44 +385,49 @@ ${JSON.stringify(datosEstructurados, null, 2).replace(/</g, "\\u003c")}
                 >
             </a>
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href="/index.html">
-                            INICIO
-                        </a>
-                    </li>
+<nav>
+    <ul>
+        <li>
+            <a href="/index.html">
+                INICIO
+            </a>
+        </li>
 
-                    <li>
-                        <a
-                            href="/noticias.html"
-                            class="active"
+        <li>
+            <a href="/noticias.html" class="active">
+                NOTICIAS
+            </a>
+        </li>
+
+        <li>
+            <a href="/podcast.html">
+                PODCAST
+            </a>
+        </li>
+
+        <li>
+            <a href="/revista.html">
+                REVISTA
+            </a>
+        </li>
+
+        <li>
+            <a href="/nosotros.html">
+                NOSOTROS
+            </a>
+        </li>
+
+        <li><a href="https://patreon.com/tokiopanic"
+                        class="patreon-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         >
-                            NOTICIAS
+                        PATREON
                         </a>
-                    </li>
-
-                    <li>
-                        <a href="/podcast.html">
-                            PODCAST
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/revista.html">
-                            REVISTA
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/nosotros.html">
-                            NOSOTROS
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
+                        </li>
+    </ul>
+</nav>
+</header>
         <main class="noticia-detalle">
 
             <h1>${titulo}</h1>

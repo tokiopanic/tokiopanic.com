@@ -626,6 +626,7 @@ iframe {
     transform: translateY(-2px);
 }
 
+
 /* =========================================
    TABLETS
 ========================================= */
@@ -3151,4 +3152,29 @@ body.noticias-page .back-link {
     .copy-link-message:empty {
         display: none;
     }
+}
+
+nav ul li a.patreon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.35rem 0.9rem;
+
+    border: 2px solid #ffe44e;
+    border-radius: 999px;
+
+    color: #ffe44e;
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+}
+
+nav ul li a.patreon-link:hover {
+    background: #ffe44e;
+    color: #000;
+}
+
+nav ul li a.patreon-link::after {
+    content: none;
 }
