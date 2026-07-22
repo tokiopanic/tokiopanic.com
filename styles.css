@@ -1352,8 +1352,8 @@ body.internal-page .podcast-section .podcast-item {
     .radio-floating {
         position: fixed;
         bottom: 20px;
-        right: 20px;            /* ← Ya está */
-        left: auto !important;  /* ← AÑADE ESTO para anular el left:0 de móvil */
+        right: 20px;            
+        left: auto !important;  
         width: 340px;
         max-width: calc(100% - 40px);
         z-index: 9999;
@@ -3178,3 +3178,209 @@ nav ul li a.patreon-link:hover {
 nav ul li a.patreon-link::after {
     content: none;
 }
+
+/* =========================================
+   MENÚ MÓVIL EN UNA SOLA FILA
+   No modifica la versión de escritorio
+========================================= */
+
+@media (max-width: 768px) {
+
+    header,
+    body.internal-page header {
+        padding: 1rem 0.35rem;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+        gap: 0.1rem;
+        padding: 0.25rem 0;
+        margin: 0;
+    }
+
+    header nav ul li {
+        flex: 0 0 auto;
+    }
+
+    header nav ul li a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0.3rem 0.35rem;
+        font-size: 0.64rem;
+        letter-spacing: 0;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 400px) {
+
+    header nav ul {
+        gap: 0;
+    }
+
+    header nav ul li a {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        font-size: 0.6rem;
+    }
+}
+
+/* =========================================
+   TOKIO PANIC RADIO — PASTILLA FLOTANTE MÓVIL
+========================================= */
+
+@media (max-width: 768px) {
+
+    .radio-floating {
+        position: fixed;
+
+        left: auto;
+        right: 12px;
+        bottom: 18px;
+
+        width: auto;
+        max-width: calc(100vw - 24px);
+
+        background: transparent;
+        border-radius: 999px;
+        box-shadow: none;
+        overflow: visible;
+
+        z-index: 9999;
+    }
+
+    .radio-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: auto;
+        min-height: 48px;
+
+        padding: 0.7rem 1rem;
+
+        background-color: #ffe44e;
+        color: #000;
+
+        border: none;
+        border-radius: 999px;
+
+        box-shadow: 0 5px 18px rgba(0, 0, 0, 0.28);
+
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    .radio-live {
+        color: #000;
+        font-size: 0.78rem;
+        font-weight: 500;
+        opacity: 1;
+        
+    }
+
+    .radio-live::after {
+        content: " -";
+    }
+
+    .radio-text {
+        margin-left: 0.25rem;
+        font-weight: bold;
+        color: #000;
+        font-size: 0.78rem;
+        font-weight: 500;
+        
+    }
+
+    /* Oculta la flecha de la barra */
+    .radio-toggle {
+        display: none;
+    }
+
+    /* El reproductor se despliega encima de la pastilla */
+    .radio-expand {
+        position: absolute;
+
+        right: 0;
+        bottom: calc(100% + 10px);
+
+        width: min(350px, calc(100vw - 24px));
+        max-height: 0;
+
+        background-color: #000;
+        border-radius: 12px;
+
+        overflow: hidden;
+
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+
+        transition: max-height 0.35s ease;
+    }
+
+    .radio-floating.active .radio-expand {
+        max-height: 320px;
+    }
+
+    .radio-iframe,
+    .history-iframe {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+/* =========================================
+   RADIO MÓVIL — AJUSTE HORIZONTAL
+========================================= */
+
+@media (max-width: 768px) and (orientation: landscape) {
+
+    .radio-floating {
+        right: 12px;
+        bottom: 12px;
+    }
+
+    .radio-bar {
+        min-height: 42px;
+        padding: 0.55rem 0.9rem;
+    }
+
+    .radio-live,
+    .radio-text {
+        font-size: 0.72rem;
+        font-weight: bold;
+    }
+
+    .radio-expand {
+        bottom: calc(100% + 8px);
+
+        width: min(440px, calc(100vw - 24px));
+        max-height: calc(100vh - 78px);
+
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .radio-floating.active .radio-expand {
+        max-height: calc(100vh - 78px);
+    }
+
+    .radio-iframe {
+        height: 110px;
+    }
+
+    .history-iframe {
+        height: 150px;
+    }
+}
+
