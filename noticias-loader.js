@@ -60,6 +60,7 @@ async function cargarNoticias() {
          */
         if (contenedorNoticiasIndex) {
             await cargarNoticiasIndex(8);
+            await cargarPatreonIndex();
             return;
         }
 
@@ -955,6 +956,136 @@ function escapeHtml(text) {
     return div.innerHTML;
 }
 
+/* ==================================================
+   PATREON — EXCLUSIVO
+================================================== */
+
+async function cargarPatreonIndex() {
+    const contenedorPatreon =
+        document.getElementById("lista-patreon-index");
+
+    if (!contenedorPatreon) {
+        return;
+    }
+
+    try {
+        const respuesta =
+            await fetch("patreon.json");
+
+        if (!respuesta.ok) {
+            throw new Error(
+                "No se pudo cargar patreon.json"
+            );
+        }
+
+        const publicaciones =
+            await respuesta.json();
+
+        if (
+            !Array.isArray(publicaciones) ||
+            publicaciones.length === 0
+        ) {
+            contenedorPatreon.innerHTML = `
+                <p class="no-news">
+                    Próximamente contenido exclusivo.
+                </p>
+            `;
+
+            return;
+        }
+
+        const publicacionesOrdenadas =
+            [...publicaciones].sort(
+                (a, b) =>
+                    Number(b.id || 0) -
+                    Number(a.id || 0)
+            );
+
+        const publicacionesHTML =
+            publicacionesOrdenadas
+                .map(publicacion => {
+
+                    const titulo =
+                        String(publicacion.titulo || "");
+
+                    const resumen =
+                        String(publicacion.resumen || "");
+
+                    const imagen =
+                        publicacion.imagen ||
+                        "images/placeholder.jpg";
+
+                    const url =
+                        publicacion.url || "#";
+
+                    const resumenCorto =
+                        resumen.substring(0, 100);
+
+                    const puntosSuspensivos =
+                        resumen.length > 100
+                            ? "..."
+                            : "";
+
+                    return `
+                        <article class="news-card patreon-card">
+
+                            <img
+                                src="${imagen}"
+                                alt="${escapeHtml(titulo)}"
+                                class="news-card-image"
+                                loading="lazy"
+                                decoding="async"
+                                width="600"
+                                height="400"
+                                onerror="this.onerror=null; this.src='images/placeholder.jpg';"
+                            >
+
+                            <div class="news-card-content">
+
+                                <h3 class="news-card-title">
+                                    ${escapeHtml(titulo)}
+                                </h3>
+
+                                <p class="news-card-date">
+                                    ${publicacion.fecha || ""}
+                                </p>
+
+                                <p class="news-card-summary">
+                                    ${escapeHtml(resumenCorto)}${puntosSuspensivos}
+                                </p>
+
+                                <a
+                                    href="${url}"
+                                    class="news-card-link patreon-card-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Ver en Patreon
+                                </a>
+
+                            </div>
+
+                        </article>
+                    `;
+                })
+                .join("");
+
+        contenedorPatreon.innerHTML =
+            publicacionesHTML;
+
+    } catch (error) {
+        console.error(
+            "Error cargando publicaciones de Patreon:",
+            error
+        );
+
+        contenedorPatreon.innerHTML = `
+            <p class="no-news">
+                No se pudo cargar el contenido de Patreon.
+            </p>
+        `;
+    }
+}
 
 /* ==================================================
    INICIAR
@@ -964,3 +1095,4 @@ document.addEventListener(
     "DOMContentLoaded",
     cargarNoticias
 );
+

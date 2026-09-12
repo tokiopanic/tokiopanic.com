@@ -20,10 +20,10 @@ body {
 
 /* ===== TIPOGRAFÍAS PERSONALIZADAS ===== */
 @font-face {
-    font-family: "Impact";
-    src: url("impact.woff2") format("woff2"),
-         url("impact.woff") format("woff"),
-         url("impact.ttf") format("truetype");
+    font-family: "Anton";
+    src: url("Anton.woff2") format("woff2"),
+         url("Anton.woff") format("woff"),
+         url("Anton.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -190,7 +190,7 @@ iframe {
 
 /* ===== TÍTULOS ===== */
 .main-title {
-    font-family: "Impact", "Arial Black", sans-serif;
+    font-family: "Anton", "Arial Black", sans-serif;
     font-size: 3.5rem;
     font-weight: 800;
     line-height: 1.4;
@@ -221,7 +221,7 @@ iframe {
 }
 
 .history h3 {
-    font-family: "Impact", "Arial Black", sans-serif;
+    font-family: "Anton", "Arial Black", sans-serif;
     font-size: 1.5rem;
     color: #ffe44e;
     text-align: center;
@@ -293,7 +293,7 @@ iframe {
 }
 
 .news-title {
-    font-family: "Impact", "Arial Black", sans-serif;
+    font-family: "Anton", "Arial Black", sans-serif;
     font-size: 2.8rem;
     color: #ffe44e;
     margin-bottom: 3rem;
@@ -714,7 +714,7 @@ body.internal-page .page-title {
     padding-bottom: 1rem;
 
     color: #000;
-    font-family: "Impact", "Arial Black", sans-serif;
+    font-family: "Anton", "Arial Black", sans-serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: normal;
     line-height: 1;
@@ -743,7 +743,7 @@ body.internal-page .page-title::after {
 }
 
 .podcast-title {
-    font-family: "Impact", sans-serif;
+    font-family: "Anton", sans-serif;
     font-size: 2.5rem;
     color: #000;
     margin-bottom: 3rem;
@@ -862,7 +862,7 @@ body.internal-page .page-title::after {
 
 /* TÍTULO - Tamaño base (móvil) */
 .hero-podcast-title {
-    font-family: "Impact", "Arial Black", sans-serif;
+    font-family: "Anton", "Arial Black", sans-serif;
     font-size: 2.5rem;
     color: #ffe44e;
     margin-bottom: 1rem;
@@ -961,7 +961,7 @@ body.internal-page .page-title::after {
 }
 
 .episodios-title {
-    font-family: "Impact", "Arial Black", sans-serif;
+    font-family: "Anton", "Arial Black", sans-serif;
     font-size: 2rem;
     color: #000000;
     text-align: center;
@@ -1190,7 +1190,7 @@ body.internal-page .podcast-section .podcast-item {
 }
 
 .hero-title {
-    font-family: "Montserrat", "Arial Black", Impact, sans-serif;
+    font-family: "Montserrat", "Arial Black", Anton, sans-serif;
     font-size: clamp(2.2rem, 4.5vw + 0.5rem, 5rem);
     line-height: 0.95;
     font-weight: 900;
@@ -2024,7 +2024,7 @@ body.internal-page main {
 }
 
 .page-title {
-    font-family: "Impact", "Arial Black", sans-serif;
+    font-family: "Anton", "Arial Black", sans-serif;
     font-size: 2.8rem;
     color: #000000;
     text-align: center;
@@ -2218,7 +2218,7 @@ body.internal-page main {
 
 /* Etiqueta "Episodio reciente" - misma fuente que news-title pero negra */
 .episodio-reciente-tag {
-    font-family: "Impact", "Arial Black", sans-serif;
+    font-family: "Anton", "Arial Black", sans-serif;
     font-size: 2.8rem;
     color: #ffe44e;
     text-align: center;
@@ -2285,7 +2285,7 @@ body.internal-page main {
 }
 
 .hero-revista-title {
-    font-family: "Impact", "Arial Black", sans-serif;
+    font-family: "Anton", "Arial Black", sans-serif;
     font-size: 4rem;
     color: #ffe44e;
     margin-bottom: 1rem;
@@ -2306,7 +2306,7 @@ body.internal-page main {
 }
 
 .edicion-titulo {
-    font-family: "Impact", "Arial Black", sans-serif;
+    font-family: "Anton", "Arial Black", sans-serif;
     font-size: 2rem;
     color: #000000;
     text-align: center;
@@ -2933,7 +2933,7 @@ background-color: #ffe44e;
     text-decoration:none;
     color:#000;
     min-height:85px;
-    font-family: 'ImpactCustom', Impact, sans-serif;
+    font-family: 'AntonCustom', Anton, sans-serif;
 }
 
 .revista-left {
@@ -3226,3 +3226,76 @@ nav ul li a.patreon-link::after {
 }
 
 
+/* =========================================
+   SECCIÓN EXCLUSIVO EN PATREON
+========================================= */
+
+.patreon-section {
+    width: 100%;
+    background-color: #fff;       /* Fondo blanco */
+    padding: 4rem 2rem;
+    border-top: none;              /* Sin línea superior */
+}
+
+.patreon-title {
+    font-family: "Anton", "Arial Black", sans-serif;
+    font-size: 2.8rem;
+    color: #000;                    /* Título en negro */
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 3px solid #ffe44e; /* Mantenemos la línea amarilla debajo del título */
+    width: 100%;
+    padding-bottom: 0.5rem;
+}
+
+/* Ajustes de tarjetas sobre fondo blanco */
+.patreon-card {
+    border: 2px solid #ffe44e;
+    background-color: #000;
+}
+
+.patreon-card:hover {
+    border-color: #000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Título de la tarjeta en negro para mejor contraste */
+.patreon-card .news-card-title {
+    color: #ffe44e;
+}
+
+/* Resumen y fecha en gris oscuro */
+.patreon-card .news-card-date {
+    color: #666;
+}
+
+.patreon-card .news-card-summary {
+    color: #ffffff;
+}
+
+/* Botón sigue en amarillo con texto negro */
+.patreon-card-link {
+    background-color: #ffe44e;
+    color: #000;
+}
+
+.patreon-card-link:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .patreon-section {
+        padding: 2rem 1rem;
+    }
+
+    .patreon-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+}

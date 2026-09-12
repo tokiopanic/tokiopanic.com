@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "titulo": "Estas son nuestras próximas entrevistas programadas a artistas",
+        "fecha": "2026-07-07",
+        "resumen": "Contenido exclusivo para nuestros suscriptopres de Patreon.",
+        "imagen": "images/patreon/patreon1.webp",
+        "url": "https://www.patreon.com/TOKIOPANIC/posts/estas-son-166026208?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+    },
+    {
+        "id": 2,
+        "titulo": "Esta banda japonesa viene de gira a México y ya pudimos entrevistarla!",
+        "fecha": "2026-07-27",
+        "resumen": "Contenido exclusivo para nuestros suscriptopres de Patreon.",
+        "imagen": "images/patreon/patreon2.webp",
+        "url": "https://www.patreon.com/TOKIOPANIC/posts/esta-banda-viene-167838898?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+    }
+
+]
