@@ -1744,6 +1744,9 @@ body.internal-page main {
 
     margin: 0 auto 0.75rem;
 
+    font-family: "Anton", "Arial Black", sans-serif;
+    font-weight: normal;  /* Anton no tiene negrita, se ve mejor sin ella */
+
     color: #111;
     font-size: clamp(2rem, 3.5vw, 3.3rem);
     font-weight: 800;
