@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             description.textContent = noticia.resumen || '';
             link.href = `noticias/${slug}.html`;
             link.textContent = 'Leer ahora';
-
+            content.classList.add('is-ready');
             if (restartTimer) startTimer();
         }
 

@@ -144,7 +144,6 @@ header nav a.active::after{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url("images/hero.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1170,8 +1169,13 @@ body.internal-page .podcast-section .podcast-item {
 }
 
 /* Carrusel de noticias destacadas. La imagen fija anterior permanece como respaldo sin JavaScript. */
-.hero-feature {
-    background: url("images/hero.jpg") no-repeat center center / cover;
+.hero-content {
+  opacity: 0;
+}
+
+.hero-content.is-ready {
+  opacity: 1;
+  transition: opacity 0.25s ease;
 }
 
 .hero-slides {
