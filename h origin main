@@ -1,0 +1,10 @@
+[33mcommit ae2a2176c976a675440538deeb2bad2357d146af[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: tokiopanic <josue.takanori@gmail.com>
+Date:   Thu Sep 17 16:49:42 2026 -0600
+
+    index y banner principal modificado
+
+ noticias-paginas/metadata.json | 2 [32m+[m[31m-[m
+ noticias-paginas/pagina-1.json | 6 [31m------[m
+ noticias-paginas/pagina-2.json | 2 [31m--[m
+ 3 files changed, 1 insertion(+), 9 deletions(-)
