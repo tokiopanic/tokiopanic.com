@@ -1,0 +1,39 @@
+{
+  "noticias": [
+    {
+    "ordenDestacada": 1,
+    "etiquetaPortada": "ENTREVISTA EXCLUSIVA",
+    "slug": "entrevista-harenuki-banda-de-jazz-rock-japonesa",
+    "titulo": "Una conversación profunda con harenuki",
+    "resumen": "Desde su identidad anónima hasta su constante experimentación entre el jazz, el rock y los sonidos más extremos, conversamos con harenuki sobre la libertad detrás de su música y el mensaje que tienen para sus oyentes en Latinoamérica.",
+    "imagen": "images/portada-harenuki.webp"
+    },
+    
+    {
+    "ordenDestacada": 2,
+    "etiquetaPortada": "NOTICIA DESTACADA",
+    "slug": "la-banda-japonesa-scandal-anuncia-su-separacion",
+    "titulo": "SCANDAL anuncia su separación tras 20 años de carrera",
+    "resumen": "El grupo ofrecerá una gira por las 47 prefecturas de Japón antes de su concierto final el 21 de agosto de 2027 en Yokohama Arena.",
+    "imagen": "images/portada-scandal.webp"
+     },
+    {
+    "ordenDestacada": 3,
+    "etiquetaPortada": "ENTREVISTA EXCLUSIVA",
+    "slug": "shihori-entrevista-album-escalation",
+    "titulo": "Shihori presenta \"ESCALATION\": Un nuevo capítulo en su carrera",
+    "resumen": "Tras mudarse a Estados Unidos en 2018, Shihori comenzó una nueva etapa artística marcada por la búsqueda de su propia identidad y libertad creativa.",
+    "imagen": "images/portada-shihori.webp"
+    },
+
+    {
+    "id": 4,
+    "etiquetaPortada": "NOTICIA DESTACADA",
+    "slug": "mass-of-the-fermenting-dregs-tour-latinoamerica-2027",
+    "titulo": "MASS OF THE FERMENTING DREGS anuncia gira por Latinoamérica en 2027",
+    "resumen": "La banda japonesa llevará su nuevo álbum a México, Chile y Brasil como parte de una extensa gira internacional que recorrerá 26 países.",
+    "imagen": "images/portada-mass.webp"
+    }
+      ]
+}
+    
