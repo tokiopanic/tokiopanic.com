@@ -36,30 +36,45 @@
             </header>
 
 <!-- HERO DE REVISTA -->
-<div class="hero-revista">
-    <div class="hero-revista-content">
-        <span class="tag-revista">REVISTA DIGITAL</span>
-        <h1 class="hero-revista-title">REVISTA TOKIO PANIC</h1>
-        <p class="hero-revista-description">
-            Una recopilación de las entrevistas más profundas realizadas por TOKIO PANIC,<br>
-            el análisis de la escena y las voces que mueven el visual kei.
-        </p>
-    </div>
-</div>
+<main>
+    <section class="hero-revista" aria-labelledby="revista-title">
+        <div class="hero-revista-content">
+            <span class="tag-revista">REVISTA DIGITAL · VOL. 02</span>
+            <p class="hero-revista-kicker">TOKIO PANIC PRESENTA</p>
+            <h1 id="revista-title" class="hero-revista-title">NOCTURNAL BLOODLUST</h1>
+            <p class="hero-revista-description">
+                La banda está lista para dar un nuevo paso en su trayectoria con su primera gira por Latinoamérica, que incluirá un esperado debut en México este 16 de septiembre.
+            </p>
+        </div>
+        <p class="hero-revista-issue">JUNIO—JULIO<br><span>2026</span></p>
+    </section>
 
-<!-- EDICIÓN ACTUAL -->
-<section class="edicion-actual">
-    <h2 class="edicion-titulo">EDICIÓN JUNIO - JULIO 2026</h2>
-    
-    <div class="edicion-grid">
-        <!-- Portada -->
-        <div class="edicion-portada">
-            <img src="images/revista2.webp" alt="Revista TOKIO PANIC" class="portada-img">
-            <a href="REVISTA TOKIO PANIC 2_(junio-julio).pdf" class="descargar-btn" download>Descargar</a>
+    <!-- EDICIÓN ACTUAL -->
+    <section class="edicion-actual" aria-labelledby="edicion-title">
+        <div class="edicion-heading">
+            <p class="section-label">EDICIÓN ACTUAL</p>
+            <h2 id="edicion-title" class="edicion-titulo">JUNIO — JULIO 2026</h2>
         </div>
 
-        <!-- Lista de entrevistas -->
-        <div class="edicion-contenido"> 
+        <div class="edicion-grid">
+            <!-- Portada -->
+            <aside class="edicion-portada" aria-label="Portada y opciones de lectura">
+                <div class="portada-frame">
+                    <img src="images/revista2.webp" alt="Portada de la revista TOKIO PANIC, edición junio-julio 2026" class="portada-img">
+                </div>
+                <p class="portada-caption">TOKIO PANIC / VOL. 02</p>
+                <div class="revista-actions">
+                    <a href="REVISTA TOKIO PANIC 2_(junio-julio).pdf" class="leer-online-btn" target="_blank" rel="noopener noreferrer">Leer revista <span aria-hidden="true">↗</span></a>
+                    <a href="REVISTA TOKIO PANIC 2_(junio-julio).pdf" class="descargar-btn" download>Descargar PDF <span aria-hidden="true">↓</span></a>
+                </div>
+            </aside>
+
+            <!-- Lista de entrevistas -->
+            <div class="edicion-contenido">
+                <div class="indice-header">
+                    <p class="section-label">CONTENIDO</p>
+                    <p>ÍNDICE DE ENTREVISTAS</p>
+                </div>
 
             <div class="entrevista-item">
                 <span class="entrevista-pagina">pág.4</span>
@@ -136,12 +151,10 @@
 
 
 
-                </div>
             </div>
-
-        </div>  <!-- ← CIERRE DE edicion-contenido -->
-    </div>  <!-- ← CIERRE DE edicion-grid -->
-</section>  <!-- ← CIERRE DE edicion-actual -->
+        </div>
+    </section>
+</main>
 
 
     <!-- FOOTER (igual que en index.html) -->
@@ -178,6 +191,7 @@
     </div>
 
 </footer>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
