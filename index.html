@@ -53,7 +53,9 @@
                 </nav>
             </header>
 
-<main class="hero-feature">
+<main class="hero-feature" id="hero-carousel" aria-roledescription="carrusel" aria-label="Noticias destacadas">
+
+    <div class="hero-slides" aria-hidden="true"></div>
 
     <div class="hero-content">
         <span class="tag">EN PORTADA</span>
@@ -63,13 +65,17 @@
         </h1>
 
         <p class="hero-description">
-           La banda nos cuenta sobre la emoción de tocar por primera vez en México.
+           
         </p>
 
         <a href="https://tokiopanic.com/noticias/nocturnal-bloodlust-y-la-emocion-de-tocar-por-primera-vez-en-mexico.html" class="hero-btn">
              Leer entrevista
         </a>
     </div>
+
+    <button class="hero-control hero-control-prev" type="button" aria-label="Noticia anterior">&#10094;</button>
+    <button class="hero-control hero-control-next" type="button" aria-label="Siguiente noticia">&#10095;</button>
+    <div class="hero-dots" aria-label="Seleccionar noticia"></div>
 
 </main>
         </div>
