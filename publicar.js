@@ -400,7 +400,7 @@ ${JSON.stringify(datosEstructurados, null, 2).replace(/</g, "\\u003c")}
         </li>
 
         <li>
-            <a href="/podcast.html">
+            <a href="https://open.spotify.com/show/4hD9kkJtiRzGD3SnqVZrOu" target="_blank" rel="noopener noreferrer">
                 PODCAST
             </a>
         </li>
