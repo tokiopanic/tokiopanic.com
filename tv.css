@@ -139,6 +139,55 @@ header nav a.active::after{
     width:100%;
 
 }
+
+/*==========================
+        HEADER - MÓVIL
+==========================*/
+
+@media (max-width: 768px){
+
+    header{
+        height:auto;
+        min-height:72px;
+
+        padding:18px 20px;
+
+        flex-direction:column;
+        justify-content:center;
+        gap:16px;
+    }
+
+    .logo{
+        height:42px;
+    }
+
+    nav{
+        width:100%;
+    }
+
+    nav ul{
+        width:100%;
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        flex-wrap:wrap;
+
+        gap:12px 18px;
+    }
+
+    nav ul li a{
+        font-size:.85rem;
+        letter-spacing:.3px;
+    }
+
+    header nav a::after{
+        bottom:-4px;
+        height:2px;
+    }
+
+}
 /* =========================
    HERO
 ========================= */
