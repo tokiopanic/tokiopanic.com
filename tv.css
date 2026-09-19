@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+:root {
+
+    --yellow: #FFD600;
+    --yellow-dark: #C7A800;
+
+    --black: #050505;
+    --dark: #0c0c0c;
+    --gray: #151515;
+    --gray-light: #242424;
+
+    --white: #ffffff;
+    --text-gray: #999;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    background: var(--black);
+
+    color: var(--white);
+
+    font-family: 'Inter', sans-serif;
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+/* =========================
+   HEADER
+========================= */
+
+.tv-header {
+
+    height: 74px;
+
+    background: #050505;
+
+    border-bottom: 1px solid #222;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 5%;
+
+}
+
+
+.tv-header > a {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.tv-header .logo {
+
+    display: block;
+
+    width: 180px;
+
+    height: auto;
+
+}
+
+
+.tv-header nav ul {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+.tv-header nav ul li {
+
+    list-style: none;
+
+}
+
+
+.tv-header nav ul li a {
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    transition: 0.2s;
+
+}
+
+
+.tv-header nav ul li a:hover {
+
+    color: white;
+
+}
+
+
+/* TV */
+
+.tv-header nav ul li a.tv-link {
+
+    color: var(--yellow);
+
+}
+
+
+.tv-header nav ul li a.tv-link:hover {
+
+    color: white;
+
+}
+
+
+/* PATREON */
+
+.tv-header nav ul li a.patreon-link {
+
+    color: var(--yellow);
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.tv-hero {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 60px 5% 40px;
+
+}
+
+
+.hero-title {
+
+    margin-bottom: 25px;
+
+}
+
+
+.live-indicator {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--yellow);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.live-indicator span {
+
+    width: 8px;
+
+    height: 8px;
+
+    background: var(--yellow);
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px var(--yellow);
+
+}
+
+
+.hero-title h1 {
+
+    font-family: 'Anton', sans-serif;
+
+    font-size: clamp(50px, 8vw, 100px);
+
+    line-height: 0.95;
+
+    letter-spacing: 2px;
+
+}
+
+
+.hero-title p {
+
+    margin-top: 15px;
+
+    color: #777;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* =========================
+   PLAYER
+========================= */
+
+.player-wrapper {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    background: #000;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.6);
+
+}
+
+
+#tv-player {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    background: #000;
+
+}
+
+
+
+
+    
+
+/* =========================
+   NOW PLAYING
+========================= */
+
+.now-playing {
+
+    background: var(--gray);
+
+    border-left: 4px solid var(--yellow);
+
+    padding: 20px 25px;
+
+}
+
+
+.np-label {
+
+    color: var(--yellow);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.np-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.np-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--yellow);
+
+    font-size: 14px;
+
+}
+
+
+.np-artist {
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+}
+
+
+.np-song {
+
+    margin-top: 4px;
+
+    color: #888;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.tv-content {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 20px 5% 80px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+}
+
+
+.schedule,
+.about-tv {
+
+    background: var(--dark);
+
+    border: 1px solid #1c1c1c;
+
+    padding: 30px;
+
+}
+
+
+.section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-family: 'Anton', sans-serif;
+
+    font-size: 24px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.section-heading span {
+
+    display: block;
+
+    width: 5px;
+
+    height: 25px;
+
+    background: var(--yellow);
+
+}
+
+
+/* =========================
+   SCHEDULE
+========================= */
+
+.schedule-item {
+
+    display: flex;
+
+    gap: 20px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #222;
+
+}
+
+
+.schedule-item:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.schedule-item.active {
+
+    color: white;
+
+}
+
+
+.schedule-time {
+
+    color: var(--yellow);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    width: 50px;
+
+}
+
+
+.schedule-item strong {
+
+    display: block;
+
+    font-size: 14px;
+
+}
+
+
+.schedule-item small {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: #666;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-tv p {
+
+    color: #888;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+
+}
+
+
+.tv-tag {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 8px 12px;
+
+    border: 1px solid #333;
+
+    color: #777;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    border-top: 1px solid #222;
+
+    padding: 50px 5%;
+
+    text-align: center;
+
+}
+
+
+.footer-logo {
+
+    font-family: 'Anton', sans-serif;
+
+    font-size: 28px;
+
+}
+
+
+footer p {
+
+    color: #555;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    margin: 10px 0 20px;
+
+}
+
+
+footer small {
+
+    color: #444;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+
+    .tv-header {
+
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .tv-header nav {
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+
+    .tv-header nav a {
+
+        font-size: 10px;
+
+    }
+
+
+    .tv-hero {
+
+        padding: 40px 15px 25px;
+
+    }
+
+
+    .hero-title h1 {
+
+        font-size: 52px;
+
+    }
+
+
+    .hero-title p {
+
+        font-size: 9px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .player-wrapper {
+
+        aspect-ratio: 16 / 9;
+
+    }
+
+
+    .player-overlay {
+
+        top: 15px;
+
+        right: 15px;
+
+    }
+
+
+    .channel-logo {
+
+        font-size: 15px;
+
+    }
+
+
+    .tv-content {
+
+        grid-template-columns: 1fr;
+
+        padding: 15px;
+
+    }
+
+
+    .schedule,
+    .about-tv {
+
+        padding: 22px;
+
+    }
+
+}

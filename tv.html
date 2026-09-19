@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TOKIO PANIC TV | J-ROCK & VISUAL KEI</title>
+
+    <link rel="stylesheet" href="tv.css">
+
+    <!-- HLS.js -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+<header class="tv-header">
+
+    <a href="/">
+        <img src="header.png" alt="TOKIO PANIC" class="logo">
+    </a>
+
+    <nav>
+        <ul>
+            <li><a href="/">INICIO</a></li>
+
+            <li>
+                <a href="noticias.html">NOTICIAS</a>
+            </li>
+
+            <li>
+                <a
+                    href="https://open.spotify.com/show/4hD9kkJtiRzGD3SnqVZrOu"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    PODCAST
+                </a>
+            </li>
+
+            <li>
+                <a href="revista.html">REVISTA</a>
+            </li>
+
+            <li>
+                <a href="nosotros.html">NOSOTROS</a>
+            </li>
+
+            <li>
+                <a
+                    href="https://patreon.com/tokiopanic"
+                    class="patreon-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    PATREON
+                </a>
+            </li>
+
+            <li>
+                <a href="tv.html" class="tv-link active">
+                    TV
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="tv-hero">
+
+            <div class="hero-title">
+
+                <div class="live-indicator">
+                    <span></span> EN VIVO
+                </div>
+
+                <h1>TOKIO PANIC TV</h1>
+
+                <p>
+                    J-ROCK · VISUAL KEI · JAPANESE MUSIC
+                </p>
+
+            </div>
+
+
+            <!-- PLAYER -->
+
+            <div class="player-wrapper">
+
+                <video
+                    id="tv-player"
+                    controls
+                    playsinline
+                    autoplay
+                    muted>
+                </video>
+
+            </div>
+
+
+            <!-- NOW PLAYING -->
+
+            <section class="now-playing">
+
+                <div class="np-label">
+                    ESTÁS ESCUCHANDO
+                </div>
+
+                <div class="np-info">
+
+                    <div class="np-icon">
+                        ▶
+                    </div>
+
+                    <div>
+                        <div class="np-artist" id="artist">
+                            TOKIO PANIC TV
+                        </div>
+
+                        <div class="np-song" id="song">
+                            TRANSMISIÓN EN VIVO
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- CONTENT -->
+
+        <section class="tv-content">
+
+            <!-- PROGRAMACIÓN -->
+
+            <div class="schedule">
+
+                <div class="section-heading">
+                    <span></span>
+                    PROGRAMACIÓN
+                </div>
+
+                <div class="schedule-item active">
+
+                    <div class="schedule-time">
+                        AHORA
+                    </div>
+
+                    <div>
+                        <strong>TOKIO PANIC TV</strong>
+                        <small>J-ROCK & VISUAL KEI</small>
+                    </div>
+
+                </div>
+
+
+                <div class="schedule-item">
+
+                    <div class="schedule-time">
+                        24/7
+                    </div>
+
+                    <div>
+                        <strong>MUSIC VIDEOS</strong>
+                        <small>JAPANESE MUSIC</small>
+                    </div>
+
+                </div>
+
+
+                <div class="schedule-item">
+
+                    <div class="schedule-time">
+                        PRONTO
+                    </div>
+
+                    <div>
+                        <strong>TOKIO PANIC SPECIAL</strong>
+                        <small>EXCLUSIVE CONTENT</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ABOUT -->
+
+            <div class="about-tv">
+
+                <div class="section-heading">
+                    <span></span>
+                    SOBRE TOKIO PANIC TV
+                </div>
+
+                <p>
+                    TOKIO PANIC TV es el canal de TOKIO PANIC dedicado
+                    a la música japonesa.
+                </p>
+
+                <p>
+                    Visual Kei, J-Rock, bandas emergentes y una selección
+                    de música japonesa transmitida las 24 horas.
+                </p>
+
+                <div class="tv-tag">
+                    #TOKIOPANICTV
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            TOKIO PANIC TV
+        </div>
+
+        <p>
+            J-ROCK · VISUAL KEI · JAPANESE MUSIC
+        </p>
+
+        <small>
+            © TOKIO PANIC
+        </small>
+
+    </footer>
+
+
+    <script src="tv.js"></script>
+
+</body>
+</html>
