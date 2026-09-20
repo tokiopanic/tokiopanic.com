@@ -69,3 +69,64 @@ else if (
     );
 
 }
+
+// ======================================
+// NOW PLAYING
+// ======================================
+
+const nowPlayingURL =
+    "https://stream.tokiopanic.com/nowplaying.json";
+
+const artistElement =
+    document.getElementById("artist");
+
+const songElement =
+    document.getElementById("song");
+
+
+async function actualizarNowPlaying() {
+
+    try {
+
+        const response = await fetch(
+            nowPlayingURL + "?t=" + Date.now()
+        );
+
+        if (!response.ok) {
+            throw new Error(
+                "No se pudo obtener nowplaying.json"
+            );
+        }
+
+        const data = await response.json();
+
+        if (data.artist) {
+            artistElement.textContent =
+                data.artist;
+        }
+
+        if (data.title) {
+            songElement.textContent =
+                data.title;
+        }
+
+    } catch (error) {
+
+        console.error(
+            "Error obteniendo Now Playing:",
+            error
+        );
+
+    }
+}
+
+
+// Actualizar inmediatamente
+actualizarNowPlaying();
+
+
+// Actualizar cada 5 segundos
+setInterval(
+    actualizarNowPlaying,
+    5000
+);
