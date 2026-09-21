@@ -860,3 +860,41 @@ footer small {
     }
 
 }
+
+
+/* ======================================
+   HEADER MOBILE - UNA SOLA LÍNEA
+   ====================================== */
+
+@media (max-width: 600px) {
+
+    .tv-header nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 18px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 0 12px;
+        margin: 0;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    /* Ocultar barra de desplazamiento */
+    .tv-header nav ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tv-header nav ul li {
+        flex-shrink: 0;
+    }
+
+    .tv-header nav ul li a {
+        white-space: nowrap;
+        font-size: 11px;
+    }
+
+}
