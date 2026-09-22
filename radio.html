@@ -8,9 +8,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TOKIO PANIC TV | J-MUSIC LAS 24 HORAS</title>
+    <title>TOKIO PANIC RADIO | J-MUSIC LAS 24 HORAS</title>
 
-    <link rel="stylesheet" href="tv.css">
+    <link rel="stylesheet" href="radio.css">
 
     <!-- HLS.js -->
     <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
@@ -61,8 +61,8 @@
             </li>
 
             <li>
-                <a href="tv.html" class="tv-link active">
-                    TV
+                <a href="radio.html" class="tv-link active">
+                    RADIO
                 </a>
             </li>
         </ul>
@@ -82,7 +82,7 @@
                     <span></span> EN VIVO
                 </div>
 
-                <h1>TOKIO PANIC TV</h1>
+                <h1>TOKIO PANIC RADIO</h1>
 
                 <p>
                     J-ROCK · VISUAL KEI · JAPANESE MUSIC
@@ -93,44 +93,89 @@
 
             <!-- PLAYER -->
 
-            <div class="player-wrapper">
+<div class="player-wrapper">
 
-                <video
-                    id="tv-player"
-                    controls
-                    playsinline
-                    autoplay
-                    muted>
-                </video>
+    <video
+        id="radio-spot"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto">
 
+        <source
+            src="/video/spot-radio.mp4"
+            type="video/mp4">
+
+        Tu navegador no soporta la reproducción de video.
+    </video>
+
+</div>
+
+
+<!-- NOW PLAYING -->
+<section class="now-playing">
+
+    <div class="np-label">
+        ESTÁS ESCUCHANDO
+    </div>
+
+    <div class="np-info">
+
+        <div class="np-track-info">
+
+            <div class="np-artist" id="artist">
+                TOKIO PANIC RADIO
             </div>
 
+            <div class="np-song" id="song">
+                TRANSMISIÓN EN VIVO
+            </div>
 
-            <!-- NOW PLAYING -->
+        </div>
 
-            <section class="now-playing">
+        <!-- CONTROLES DE RADIO -->
+        <div class="radio-controls">
 
-                <div class="np-label">
-                    ESTÁS ESCUCHANDO
-                </div>
+            <button
+                id="play-pause"
+                class="radio-button"
+                type="button"
+                aria-label="Reproducir radio">
+                ▶
+            </button>
 
-                <div class="np-info">
+            <button
+                id="mute-toggle"
+                class="radio-button"
+                type="button"
+                aria-label="Silenciar radio">
+                🔊
+            </button>
 
-                    <div>
-                        <div class="np-artist" id="artist">
-                            TOKIO PANIC TV
-                        </div>
+            <input
+                id="volume-control"
+                class="volume-control"
+                type="range"
+                min="0"
+                max="1"
+                step="0.05"
+                value="0.8"
+                aria-label="Volumen">
 
-                        <div class="np-song" id="song">
-                            TRANSMISIÓN EN VIVO
-                        </div>
-                    </div>
+        </div>
 
-                </div>
+    </div>
 
-            </section>
+    <!-- REPRODUCTOR DE AUDIO -->
+    <audio
+        id="radio-audio"
+        preload="none">
+    </audio>
 
-        </section>
+</section>  
+
+      
 
 
         <!-- CONTENT -->
@@ -153,7 +198,7 @@
                     </div>
 
                     <div>
-                        <strong>TOKIO PANIC TV</strong>
+                        <strong>TOKIO PANIC RADIO</strong>
                         <small>J-ROCK & VISUAL KEI</small>
                     </div>
 
@@ -171,11 +216,11 @@
 
                 <div class="section-heading">
                     <span></span>
-                    SOBRE TOKIO PANIC TV
+                    SOBRE TOKIO PANIC RADIO
                 </div>
 
                 <p>
-                    TOKIO PANIC TV es un canal dedicado
+                    TOKIO PANIC RADIO es un canal dedicado
                     a la música japonesa.
                 </p>
 
@@ -185,7 +230,7 @@
                 </p>
 
                 <div class="tv-tag">
-                    #TOKIOPANICTV
+                    #TOKIOPANICRADIO
                 </div>
 
             </div>
@@ -247,7 +292,7 @@
 </footer>
 
 
-    <script src="tv.js"></script>
+    <script src="radio.js"></script>
 
 </body>
 </html>

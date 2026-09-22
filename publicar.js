@@ -14,6 +14,7 @@ const CONFIG = {
     archivosEstaticosSitemap: [
         "/",
         "/noticias.html",
+        "/radio.html",
         "/podcast.html",
         "/revista.html",
         "/nosotros.html",
@@ -396,6 +397,12 @@ ${JSON.stringify(datosEstructurados, null, 2).replace(/</g, "\\u003c")}
         <li>
             <a href="/noticias.html" class="active">
                 NOTICIAS
+            </a>
+        </li>
+
+                <li>
+            <a href="/radio.html">
+                RADIO
             </a>
         </li>
 
