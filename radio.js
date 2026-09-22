@@ -1,7 +1,68 @@
 
-const video = document.getElementById("tv-player");
+const video = document.getElementById("radio-spot");
 
+// ======================================
+// PLAYLIST DE VIDEOS - TOKIO PANIC RADIO
+// ======================================
 
+const videosRadio = [
+    "/video/spot-radio.mp4",
+    "/video/spot-radio2.mp4",
+    "/video/spot-radio3.mp4",
+    "/video/spot-radio4.mp4",
+    "/video/spot-radio5.mp4"
+];
+
+let videoActual = 0;
+
+if (video) {
+
+    // Cargar el primer video
+    video.src = videosRadio[videoActual];
+
+    video.load();
+
+    // Reproducir automáticamente
+    video.play().catch(error => {
+
+        console.warn(
+            "La reproducción automática fue bloqueada:",
+            error
+        );
+
+    });
+
+    // Cambiar al siguiente video al terminar
+    video.addEventListener(
+        "ended",
+        function () {
+
+            videoActual++;
+
+            // Volver al primer video después del quinto
+            if (videoActual >= videosRadio.length) {
+
+                videoActual = 0;
+
+            }
+
+            video.src = videosRadio[videoActual];
+
+            video.load();
+
+            video.play().catch(error => {
+
+                console.warn(
+                    "No se pudo reproducir el siguiente video:",
+                    error
+                );
+
+            });
+
+        }
+    );
+
+}
 
 
 // ===============================
