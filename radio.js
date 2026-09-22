@@ -3,12 +3,13 @@ const video = document.getElementById("tv-player");
 
 
 
+
 // ===============================
 // NOW PLAYING - AZURACAST
 // ===============================
 
 const nowPlayingURL =
-    "https://stream.tokiopanic.com/api/nowplaying_static/tokio_panic.json";
+    "https://radio.tokiopanic.com/api/nowplaying/tokio_panic";
 
 const artistElement = document.getElementById("artist");
 const songElement = document.getElementById("song");
@@ -20,31 +21,86 @@ async function updateNowPlaying() {
         const response = await fetch(
             `${nowPlayingURL}?t=${Date.now()}`,
             {
-                cache: "no-store"
+                method: "GET",
+                cache: "no-store",
+                mode: "cors"
             }
         );
 
+        console.log(
+            "Estado de la API:",
+            response.status,
+            response.statusText
+        );
+
         if (!response.ok) {
-            throw new Error(`Error HTTP: ${response.status}`);
+            throw new Error(
+                `Error HTTP: ${response.status}`
+            );
         }
 
         const data = await response.json();
 
-        console.log("Datos de AzuraCast:", data);
+        console.log(
+            "Respuesta completa de AzuraCast:",
+            data
+        );
 
-        // Obtener la canción actual
-        const currentSong = data.now_playing?.song;
+        // Verificar si existe la información
+        if (!data.now_playing) {
 
-        const artist = currentSong?.artist || "TOKIO PANIC RADIO";
-        const title = currentSong?.title || "TRANSMISIÓN EN VIVO";
+            console.warn(
+                "La API no contiene now_playing"
+            );
+
+            throw new Error(
+                "Estructura de API inesperada"
+            );
+
+        }
+
+        const currentSong = data.now_playing.song;
+
+        if (!currentSong) {
+
+            console.warn(
+                "La API no contiene información de song"
+            );
+
+            throw new Error(
+                "No se encontró la canción actual"
+            );
+
+        }
+
+        const artist =
+            currentSong.artist || "Artista desconocido";
+
+        const title =
+            currentSong.title || "Título desconocido";
+
+        console.log(
+            "ARTISTA:",
+            artist
+        );
+
+        console.log(
+            "CANCIÓN:",
+            title
+        );
 
         // Mostrar los datos en el HTML
+
         if (artistElement) {
+
             artistElement.textContent = artist;
+
         }
 
         if (songElement) {
+
             songElement.textContent = title;
+
         }
 
     } catch (error) {
@@ -54,12 +110,21 @@ async function updateNowPlaying() {
             error
         );
 
+        // Mostrar error temporal en la interfaz
+        // para distinguirlo de los datos normales
+
         if (artistElement) {
-            artistElement.textContent = "TOKIO PANIC RADIO";
+
+            artistElement.textContent =
+                "TOKIO PANIC RADIO";
+
         }
 
         if (songElement) {
-            songElement.textContent = "TRANSMISIÓN EN VIVO";
+
+            songElement.textContent =
+                "ESPERANDO INFORMACIÓN...";
+
         }
 
     }
@@ -72,13 +137,13 @@ updateNowPlaying();
 // Actualizar cada 5 segundos
 setInterval(updateNowPlaying, 5000);
 
+
 // ======================================
 // REPRODUCTOR - TOKIO PANIC RADIO
 // ======================================
 
 const radioAudio = document.getElementById("radio-audio");
 const playPauseButton = document.getElementById("play-pause");
-const muteToggleButton = document.getElementById("mute-toggle");
 const volumeControl = document.getElementById("volume-control");
 
 const radioStreamURL =
@@ -87,7 +152,6 @@ const radioStreamURL =
 if (
     radioAudio &&
     playPauseButton &&
-    muteToggleButton &&
     volumeControl
 ) {
 
@@ -95,11 +159,16 @@ if (
 
     radioAudio.volume = Number(volumeControl.value);
 
+    // ======================================
+    // ACTUALIZAR BOTÓN DE REPRODUCCIÓN
+    // ======================================
+
     function actualizarBotonReproduccion() {
 
         if (radioAudio.paused) {
 
             playPauseButton.textContent = "▶";
+
             playPauseButton.setAttribute(
                 "aria-label",
                 "Reproducir radio"
@@ -110,6 +179,7 @@ if (
         } else {
 
             playPauseButton.textContent = "❚❚";
+
             playPauseButton.setAttribute(
                 "aria-label",
                 "Pausar radio"
@@ -121,29 +191,10 @@ if (
 
     }
 
-    function actualizarBotonSilencio() {
-
-        if (radioAudio.muted || radioAudio.volume === 0) {
-
-            muteToggleButton.textContent = "🔇";
-            muteToggleButton.setAttribute(
-                "aria-label",
-                "Activar sonido"
-            );
-
-        } else {
-
-            muteToggleButton.textContent = "🔊";
-            muteToggleButton.setAttribute(
-                "aria-label",
-                "Silenciar radio"
-            );
-
-        }
-
-    }
-
+    // ======================================
     // REPRODUCIR / PAUSAR
+    // ======================================
+
     playPauseButton.addEventListener(
         "click",
         async function () {
@@ -154,6 +205,8 @@ if (
 
                     await radioAudio.play();
 
+                    actualizarBotonReproduccion();
+
                 } catch (error) {
 
                     console.error(
@@ -161,32 +214,25 @@ if (
                         error
                     );
 
+                    actualizarBotonReproduccion();
+
                 }
 
             } else {
 
                 radioAudio.pause();
 
+                actualizarBotonReproduccion();
+
             }
 
-            actualizarBotonReproduccion();
-
         }
     );
 
-    // SILENCIAR / ACTIVAR SONIDO
-    muteToggleButton.addEventListener(
-        "click",
-        function () {
-
-            radioAudio.muted = !radioAudio.muted;
-
-            actualizarBotonSilencio();
-
-        }
-    );
-
+    // ======================================
     // CONTROL DE VOLUMEN
+    // ======================================
+
     volumeControl.addEventListener(
         "input",
         function () {
@@ -194,16 +240,13 @@ if (
             radioAudio.volume =
                 Number(volumeControl.value);
 
-            if (radioAudio.volume > 0) {
-                radioAudio.muted = false;
-            }
-
-            actualizarBotonSilencio();
-
         }
     );
 
+    // ======================================
     // ACTUALIZAR ESTADO DEL BOTÓN
+    // ======================================
+
     radioAudio.addEventListener(
         "play",
         actualizarBotonReproduccion
@@ -215,23 +258,18 @@ if (
     );
 
     radioAudio.addEventListener(
-        "volumechange",
-        actualizarBotonSilencio
-    );
-
-    radioAudio.addEventListener(
         "error",
         function () {
 
             console.error(
-                "Error al conectar con TOKIO PANIC RADIO."
+                "Error al conectar con TOKIO PANIC RADIO.",
+                radioAudio.error
             );
 
         }
     );
 
     actualizarBotonReproduccion();
-    actualizarBotonSilencio();
 
 }
 // ======================================
