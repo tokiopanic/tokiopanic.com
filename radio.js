@@ -156,7 +156,6 @@ if (
 ) {
 
     radioAudio.src = radioStreamURL;
-
     radioAudio.volume = Number(volumeControl.value);
 
     // ======================================
@@ -192,42 +191,52 @@ if (
     }
 
     // ======================================
-    // REPRODUCIR / PAUSAR
-    // ======================================
+// REPRODUCIR / PAUSAR
+// ======================================
 
-    playPauseButton.addEventListener(
-        "click",
-        async function () {
+playPauseButton.addEventListener(
+    "click",
+    async function () {
 
-            if (radioAudio.paused) {
+        if (radioAudio.paused) {
 
-                try {
+            try {
 
-                    await radioAudio.play();
+                // Crear una nueva conexión al stream en vivo
+                const liveStreamURL =
+                    `${radioStreamURL}?t=${Date.now()}`;
 
-                    actualizarBotonReproduccion();
+                radioAudio.src = liveStreamURL;
 
-                } catch (error) {
+                // Recargar el reproductor con la nueva conexión
+                radioAudio.load();
 
-                    console.error(
-                        "No se pudo iniciar la radio:",
-                        error
-                    );
+                // Iniciar la reproducción desde el momento actual
+                await radioAudio.play();
 
-                    actualizarBotonReproduccion();
+                actualizarBotonReproduccion();
 
-                }
+            } catch (error) {
 
-            } else {
-
-                radioAudio.pause();
+                console.error(
+                    "No se pudo iniciar la radio:",
+                    error
+                );
 
                 actualizarBotonReproduccion();
 
             }
 
+        } else {
+
+            radioAudio.pause();
+
+            actualizarBotonReproduccion();
+
         }
-    );
+
+    }
+);
 
     // ======================================
     // CONTROL DE VOLUMEN
