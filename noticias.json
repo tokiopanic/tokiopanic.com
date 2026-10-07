@@ -226,6 +226,7 @@
     },
     {
     "id": 27,
+    "slug": "entrevista-ano-ko-no-heya-no-calendula-wa-y-el-arte-de-habitar-las-emociones",
     "titulo": "[Entrevista] Ano Ko no Heya no Calendula wa y el arte de habitar las emociones",
     "fecha": "2026-04-20",
     "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
@@ -244,6 +245,7 @@
     },
     {
     "id": 29,
+    "slug": "entrevista-cissne-atmosferas-que-rompen-el-silencio-del-underground-japones",
     "titulo": "[Entrevista] Cissné: atmósferas que rompen el silencio del underground japonés",
     "fecha": "2026-04-22",
     "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
@@ -253,6 +255,7 @@
     }, 
     {
     "id": 30,
+    "slug": "entrevista-hikensya-a-creando-identidad-a-traves-de-la-experimentacion",
     "titulo": "[Entrevista] Hikensya A: creando identidad a través de la experimentación",
     "fecha": "2026-04-25",
     "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
@@ -280,6 +283,7 @@
     },
     {
     "id": 33,
+    "slug": "entrevista-ryo-trackmaker-del-legado-de-girugamesh-a-una-nueva-era-de-creacion-independiente",
     "titulo": "[Entrevista] Ryo trackmaker: del legado de Girugamesh a una nueva era de creación independiente",
     "fecha": "2026-04-03",
     "autor": "<a href=\"https://www.instagram.com/midoridt/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@midoridt</a>",
@@ -299,6 +303,7 @@
     },
     {
     "id": 35,
+    "slug": "entrevista-kierrr-la-nueva-propuesta-del-visual-kei-que-fusiona-shoegaze-emocion-y-oscuridad",
     "titulo": "[Entrevista] Kierrr: La nueva propuesta del visual kei que fusiona shoegaze, emoción y oscuridad",
     "fecha": "2026-05-06",
     "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
@@ -308,6 +313,7 @@
     },
     {
     "id": 36,
+    "slug": "entrevista-kakuriyo-panda-entre-este-mundo-y-el-otro-nace-una-nueva-vision-del-rock-japones",
     "titulo": "[Entrevista] KAKURIYO PANDA: Entre este mundo y el otro, nace una nueva visión del rock japonés",
     "fecha": "2026-05-06",
     "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
@@ -326,6 +332,7 @@
     },
     {
     "id": 38,
+    "slug": "entrevista-in-my-vanitasss-reinterpretando-el-visual-kei-mas-alla-de-la-nostalgia",
     "titulo": "[Entrevista] In My Vanitasss: Reinterpretando el Visual Kei más allá de la nostalgia",
     "fecha": "2026-05-23",
     "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
@@ -363,6 +370,7 @@
       },
     {
     "id": 42,
+    "slug": "dearpsycho-la-banda-chilena-que-busca-revivir-el-lado-colorido-del-visual-kei",
     "titulo": "DearPsycho: La banda chilena que busca revivir el lado colorido del Visual Kei",
     "fecha": "2026-06-02",
     "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
@@ -372,6 +380,7 @@
     },
    {
     "id": 43,
+    "slug": "metal-paws-el-poder-del-kawaii-metal-chileno-que-busca-conquistar-latinoamerica",
     "titulo": "Metal Paws: El poder del Kawaii Metal chileno que busca conquistar Latinoamérica",
     "fecha": "2026-06-11",
     "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
@@ -381,6 +390,7 @@
 },
 {
     "id": 44,
+    "slug": "nameless-crown-el-renacer-del-visual-kei-en-indonesia",
     "titulo": "NAMELESS CROWN: el renacer del Visual Kei en Indonesia",
     "fecha": "2026-06-13",
     "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
@@ -391,6 +401,7 @@
 
 {
     "id": 45,
+    "slug": "issei-ex-nazare-habla-sobre-mexico-su-evolucion-musical-y-su-motivacion-para-seguir-detras-de-la-bateria",
     "titulo": "Issei (ex-NAZARE) habla sobre México, su evolución musical y su motivación para seguir detrás de la batería",
     "fecha": "2026-06-25",
     "autor": "<a href=\"https://www.instagram.com/midoridt/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@midoridt</a>",
@@ -412,6 +423,7 @@
 
   {
     "id": 47,
+    "slug": "ykmo-impulsando-el-visual-kei-desde-mexico",
     "titulo": "YKMO: Impulsando el Visual Kei desde México",
     "fecha": "2026-07-04",
     "autor": "<a href=\"https://www.instagram.com/midoridt/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@midoridt</a>",
@@ -421,6 +433,7 @@
   },
   {
     "id": 48,
+    "slug": "nocturnal-bloodlust-y-la-emocion-de-tocar-por-primera-vez-en-mexico",
     "titulo": "NOCTURNAL BLOODLUST y la emoción de tocar por primera vez en México",
     "fecha": "2026-07-06",
     "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
@@ -430,6 +443,7 @@
 },
 {
     "id": 49,
+    "slug": "sisen-quiero-volver-a-mexico-muy-pronto",
     "titulo": "SiSeN: \"Quiero volver a México muy pronto\"",
     "fecha": "2026-07-11",
     "autor": "<a href=\"https://www.instagram.com/midoridt/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@midoridt</a>",
@@ -640,7 +654,7 @@
 },
 {
     "id": 71,
-    "slug": "undesire-banda-visual-keigit status-chilena-prepara-su-regreso-a-los-escenarios",
+    "slug": "undesire-banda-visual-kei-chilena-prepara-su-regreso-a-los-escenarios",
     "titulo": "Undesire prepara su regreso a los escenarios con \"Overture: First Contact\"",
     "fecha": "2026-08-15",
     "autor": "<a href=\"https://www.instagram.com/j__guajardo/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link\">@j__guajardo</a>",
