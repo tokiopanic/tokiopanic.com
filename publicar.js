@@ -399,7 +399,9 @@ ${JSON.stringify(datosEstructurados, null, 2).replace(/</g, "\\u003c")}
                 NOTICIAS
             </a>
         </li>
-        <li><a href="entrevistas.html">ENTREVISTAS</a></li>
+        <li><a href="/entrevistas.html">
+            ENTREVISTAS
+        </a></li>
 
                 <li>
             <a href="/radio.html">
