@@ -45,7 +45,8 @@ const IDS_ENTREVISTAS = [
     81,
     84,
     85,
-    86
+    86,
+    92
 ];
 
 
