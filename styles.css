@@ -1122,6 +1122,20 @@ body.internal-page .page-title::after {
     color: #ffe44e;
     text-decoration: underline;
 }
+@media (max-width: 480px) {
+    .footer-patreon {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .patreon-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
 
 /* ===== PÁGINAS INTERNAS ===== */
 body.internal-page {
